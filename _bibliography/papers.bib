@@ -1,115 +1,131 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{gyevnar2024towardstrustworthy,
+    title={Towards Trustworthy Autonomous Systems via Conversations and Explanations},
+    volume={38},
+    url={https://ojs.aaai.org/index.php/AAAI/article/view/30395},
+    doi={10.1609/aaai.v38i21.30395},
+    number={21},
+    journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+    author={Balint Gyevnar},
+    year={2024},
+    month={Mar.},
+    pages={23389-23390},
+    abstract = {Autonomous systems fulfil an increasingly important role in our societies, however, AI-powered systems have seen less success over the years, as they are expected to tackle a range of social, legal, or technological challenges and modern neural network-based AI systems cannot yet provide guarantees to many of these challenges. Particularly important is that these systems are black box decision makers, eroding human oversight, contestation, and agency. To address this particular concern, my thesis focuses on integrating social explainable AI with cognitive methods and natural language processing to shed light on the internal processes of autonomous systems in a way accessible to lay users. I propose a causal explanation generation model for decision-making called CEMA based on counterfactual simulations in multi-agent systems. I also plan to integrate CEMA with a broader natural language processing pipeline to support targeted and personalised explanations that address people's cognitive biases. I hope that my research will have a positive impact on the public acceptance of autonomous agents by building towards more trustworthy AI.},
+    selected = {true}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{kuznietsov2024avreview,
+    title={Explainable AI for Safe and Trustworthy Autonomous Driving: A Systematic Review},
+    author={Anton Kuznietsov* and Balint Gyevnar* and Cheng Wang and Steven Peters and Stefano V. Albrecht},
+    year={2024},
+    month={Dec.},
+    journal={IEEE Transactions on Intelligent Transportation Systems},
+    volume={25},
+    number={12},
+    pages={19342-19364},
+    publisher={IEEE},
+    abstract={Artificial Intelligence (AI) shows promising applications for the perception and planning tasks in autonomous driving (AD) due to its superior performance compared to conventional methods. However, inscrutable AI systems exacerbate the existing challenge of safety assurance of AD. One way to mitigate this challenge is to utilize explainable AI (XAI) techniques. To this end, we present the first comprehensive systematic literature review of explainable methods for safe and trustworthy AD. We begin by analyzing the requirements for AI in the context of AD, focusing on three key aspects: data, model, and agency. We find that XAI is fundamental to meeting these requirements. Based on this, we explain the sources of explanations in AI and describe a taxonomy of XAI. We then identify five key contributions of XAI for safe and trustworthy AI in AD, which are interpretable design, interpretable surrogate models, interpretable monitoring, auxiliary explanations, and interpretable validation. Finally, we propose a modular framework called SafeX to integrate these contributions, enabling explanation delivery to users while simultaneously ensuring the safety of AI models.},
+    doi = {10.1109/TITS.2024.3474469},
+    url = {https://ieeexplore.ieee.org/document/10716567},
+    selected = {true},
+    annotation = {* Equal contribution}
+  }
+
+@misc{gyevnar2024attribute,
+    title={People Attribute Purpose to Autonomous Vehicles When Explaining Their Behavior},
+    author={Balint Gyevnar and Stephanie Droop and Tadeg Quillien},
+    year={2024},
+    eprint={2403.08828},
+    archivePrefix={arXiv},
+    primaryClass={cs.HC},
+    url={https://arxiv.org/abs/2403.08828},
+    abstract = {Cognitive science can help us understand which explanations people might expect, and in which format they frame these explanations, whether causal, counterfactual, or teleological (i.e., purpose-oriented). Understanding the relevance of these concepts is crucial for building good explainable AI (XAI) which offers recourse and actionability. Focusing on autonomous driving, a complex decision-making domain, we report empirical data from two surveys on (i) how people explain the behavior of autonomous vehicles in 14 unique scenarios (N1=54), and (ii) how they perceive these explanations in terms of complexity, quality, and trustworthiness (N2=356). Participants deemed teleological explanations significantly better quality than counterfactual ones, with perceived teleology being the best predictor of perceived quality and trustworthiness. Neither the perceived teleology nor the quality were affected by whether the car was an autonomous vehicle or driven by a person. This indicates that people use teleology to evaluate information about not just other people but also autonomous vehicles. Taken together, our findings highlight the importance of explanations that are framed in terms of purpose rather than just, as is standard in XAI, the causal mechanisms involved. We release the 14 scenarios and more than 1,300 elicited explanations publicly as the Human Explanations for Autonomous Driving Decisions (HEADD) dataset.},
+    selected = {true}
+  }
+
+@inproceedings{gyevnar2024causal,
+    title={Causal Explanations for Sequential Decision-Making in Multi-Agent Systems},
+    author={Balint Gyevnar and Cheng Wang and Christopher G. Lucas and Shay B. Cohen and Stefano V. Albrecht},
+    booktitle={23rd International Conference on Autonomous Agents and Multi-Agent Systems},
+    organization={IFAAMAS},
+    year={2024},
+    month = {May},
+    pages={771-779},
+    url={https://dl.acm.org/doi/10.5555/3635637.3662930},
+    doi = {10.5555/3635637.3662930},
+    abstract = {We present CEMA: Causal Explanations in Multi-A gent systems; a framework for creating causal natural language explanations of an agent's decisions in dynamic sequential multi-agent systems to build more trustworthy autonomous agents. Unlike prior work that assumes a fixed causal structure, CEMA only requires a probabilistic model for forward-simulating the state of the system. Using such a model, CEMA simulates counterfactual worlds that identify the salient causes behind the agent's decisions. We evaluate CEMA on the task of motion planning for autonomous driving and test it in diverse simulated scenarios. We show that CEMA correctly and robustly identifies the causes behind the agent's decisions, even when a large number of other agents is present, and show via a user study that CEMA's explanations have a positive effect on participants' trust in autonomous vehicles and are rated as high as high-quality baseline explanations elicited from other participants. We release the collected explanations with annotations as the HEADD dataset.},
+    selected = {true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{gyevnar2023transparencyGap,
+    title={Bridging the Transparency Gap: What Can Explainable AI Learn From the AI Act?},
+    author={Balint Gyevnar and Nick Ferguson and Burkhard Schafer},
+    booktitle={26th European Conference on Artificial Intelligence},
+    pages={964--971},
+    year={2023},
+    organization={IOS Press},
+    url = {https://ebooks.iospress.nl/doi/10.3233/FAIA230367},
+    doi = {10.3233/FAIA230367},
+    abstract = {The European Union has proposed the Artificial Intelligence Act which introduces detailed requirements of transparency for AI systems. Many of these requirements can be addressed by the field of explainable AI (XAI), however, there is a fundamental difference between XAI and the Act regarding what transparency is. The Act views transparency as a means that supports wider values, such as accountability, human rights, and sustainable innovation. In contrast, XAI views transparency narrowly as an end in itself, focusing on explaining complex algorithmic properties without considering the socio-technical context. We call this difference the “transparency gap”. Failing to address the transparency gap, XAI risks leaving a range of transparency issues unaddressed. To begin to bridge this gap, we overview and clarify the terminology of how XAI and European regulation -- the Act and the related General Data Protection Regulation (GDPR) -- view basic definitions of transparency. By comparing the disparate views of XAI and regulation, we arrive at four axes where practical work could bridge the transparency gap: defining the scope of transparency, clarifying the legal status of XAI, addressing issues with conformity assessment, and building explainability for datasets.},
+    selected = {true}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@incollection{gyevnar2023loveSexAI,
+    title={Love, Sex, and AI},
+    author={Balint Gyevnar},
+    booktitle={AI100 Early Career Essay Competition},
+    year={2023},
+    month = {Sep.},
+    publisher={Stanford},
+    abstract = {The artificial lover has captivated people's imagination since ancient times. Today, technologies such as affective chatbots, AI-generated imagery, and human-like robots capture the minds, and indeed the bodies, of the amorous. Research interest in the topic has increased in recent years, yet the AI100 study panel remains silent to date on the genuinely promising applications, major ethical issues, and technological roadblocks of AI in love and sex. Now that real Pygmalions and Coppelias are being born into our world, we must look past sensationalised media coverages and sci-fi to ask in earnest about the social, legal, and ethical challenges our society must face if we really are to love artificial intelligence; and whether it should love us back.},
+    url = {https://ai100.stanford.edu/sites/g/files/sbiybj18871/files/media/file/ai100_essaycompetition.pdf}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{gyevnar2022humanCentric,
+    title={A Human-Centric Method for Generating Causal Explanations in Natural Language for Autonomous Vehicle Motion Planning},
+    author={Balint Gyevnar and Massimiliano Tamborski and Cheng Wang and Christopher G. Lucas and Shay B. Cohen and Stefano V. Albrecht},
+    booktitle={IJCAI 2022 Workshop on Artificial Intelligence for Autonomous Driving},
+    year={2022},
+    url={https://arxiv.org/abs/2403.08828},
+    abstract = {Inscrutable AI systems are difficult to trust, especially if they operate in safety-critical settings like autonomous driving. Therefore, there is a need to build transparent and queryable systems to increase trust levels. We propose a transparent, human-centric explanation generation method for autonomous vehicle motion planning and prediction based on an existing white-box system called IGP2. Our method integrates Bayesian networks with context-free generative rules and can give causal natural language explanations for the high-level driving behaviour of autonomous vehicles. Preliminary testing on simulated scenarios shows that our method captures the causes behind the actions of autonomous vehicles and generates intelligible explanations with varying complexity.}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{gyevnar2022colour,
+    title={Communicative Efficiency or Iconic Learning: Do acquisition and communicative pressures interact to shape colour-naming systems?},
+    author={Gyevnar, Balint* and Dagan, Gautier* and Haley, Coleman* and Guo, Shangmin* and Mollica, Frank},
+    journal={Entropy},
+    volume={24},
+    number={11},
+    pages={1542},
+    year={2022},
+    publisher={MDPI},
+    doi = {10.3390/e24111542},
+    url = {https://www.mdpi.com/1099-4300/24/11/1542},
+    abstract = {Language evolution is driven by pressures for simplicity and informativity; however, the timescale on which these pressures operate is debated. Over several generations, learners’ biases for simple and informative systems can guide language evolution. Over repeated instances of dyadic communication, the principle of least effort dictates that speakers should bias systems towards simplicity and listeners towards informativity, similarly guiding language evolution. At the same time, it has been argued that learners only provide a bias for simplicity and, thus, language users must provide a bias for informativity. To what extent do languages evolve during acquisition versus use? We address this question by formally defining and investigating the communicative efficiency of acquisition trajectories. We illustrate our approach using colour-naming systems, replicating a communicative efficiency model based on the information bottleneck problem, and an acquisition model based on self-organising maps. We find that to the extent that language is iconic, learning alone is sufficient to shape language evolution. Regarding colour-naming systems specifically, we find that incorporating learning biases into communicative efficiency accounts might explain how speakers and listeners trade off communicative effort.},
+    keywords = {colour-naming systems; communicative efficiency; language evolution; information bottleneck},
+    annotation = {* Equal contribution}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{brewitt2021grit,
+    title={{GRIT:} Fast, Interpretable, and Verifiable Goal Recognition with Learned Decision Trees for Autonomous Driving},
+    author={Cillian Brewitt and Balint Gyevnar and Samuel Garcin and Stefano V. Albrecht},
+    booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+    year={2021},
+    pages={1023-1030},
+    abstract = {It is important for autonomous vehicles to have the ability to infer the goals of other vehicles (goal recognition), in order to safely interact with other vehicles and predict their future trajectories. This is a difficult problem, especially in urban environments with interactions between many vehicles. Goal recognition methods must be fast to run in real time and make accurate inferences. As autonomous driving is safety- critical, it is important to have methods which are human interpretable and for which safety can be formally verified. Existing goal recognition methods for autonomous vehicles fail to satisfy all four objectives of being fast, accurate, interpretable and verifiable. We propose Goal Recognition with Interpre table Trees (GRIT), a goal recognition system which achieves these objectives. GRIT makes use of decision trees trained on vehicle trajectory data. We evaluate GRIT on two datasets, showing that GRIT achieved fast inference speed and comparable accuracy to two deep learning baselines, a planning-based goal recognition method, and an ablation of GRIT. We show that the learned trees are human interpretable and demonstrate how properties of GRIT can be formally verified using a satisfiability modulo theories (SMT) solver.},
+    url = {https://ieeexplore.ieee.org/abstract/document/9636279},
+    doi={10.1109/IROS51168.2021.9636279}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{albrecht2020igp2,
+    title={Interpretable Goal-based Prediction and Planning for Autonomous Driving},
+    author={Stefano V. Albrecht and Cillian Brewitt and John Wilhelm and Balint Gyevnar and Francisco Eiras and Mihai Dobre and Subramanian Ramamoorthy},
+    booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+    year={2021},
+    doi={10.1109/ICRA48506.2021.9560849},
+    url = {https://ieeexplore.ieee.org/document/9560849},
+    pages={1043-1049},
+    abstract = {We propose an integrated prediction and planning system for autonomous driving which uses rational inverse planning to recognise the goals of other vehicles. Goal recognition informs a Monte Carlo Tree Search (MCTS) algorithm to plan optimal maneuvers for the ego vehicle. Inverse planning and MCTS utilise a shared set of defined maneuvers and macro actions to construct plans which are explainable by means of rationality principles. Evaluation in simulations of urban driving scenarios demonstrate the system's ability to robustly recognise the goals of other vehicles, enabling our vehicle to exploit non-trivial opportunities to significantly reduce driving times. In each scenario, we extract intuitive explanations for the predictions which justify the system's decisions.}
 }
