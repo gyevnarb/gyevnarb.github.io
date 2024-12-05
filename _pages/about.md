@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href="https://agents.inf.ed.ac.uk/">Autonomous Agents Research Group (AARG)</a>; University of Edinburgh, UK.
 
 profile:
   align: right
