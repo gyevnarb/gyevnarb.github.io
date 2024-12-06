@@ -1,34 +1,35 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"albrecht":
+  - firstname: ["Stefano", "V.", "S. V."]
+    url: https://agents.inf.ed.ac.uk/stefano-albrecht/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"droop":
+  - firstname: ["Stephanie", "S."]
+    url: https://stephaniedroop.com/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"quillien":
+  - firstname: ["Tadeg", "T."]
+    url: https://quillienlab.github.io/people/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"bramley":
+  - firstname: ["Neil", "R.", "N. R."]
+    url: https://www.bramleylab.ppls.ed.ac.uk/member/neil/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"lucas":
+  - firstname: ["Christopher", "G.", "C. G."]
+    url: https://lucaslab-uoe.github.io/members/chris/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"cohen":
+  - firstname: ["Shay", "B.", "S. B."]
+    url: https://homepages.inf.ed.ac.uk/scohen/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"wang":
+  - firstname: ["Cheng", "C."]
+    url: https://chengwang2018.github.io/chengwang.github.io/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"schafer":
+  - firstname: ["Burkhard", "B."]
+    url: https://www.law.ed.ac.uk/people/professor-burkhard-schafer
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"brewitt":
+  - firstname: ["Cillian", "C."]
+    url: https://scholar.google.com/citations?user=PLz6FbUAAAAJ&hl=en

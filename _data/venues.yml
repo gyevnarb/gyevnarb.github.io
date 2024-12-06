@@ -1,9 +1,47 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"AAAI":
+  url: https://aaai.org/
+  color: "#ffcc00"
+
+"T-ITS":
+  url: https://ieee-itss.org/pub/t-its/
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
 
-"Vision":
-  color: "#009f36"
+"AAMAS":
+  url: https://www.ifaamas.org/
+  color: "#ffcc00"
+
+"ECAI":
+  url: https://www.eurai.org/
+  color: "#ffcc00"
+
+"AI100":
+  url: https://ai100.stanford.edu/
+  color: "#aaff11"
+
+"UKRI":
+  url: https://tas.ac.uk/
+  color: "#aaff11"
+
+"ITSS":
+  url: https://ieee-itss.org/
+  color: "#aaff11"
+
+"IJCAI":
+  url: https://www.ijcai.org/
+  color: "#ffcc00"
+
+"Entropy":
+  url: https://www.mdpi.com/journal/entropy
+  color: "#00369f"
+
+"IROS":
+  url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros
+  color: "#ffcc00"
+
+"ICRA":
+  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+  color: "#ffcc00"
