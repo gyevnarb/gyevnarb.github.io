@@ -1,8 +1,8 @@
 "AAAI":
   url: https://aaai.org/
-  color: "#ffcc00"
+  color: "#3b004a"
 
-"T-ITS":
+"IEEE T-ITS":
   url: https://ieee-itss.org/pub/t-its/
   color: "#00369f"
 
@@ -12,36 +12,36 @@
 
 "AAMAS":
   url: https://www.ifaamas.org/
-  color: "#ffcc00"
+  color: "#3b004a"
 
 "ECAI":
   url: https://www.eurai.org/
-  color: "#ffcc00"
+  color: "#3b004a"
 
 "AI100":
   url: https://ai100.stanford.edu/
-  color: "#aaff11"
+  color: "#004500"
 
 "UKRI":
   url: https://tas.ac.uk/
-  color: "#aaff11"
+  color: "#004500"
 
-"ITSS":
+"IEEE ITSS":
   url: https://ieee-itss.org/
-  color: "#aaff11"
+  color: "#004500"
 
 "IJCAI":
   url: https://www.ijcai.org/
-  color: "#ffcc00"
+  color: "#3b004a"
 
 "Entropy":
   url: https://www.mdpi.com/journal/entropy
   color: "#00369f"
 
-"IROS":
+"IEEE IROS":
   url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros
-  color: "#ffcc00"
+  color: "#3b004a"
 
-"ICRA":
+"IEEE ICRA":
   url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
-  color: "#ffcc00"
+  color: "#3b004a"
