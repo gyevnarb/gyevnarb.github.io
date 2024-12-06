@@ -9,11 +9,10 @@ last_name: Gyevnar
 email: balint.gyevnar@ed.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Final year PhD candidate at the University of Edinburgh working on explainable autonomous agents and AI safety.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+footer_text:
 keywords: autonomous agents, explainable ai, cognitive science, natural language processing # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🚀 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://gyevnarb.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -80,7 +79,7 @@ github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
 inspirehep_id: # Inspire HEP author ID
-instagram_id: balinthy # your instagram id
+instagram_id: # your instagram id
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
@@ -133,7 +132,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: The Blog # blog_name will be displayed in your blog page
-blog_description: Or, how AI will not kill us all
+blog_description: Or, why AI will not kill us all
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -168,12 +167,12 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
+  # - name: medium.com
+#     rss_url: https://medium.com/@al-folio/feed
+  - name: Agents Blog
     posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+      - url: https://agents.inf.ed.ac.uk/blog/explainable-autonomous-vehicle-intelligence/
+        published_date: 2022-06-27
 
 # -----------------------------------------------------------------------------
 # Newsletter

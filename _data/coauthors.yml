@@ -1,5 +1,5 @@
 "albrecht":
-  - firstname: ["Stefano", "V.", "S. V."]
+  - firstname: ["Stefano", "Stefano V.", "V.", "S. V."]
     url: https://agents.inf.ed.ac.uk/stefano-albrecht/
 
 "droop":
@@ -11,15 +11,15 @@
     url: https://quillienlab.github.io/people/
 
 "bramley":
-  - firstname: ["Neil", "R.", "N. R."]
+  - firstname: ["Neil", "Neil R.", "R.", "N. R."]
     url: https://www.bramleylab.ppls.ed.ac.uk/member/neil/
 
 "lucas":
-  - firstname: ["Christopher", "G.", "C. G."]
+  - firstname: ["Christopher", "Christopher G.", "G.", "C. G."]
     url: https://lucaslab-uoe.github.io/members/chris/
 
 "cohen":
-  - firstname: ["Shay", "B.", "S. B."]
+  - firstname: ["Shay", "Shay B.", "B.", "S. B."]
     url: https://homepages.inf.ed.ac.uk/scohen/
 
 "wang":

@@ -1,23 +1,27 @@
-I am interested in building trustworthy <em>explainable</em> autonomous agents especially for multi-agent systems, with applications to autonomous vehicles, and an additional focus on AI safety and trust.
+<p style="margin-top: -1em;"><em>(My name is pronounced as BAH-lint [baːlint ɟɛvnaːɾ])</em></p>
 
-My supervisors are:
-- [Stefano Albrecht](https://agents.inf.ed.ac.uk/stefano-albrecht/)
-- [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/)
-- [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/).
+I research trustworthy _explainable autonomous agency_ in multi-agent systems for AI safety, with applications to autonomous vehicles.
+I like to explain this as _giving AI agents the ability to explain themselves._
 
-<hr />
-
-I began researching how we might make better explanations for autonomous vehicles.
-I quickly realised along the way that the current state of explainable AI (XAI) is broken.
-Existing methods only work for some models with particular asumptions, they ignore OOD data, always assume that the AI model is correct, and so on...
-
-Worst of all, most of XAI is unapproachable to most users who have no expertise with AI systems.
-This inspired me to look into exploring better ways to create **intelligible explanations that calibrate trust** according to the abilities of the autonomous system.
-
-I am interested in creating more trustworthy autonomous systems that are based on intelligible causal explanations and provide recourse through a conversational process. Recently, I have also become interested in applying these methods to agentic systems and its implications on AI safety and AI ethics.
+I am lucky to be supervised by three amazing scientists: [Stefano Albrecht](https://agents.inf.ed.ac.uk/stefano-albrecht/), [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/), [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/).
 
 
-## Tidbits about me
+
+<br />
+
+I began my research by looking at how we can make better explanations for autonomous vehicles.
+I realised quickly that the current state of _explainable AI (XAI) is broken._
+Existing methods only work for some models with particular asumptions, they ignore OOD data, always assume that the AI agent is correct, and so on...
+
+The biggest issue however is that _explanations are simply not made to help users_ who interact with AI agents.
+They are usually there to help the developers only.
+
+So now I am interested in exploring better ways to create intelligible explanations to _calibrate trust according to the abilities of the AI agents_.
+I also research the epistemic backgrounds of AI ethics and AI safety to understand how explanations can help create more transparent systems considering both the short- and long-term risks of AI.
+
+<br />
+
+### about me
 
 I often spend my free time learning languages. Currently, I speak four: Hungarian, English, German, and Japanese. I am also actively learning Chinese.
 
