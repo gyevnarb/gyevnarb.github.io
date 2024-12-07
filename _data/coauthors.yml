@@ -33,3 +33,11 @@
 "brewitt":
   - firstname: ["Cillian", "C."]
     url: https://scholar.google.com/citations?user=PLz6FbUAAAAJ&hl=en
+
+"kuznietsov":
+  - firstname: ["Anton", "A."]
+    url: https://www.fzd.tu-darmstadt.de/fzd/team_fzd/team_details_233024.en.jsp
+
+"peters":
+  - firstname: ["Steven", "S."]
+    url: https://www.fzd.tu-darmstadt.de/fzd/team_fzd/team_details_219264.en.jsp
