@@ -24,12 +24,12 @@
   "work": [
     {
       "name": "University of Edinburgh",
-      "position": "Reserach Assistant",
+      "position": "Research Assistant",
       "url": "",
       "startDate": "2023-07-01",
       "endDate": "",
       "summary": "Researching the intersection of AI safety and AI ethics through content analysis methods. Assistant to Dr. Atoosa Kasirzadeh of Carnegie Mellon University.",
-      "highlights": ["Large scale quantitative literature analysis with unsupervised natural langauge processing tools.", "Curation, topic coding, and qualitative analysis of large corpora of papers."]
+      "highlights": ["Large scale quantitative literature analysis with unsupervised natural language processing tools.", "Curation, topic coding, and qualitative analysis of large corpora of papers."]
     },
     {
       "name": "University of Edinburgh",

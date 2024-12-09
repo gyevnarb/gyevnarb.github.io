@@ -2,22 +2,22 @@
 layout: about
 title: about
 permalink: /
-subtitle: Hi, I am Bálint. Thanks for checking on my home page!
+subtitle: >
+  Hi, I am Bálint. Thanks for checking on my home page! <br/>
+  <em>(My name is pronounced as BAH-lint [baːlint ɟɛvnaːɾ])</em>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p><a href="https://agents.inf.ed.ac.uk/">Autonomous Agents Research Group (AARG);</a></p>
-    <p>Centre for Doctoral Training in Natural Language Processing;</p>
-    <p>University of Edinburgh, UK.</p>
+    PhD candidate at the <a href="https://agents.inf.ed.ac.uk/">Autonomous Agents Research Group</a> in explainable AI at the University of Edinburgh.
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<p style="margin-top: -1em;"><em>(My name is pronounced as BAH-lint [baːlint ɟɛvnaːɾ])</em></p>
+<br />
 
 I research trustworthy _explainable autonomous agency_ in multi-agent systems for AI safety, with applications to autonomous vehicles.
 I like to explain this as _giving AI agents the ability to explain themselves._

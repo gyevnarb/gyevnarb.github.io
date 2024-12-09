@@ -192,15 +192,25 @@ ul.task-list input[type="checkbox"] {
   color: var(--global-theme-color);
 }
 
+
 // Profile
 
 .profile {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  figure {
+    width: 20%;
+  }
 
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    width: 80%;
+    padding-left: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -0.5pt;
 
     p {
       display: inline-block;
@@ -210,16 +220,23 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
+  float: right;
   margin-left: 1rem;
 }
 
 .profile.float-left {
+  float: left;
   margin-right: 1rem;
 }
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    display: block;
+    width:25%;
+
+    figure, .more-info {
+      width: 100%;
+    }
 
     .address {
       p {
