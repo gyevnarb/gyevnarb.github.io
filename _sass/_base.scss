@@ -4,6 +4,8 @@
 
 // Typography
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 p,
 h1,
 h2,
@@ -17,8 +19,9 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   letter-spacing: 0.25pt;
+  font-weight: 400;
 }
 
 hr {

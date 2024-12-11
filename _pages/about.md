@@ -17,7 +17,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<br />
 
 I research trustworthy _explainable autonomous agency_ in multi-agent systems for AI safety, with applications to autonomous vehicles.
 I like to explain this as _giving AI agents the ability to explain themselves._
