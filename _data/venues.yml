@@ -45,3 +45,7 @@
 "IEEE ICRA":
   url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
   color: "#3b004a"
+
+"CHI":
+  url: https://chi2025.acm.org/
+  color: "#3b004a"

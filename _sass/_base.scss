@@ -202,14 +202,17 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
   display: flex;
   flex-direction: row;
+  margin-bottom: 1rem;
 
   figure {
     width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .more-info {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: auto;
+    margin-top: auto;
     width: 80%;
     padding-left: 1rem;
     font-family: 'Courier New', Courier, monospace;
@@ -235,10 +238,17 @@ ul.task-list input[type="checkbox"] {
 @media (min-width: 576px) {
   .profile {
     display: block;
-    width:25%;
+    width: 25%;
 
-    figure, .more-info {
+    figure {
       width: 100%;
+      margin: 0 0 1rem;
+    }
+    
+    .more-info {
+      width: 100%;
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
 
     .address {

@@ -1,7 +1,7 @@
 <p style="margin-top: -1em;"><em>(My name is pronounced as BAH-lint [baːlint ɟɛvnaːɾ])</em></p>
 
 I research trustworthy _explainable autonomous agency_ in multi-agent systems for AI safety, with applications to autonomous vehicles.
-I like to explain this as _giving AI agents the ability to explain themselves._
+I like to describe this as _giving AI agents the ability to explain themselves._
 
 I am lucky to be supervised by three amazing scientists: [Stefano Albrecht](https://agents.inf.ed.ac.uk/stefano-albrecht/), [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/), [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/).
 
@@ -26,4 +26,4 @@ I like playing volleyball and I was the the treasurer (2022-23) and vice preside
 Occasionally, I sit down to practise the piano. At the moment, I am working through the second movement of Schubert's piano sonata in B-flat major ([D 960](https://youtu.be/MAZ8PA5_gVA)). Currently, I am reading "Boldog ​boldogtalan" by Háy János. A list of books I have read since I began keeping records is [here](https://www.goodreads.com/review/list/62432429?sort=date_read).
 
 <img src="assets/img/background.jpg" alt="View of a corrie in the Scottish Highlands" width="100%" />
-_Image shot by me on Beinn Bhan near Applecross, Scotland._
+_View of a corrie from Beinn Bhan near Applecross, Scotland shot by me._
