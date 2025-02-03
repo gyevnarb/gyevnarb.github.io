@@ -165,6 +165,13 @@
   ],
   "publications": [
     {
+      "name": "Objective Metrics for Human-Subjects Evaluation in Explainable Reinforcement Learning",
+      "publisher": "arXiv:2501.19256 [cs.AI]",
+      "releaseDate": "2025-02-03",
+      "url": "https://arxiv.org/abs/2501.19256",
+      "summary": "Balint Gyevnar and Mark Towers"
+    },
+    {
       "name": "Causal Explanations for Sequential Decision-Making in Multi-Agent Systems",
       "publisher": "23rd International Conference on Autonomous Agents and Multiagent Systems, AAMAS 2024",
       "releaseDate": "2024-05-01",

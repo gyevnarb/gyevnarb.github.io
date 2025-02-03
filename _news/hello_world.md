@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
  
-Heyo! I have just set up a new home page, so there is still content to be added..
+Heyo! I have just set up a new home page, so there is still content to be added.
