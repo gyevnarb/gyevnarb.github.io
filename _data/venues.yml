@@ -46,6 +46,18 @@
   url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
   color: "#3b004a"
 
+"IEEE T-ITS":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979
+  color: "#00369f"
+
 "CHI":
   url: https://chi2025.acm.org/
   color: "#3b004a"
+
+"RLDM":
+  url: https://rldm.org/
+  color: "#3b004a"
+
+"Nat. Mac. Intell.":
+  url: https://www.nature.com/natmachintell/
+  color: "#00369f"

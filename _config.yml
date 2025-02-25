@@ -105,7 +105,7 @@ whatsapp_number: # your WhatsApp number (full phone number in international form
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: # work page URL
-x_username: # your X handle
+x_username: gyevnarb # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
@@ -171,7 +171,7 @@ external_sources:
 #     rss_url: https://medium.com/@al-folio/feed
   - name: Agents Blog
     posts:
-      - url: https://agents.inf.ed.ac.uk/blog/explainable-autonomous-vehicle-intelligence/
+      - url: https://agents-lab.org/blog/explainable-autonomous-vehicle-intelligence/
         published_date: 2022-06-27
 
 # -----------------------------------------------------------------------------
@@ -371,7 +371,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 4 # leave blank to always show all authors
+max_author_limit: # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.

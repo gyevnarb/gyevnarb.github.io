@@ -23,28 +23,38 @@
   },
   "projects": [
     {
+      "name": "Combining Multi-Step LLM Reasoning with World Simulators for Generating Complex Explanations",
+      "startDate": "2025-01-15",
+      "endDate": "",
+      "description": "We develop a multi-step reasoning framework for generating complex explanations and test the system in the domain of autonomous driving.",
+      "highlights": [
+        "Development of multi-step reasoning framework for complex explanation generation.",
+        "Integration of LLM inference with world simulators in a RAG approach.",
+        "Evaluation with a wide range of models (Llama, Qwen, Phi, GPT, etc.) and humans participants for autonomous driving."
+      ],
+      "url": "https://dl.acm.org/doi/10.5555/3635637.3662930"
+    },    
+    {
       "name": "Causal Explanations for Sequential Decision-Making in Multi-Agent Systems",
       "startDate": "2021-09-01",
       "endDate": "",
-      "description": "I am interested in combining technologies from explainable AI (XAI), causal reasoning, and natural language processing to support the creation of trustworthy and safe AI systems, with a focus on the domain of autonomous driving.",
+      "description": "We combine technologies from explainable AI (XAI), causal reasoning, and natural language processing to support the creation of trustworthy and safe AI systems, with a focus on the domain of autonomous driving.",
       "highlights": [
         "CEMA: Combining counterfactual causation with RL-based planning to create causally-grounded explanations in naturual language",
         "Two large human subjects studies to elicit and evaluate naturally occuring and automatically generated explanations",
-        "HEADD: The Human Explanations for Autonomous Driving Decisions dataset",
-        "Integration of LLMs with CEMA in an RAG approach to improve the quality of explanations"
+        "HEADD: The Human Explanations for Autonomous Driving Decisions dataset"
       ],
       "url": "https://dl.acm.org/doi/10.5555/3635637.3662930"
     },
     {
-      "name": "Bridging AI Safety and AI Ethics: An Emprical Approach",
+      "name": "Bridging Shared Research Challenges Amid Responsible AI Wars",
       "startDate": "2024-07-01",
       "endDate": "",
-      "description": "",
+      "description": "Curated, analysed, and descrbied a corpus of 3K+ papers on AI safety and AI ethics to bridge the disparate and often toxic discourse among the two fields.",
       "highlights": [
         "Curation of corpus of 3K+ papers on AI safety and AI ethics",
         "Data analysis and visualization techniques to identify overlapping and different topics in the literature",
-        "Advocating for an epistemically inclusive approach to AI safety that considers long standing safe ML research and AI ethics",
-        "Research done with Shannon Vallor and Atoosa Kasirzadeh"
+        "Advocating for an epistemically inclusive approach to AI safety that considers long standing safe ML research and AI ethics"
       ],
       "url": "https://github.com/uoe-agents/IGP2"
     },
@@ -165,8 +175,15 @@
   ],
   "publications": [
     {
+      "name": "AI Safety for Everyone",
+      "publisher": "Nature Machine Intelligence",
+      "releaseDate": "2025-02-25",
+      "url": "https://arxiv.org/abs/2502.09288",
+      "summary": "Balint Gyevnar and Atoosa Kasirzadeh"
+    },    
+    {
       "name": "Objective Metrics for Human-Subjects Evaluation in Explainable Reinforcement Learning",
-      "publisher": "arXiv:2501.19256 [cs.AI]",
+      "publisher": "Multi-Disciplinary Conference on Reinforcement Learning and Decision Making, RLDM 2025",
       "releaseDate": "2025-02-03",
       "url": "https://arxiv.org/abs/2501.19256",
       "summary": "Balint Gyevnar and Mark Towers"
@@ -247,7 +264,7 @@
       "level": "Master",
       "icon": "fa-solid fa-code",
       "keywords": [
-        "Python (PyTorch, Transformers, Pandas, Matplotlib, etc.)",
+        "Python (PyTorch, Transformers, vLLM, Pandas, Matplotlib, uv, etc.)",
         "R (dplyr, ggplot2, rlmer, brms, etc.)",
         "C#",
         "C++"
@@ -259,6 +276,7 @@
       "icon": "fa-solid fa-robot",
       "keywords": [
         "Natural Language Processing",
+        "Inference with LLMs (Llama, Qwen, Phi, GPT, etc.)",
         "Reinforcement Learning (MCTS, PPO, DQN, etc.)",
         "Explainable AI (SHAP, LIME, etc.)",
         "Autonomous Vehicles"
@@ -269,7 +287,7 @@
       "level": "Master",
       "icon": "fa-solid fa-person",
       "keywords": [
-        "Leadership",
+        "Responsible Leadership",
         "Event Organization",
         "Public Speaking",
         "Presentation Skills"

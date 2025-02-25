@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint on [Objective Metrics for Human-Subjects Evaluation in Explainable Reinforcement Learning](https://arxiv.org/abs/2501.19256).
+New conference paper at RLDM on [Objective Metrics for Human-Subjects Evaluation in Explainable Reinforcement Learning](https://arxiv.org/abs/2501.19256).
