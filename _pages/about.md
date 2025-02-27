@@ -24,7 +24,7 @@ I am primarly interested in exploring better ways to create intelligible explana
 
 I also work on briding the epistemic foundations and resesarch problems of AI ethics and safety to foster cross-disciplinary collaboration.
 
-I am a member of the <a href="https://agents.inf.ed.ac.uk/">Autonomous Agents Research Group</a>, supervised by [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/) and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/). I was previously supervised by [Stefano Albrecht](https://agents.inf.ed.ac.uk/stefano-albrecht/).
+I am a member of the [Autonomous Agents Research Group](https://agents-lab.org/), supervised by [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/) and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/). I was previously supervised by [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/).
 
 <br />
 
