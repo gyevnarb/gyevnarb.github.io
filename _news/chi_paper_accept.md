@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New conference paper at CHI 2025: [People Attribute Purpose to Autonomous Vehicles When Explaining Their Behavior: Insights from Cognitive Science for Explainable AI](https://arxiv.org/pdf/2403.08828)
+New conference paper at CHI 2025: [People Attribute Purpose to Autonomous Vehicles When Explaining Their Behavior: Insights from Cognitive Science for Explainable AI](https://arxiv.org/pdf/2403.08828).

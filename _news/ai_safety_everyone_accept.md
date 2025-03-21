@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New journal paper at Nature Machine Intelligence: [AI Safety for Everyone](https://arxiv.org/abs/2502.09288)
+New journal paper at Nature Machine Intelligence: [AI Safety for Everyone](https://arxiv.org/abs/2502.09288).

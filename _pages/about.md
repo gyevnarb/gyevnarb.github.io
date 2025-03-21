@@ -26,9 +26,9 @@ I also work on briding the epistemic foundations and resesarch problems of AI et
 
 I am a member of the [Autonomous Agents Research Group](https://agents-lab.org/), supervised by [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/) and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/). I was previously supervised by [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/).
 
-<br />
+<!-- <br />
 
 <img src="assets/img/background.jpg" alt="View of a corrie in the Scottish Highlands" width="100%" />
-_View of a corrie from Beinn Bhan near Applecross, Scotland shot by me._
+_View of a corrie from Beinn Bhan near Applecross, Scotland shot by me._ -->
 
 <br />
