@@ -17,12 +17,12 @@ social: true # includes social icons at the bottom of the page
 Hi, I am Bálint. Thanks for checking on my home page! ([Bluesky](https://bsky.app/profile/gbalint.bsky.social)) <br />
 _(My name is pronounced BAH-lint [baːlint])_
 
-I research trustworthy _explainable autonomous agency_ in multi-agent systems for AI safety, with applications to autonomous vehicles.
-I like to describe this as _giving AI agents the ability to explain themselves._
+My primary research area is _explainable multi-agent reinforcement learning_.
+I like to describe this as the study of _giving interacting AI agents the ability to explain themselves._
 
-I am primarly interested in exploring better ways to create intelligible explanations to _calibrate trust_ in and _understand the reasoning_ of AI agents.
+I am primarily interested in how we can explain complex emergent behaviour in multi-agent systems (MAS) via the use of counterfactual reasoning, and how this in turn can be used to calibrate trust and verify the safety of MAS.
 
-I also work on briding the epistemic foundations and resesarch problems of AI ethics and safety to foster cross-disciplinary collaboration.
+I also work on bridging the epistemic foundations and research problems of AI ethics and safety to foster cross-disciplinary collaboration.
 
 I am a member of the [Autonomous Agents Research Group](https://agents-lab.org/), supervised by [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/) and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/). I was previously supervised by [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/).
 
