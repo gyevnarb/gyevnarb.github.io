@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I gave a talk and presented a poster at the [9th CHAI Workshop](https://workshop.humancompatible.ai/) on "AI Safety for Everyone".
+I gave a talk and presented a poster at the [9th Center for Human-Compatible AI Workshop](https://workshop.humancompatible.ai/) on "AI Safety for Everyone".

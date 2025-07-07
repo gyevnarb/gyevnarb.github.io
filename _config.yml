@@ -10,7 +10,7 @@ email: balint.gyevnar@ed.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Final year PhD candidate at the University of Edinburgh working on explainable autonomous agents and AI safety.
 footer_text:
-keywords: autonomous agents, explainable ai, reinforcement learning, cognitive science, natural language processing # add your own keywords or leave empty
+keywords: multi-agent systems, autonomous agents, explainable ai, reinforcement learning, cognitive science, natural language processing # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -242,12 +242,13 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/bio.md
   - purgecss.config.js
   - README.md
   - readme_preview/
   - vendor
   - _projects/?_project.md
-  - assets/jupyter/blog.ipynb  
+  - assets/jupyter/blog.ipynb
 keep_files:
   - CNAME
   - .nojekyll

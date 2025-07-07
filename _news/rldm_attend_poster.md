@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have attended RLDM 2025, the Multi-disciplinary Conference on Reinforcement Learning and Decision Making, in Dublin, Ireland, where I have presented a poster on our [objective metrics for explainable RL](https://arxiv.org/abs/2501.19256) paper.
+I attended RLDM 2025, the Multi-disciplinary Conference on Reinforcement Learning and Decision Making, in Dublin, where I have presented a poster on [Objective Metrics for Explainable RL](https://arxiv.org/abs/2501.19256) paper.

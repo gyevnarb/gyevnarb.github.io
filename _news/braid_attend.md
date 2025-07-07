@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have attended the 2025 Bridging Responsible AI Divides (BRAID) Gathering in Manchester.
+I attended the 2025 Bridging Responsible AI Divides (BRAID) Gathering in Manchester.
