@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, I am Bálint. Thanks for checking on my home page! ([Bluesky](https://bsky.app/profile/gbalint.bsky.social)) <br />
+Hi, I am Bálint. Thanks for checking on my home page! <br />
 _(My name is pronounced BAH-lint [baːlint])_
 
 My primary research area is _explainable multi-agent reinforcement learning_.
