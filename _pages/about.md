@@ -20,7 +20,7 @@ _(My name is pronounced BAH-lint [baːlint])_
 My primary research area is the _science of AI co-scientists_: how they amplify existing biases in research production, create epistemic blind spots, and homogenise approaches across disciplines.
 I work with [Atoosa Kasirzadeh](https://kasirzadeh.org/) and [Nihar Shah](https://www.cs.cmu.edu/~nihars/) as a member of the [Institute for Complex Social Dynamics](https://www.cmu.edu/dietrich/social-dynamics/) led by [Kevin Zollman](https://www.kevinzollman.com/).
 
-During my PhD, I worked on _explainable multi-agent reinforcement learning_, which I like to describe this as the study of giving interacting AI agents the ability to explain themselves.
+During my PhD, I worked on _explainable multi-agent reinforcement learning_, which I like to describe as the study of giving interacting AI agents the ability to explain themselves.
 I researched how we can explain complex emergent behaviour in multi-agent systems (MAS) via the use of counterfactual reasoning.
 I was supervised by [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/), [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/), and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/).
 
