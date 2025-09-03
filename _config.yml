@@ -3,14 +3,14 @@
 # -----------------------------------------------------------------------------
 
 title: Bálint Gyevnár # the website title (if blank, full name will be used instead)
-first_name: Balint
+first_name: Bálint
 middle_name:
-last_name: Gyevnar
-email: balint.gyevnar@ed.ac.uk
+last_name: Gyevnár
+email: bgyevnar@andrew.cmu.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Final year PhD candidate at the University of Edinburgh working on explainable autonomous agents and AI safety.
+  Postdoctoral research associate at Carnegie Mellon University researching the risks of AI co-scientists on scientific integrity. Previously, researching explainable multi-agent reinforcement learning.
 footer_text:
-keywords: multi-agent systems, autonomous agents, explainable ai, reinforcement learning, cognitive science, natural language processing # add your own keywords or leave empty
+keywords: metascience, large language models, research integrity, multi-agent systems, agentic AI, explainable AI, reinforcement learning, cognitive science # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -46,7 +46,7 @@ rss_icon: false
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 bib_search: true
 
@@ -166,13 +166,13 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  # - name: medium.com
-#     rss_url: https://medium.com/@al-folio/feed
-  - name: Agents Blog
-    posts:
-      - url: https://agents-lab.org/blog/explainable-autonomous-vehicle-intelligence/
-        published_date: 2022-06-27
+# external_sources:
+#   # - name: medium.com
+# #     rss_url: https://medium.com/@al-folio/feed
+#   - name: Agents Blog
+#     posts:
+#       - url: https://agents-lab.org/blog/explainable-autonomous-vehicle-intelligence/
+#         published_date: 2022-06-27
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -203,7 +203,7 @@ announcements:
   limit: 7 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 

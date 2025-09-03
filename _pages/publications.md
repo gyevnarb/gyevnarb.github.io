@@ -28,13 +28,8 @@ Color legend:
 
 # Peer Reviewing
 - Program Chair:
-    - AAAI: 2026
-    - AIES: 2025
-    - XAI: 2025
+    - 2026: AAAI
+    - 2025: AIES, XAI
 - Reviewer:
-    - NeurIPS: 2025
-    - ICRA: 2025
-    - IEEE Transactions on Intelligent Transportation Systems (T-ITS): 2025
-    - EMNLP 2025 Workshop BlackboxNLP: 2025
-    - Academic Mindtrek: 2025
-    - IROS: 2023
+    - 2025: Nature Communications, NeurIPS, ICRA, IEEE T-ITS, Academic Mindtrek, EMNLP BlackboxNLP
+    - 2023: IROS

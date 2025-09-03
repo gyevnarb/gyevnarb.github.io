@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Balint Gyevnar",
+    "name": "Bálint Gyevnár",
     "label": "PhD Candidate",
     "image": "",
     "email": "balint.gyevnar@ed.ac.uk",
@@ -33,11 +33,11 @@
         "Evaluation with a wide range of models (Llama, Qwen, Phi, GPT, etc.) and humans participants for autonomous driving."
       ],
       "url": "https://dl.acm.org/doi/10.5555/3635637.3662930"
-    },    
+    },
     {
       "name": "Causal Explanations for Sequential Decision-Making in Multi-Agent Systems",
       "startDate": "2021-09-01",
-      "endDate": "",
+      "endDate": "2024-10-31",
       "description": "We combine technologies from explainable AI (XAI), causal reasoning, and natural language processing to support the creation of trustworthy and safe AI systems, with a focus on the domain of autonomous driving.",
       "highlights": [
         "CEMA: Combining counterfactual causation with RL-based planning to create causally-grounded explanations in naturual language",
@@ -76,7 +76,7 @@
       "location": "Edinburgh, Scotland",
       "url": "https://www.ed.ac.uk/",
       "area": "Natural Language Processing with Integrated Studies",
-      "studyType": "PhD",
+      "studyType": "Doctorate (PhD)",
       "startDate": "2021-09-01",
       "endDate": "2025-12-01",
       "score": "1"
@@ -86,7 +86,7 @@
       "location": "Edinburgh, Scotland",
       "url": "https://www.ed.ac.uk/",
       "area": "Master of Informatics",
-      "studyType": "Master's",
+      "studyType": "Integrated Master's (MInf)",
       "startDate": "2016-09-01",
       "endDate": "2021-05-01",
       "score": "2"
@@ -104,11 +104,19 @@
   ],
   "work": [
     {
+      "name": "Carnegie Mellon University",
+      "position": "Postdoctoral Research Associate",
+      "url": "",
+      "startDate": "2025-09-15",
+      "endDate": "",
+      "summary": "Safeguarding scientific integrity in the age of AI co-scientists: how they can amplify existing biases, create epistemic blind spots, and potentially homogenise research approaches across disciplines."    
+    },
+    {
       "name": "University of Edinburgh",
       "position": "Research Assistant",
       "url": "",
       "startDate": "2023-07-01",
-      "endDate": "",
+      "endDate": "2024-12-31",
       "summary": "Researching the intersection of AI safety and AI ethics through content analysis methods. Assistant to Dr. Atoosa Kasirzadeh of Carnegie Mellon University.",
       "highlights": ["Large scale quantitative literature analysis with unsupervised natural language processing tools.", "Curation, topic coding, and qualitative analysis of large corpora of papers."]
     },
@@ -117,7 +125,7 @@
       "position": "Teaching Assistant",
       "url": "",
       "startDate": "2020-09-01",
-      "endDate": "",
+      "endDate": "2025-09-01",
       "summary": "Teaching assistant helping with the delivery and teaching of university courses.",
       "highlights": ["Assistant supervisor for two master's students.", "Online tutorial sessions to ~12 students for introductory machine learning course." ,"Coursework and exam marker for courses in the School of Informatics, including Doing Research in NLP, Reinforcement Learning, Computer Systems, and Machine Learning."]
     },
@@ -129,17 +137,17 @@
       "endDate": "2020-10-10",
       "summary": "Development and evaluation of novel planning and prediction algorithm for autonomous vehicles.",
       "highlights": ["Developed and evaluated IGP2, a goal-based interpretable prediction and planning system for autonomous vehicles with intuitive explanations.", "Publication at International Conference on Robotics and Automation (ICRA), 2021."]
-    }    
+    }
   ],
   "volunteer": [
     {
       "organization": "Edinburgh University Volleyball Club",
       "location": "Edinburgh, Scotland",
-      "position": "Executive Committee Member",
+      "position": "Vice President",
       "url": "https://euvc.co.uk",
       "startDate": "2022-09-01",
       "endDate": "2025-06-01",
-      "summary": "Executive committee member of EUVC responsible for the deliverance of the club's volleyball programme to more than 200 members.",
+      "summary": "Vice president of EUVC responsible for the execution of the club's volleyball programme to more than 200 members.",
       "highlights": ["Responsible for public outreach to and networking with alumni members and organizing a two-day event series.", "Large-scale event organization, public speaking, timetabling, and human resource management of 8 teams, 10 coaches, and 220+ members.", "Managing a cash flow of approximately £70k, setting up an annual budget, and managing thousands of transactions."]
     }
   ],
@@ -170,79 +178,86 @@
       "date": "2021-06-01",
       "awarder": "IEEE Intelligent Transportation Systems Society (ITSS)",
       "url": "https://ieeexplore.ieee.org/document/9889156",
-      "summary": "In 2021, the Intelligent Transportation Systems Society (ITSS) organized a competition on the topic “Shape the Future of ITS” by asking participants to present a futuristic vision on transportation systems, the way they will operate, and the product and services they will provide. Balint Gyevnar's vision was selected as a 3rd place winner, titled 'Cars that Explain: Building Trust in Autonomous Vehicles through Explanations and Conversations'."
+      "summary": "In 2021, the Intelligent Transportation Systems Society (ITSS) organized a competition on the topic “Shape the Future of ITS” by asking participants to present a futuristic vision on transportation systems, the way they will operate, and the product and services they will provide. Bálint Gyevnár's vision was selected as a 3rd place winner, titled 'Cars that Explain: Building Trust in Autonomous Vehicles through Explanations and Conversations'."
     }
   ],
   "publications": [
     {
+      "name": "Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour",
+      "publisher": "Under review",
+      "releaseDate": "2025-05-25",
+      "url": "http://arxiv.org/abs/2505.17801",
+      "summary": "Bálint Gyevnár and Christopher G. Lucas and Stefano V. Albrecht and Shay B. Cohen"
+    },
+    {
       "name": "AI Safety for Everyone",
       "publisher": "Nature Machine Intelligence",
       "releaseDate": "2025-02-25",
-      "url": "https://arxiv.org/abs/2502.09288",
-      "summary": "Balint Gyevnar and Atoosa Kasirzadeh"
-    },    
+      "url": "https://www.nature.com/articles/s42256-025-01020-y",
+      "summary": "Bálint Gyevnár and Atoosa Kasirzadeh"
+    },
     {
       "name": "Objective Metrics for Human-Subjects Evaluation in Explainable Reinforcement Learning",
       "publisher": "Multi-Disciplinary Conference on Reinforcement Learning and Decision Making, RLDM 2025",
       "releaseDate": "2025-02-03",
       "url": "https://arxiv.org/abs/2501.19256",
-      "summary": "Balint Gyevnar and Mark Towers"
+      "summary": "Bálint Gyevnár and Mark Towers"
     },
     {
       "name": "Causal Explanations for Sequential Decision-Making in Multi-Agent Systems",
       "publisher": "23rd International Conference on Autonomous Agents and Multiagent Systems, AAMAS 2024",
       "releaseDate": "2024-05-01",
       "url": "https://dl.acm.org/doi/10.5555/3635637.3662930",
-      "summary": "Balint Gyevnar and Cheng Wang and Christopher G. Lucas and Shay B. Cohen and Stefano V. Albrecht"
+      "summary": "Bálint Gyevnár and Cheng Wang and Christopher G. Lucas and Shay B. Cohen and Stefano V. Albrecht"
     },
     {
       "name": "Explainable AI for Safe and Trustworthy Autonomous Driving: A Systematic Review",
       "publisher": "IEEE Transactions on Intelligent Transportation Systems",
       "releaseDate": "2024-12-01",
       "url": "https://ieeexplore.ieee.org/document/10716567",
-      "summary": "Anton Kuznietsov* and Balint Gyevnar* and Cheng Wang and Steven Peters and Stefano V. Albrecht"
+      "summary": "Anton Kuznietsov* and Bálint Gyevnár* and Cheng Wang and Steven Peters and Stefano V. Albrecht"
     },
     {
       "name": "Towards Trustworthy Autonomous Systems via Conversations and Explanations",
       "publisher": "38th AAAI Conference on Artificial Intelligence, AAAI 2024",
       "releaseDate": "2024-03-01",
       "url": "https://ojs.aaai.org/index.php/AAAI/article/view/30395",
-      "summary": "Balint Gyevnar"
+      "summary": "Bálint Gyevnár"
     },
     {
       "name": "People Attribute Purpose to Autonomous Vehicles When Explaining Their Behavior: Insights from Cognitive Science for Explainable AI",
       "publisher": "ACM CHI conference on Human Factors in Computing Systems",
       "releaseDate": "2024-12-01",
       "url": "https://arxiv.org/abs/2403.08828",
-      "summary": "Balint Gyevnar and Stephanie Droop and Tadeg Quillien and Shay B. Cohen and Neil R. Bramley and Christopher G. Lucas and Stefano V. Albrecht"
+      "summary": "Bálint Gyevnár and Stephanie Droop and Tadeg Quillien and Shay B. Cohen and Neil R. Bramley and Christopher G. Lucas and Stefano V. Albrecht"
     },
     {
       "name": "Bridging the Transparency Gap: What Can Explainable AI Learn From the AI Act?",
       "publisher": "26th European Conference on Artificial Intelligence, ECAI 2023",
       "releaseDate": "2023-05-01",
       "url": "https://ebooks.iospress.nl/doi/10.3233/FAIA230367",
-      "summary": "Balint Gyevnar and Nick Ferguson and Burkhard Schafer"
+      "summary": "Bálint Gyevnár and Nick Ferguson and Burkhard Schafer"
     },
     {
       "name": "A Human-Centric Method for Generating Causal Explanations in Natural Language for Autonomous Vehicle Motion Planning",
       "publisher": "IJCAI 2022 Workshop on Artificial Intelligence for Autonomous Driving, AI4AD 2022",
       "releaseDate": "2022-05-01",
       "url": "https://arxiv.org/abs/2206.08783",
-      "summary": "Balint Gyevnar and Massimiliano Tamborski and Cheng Wang and Christopher G. Lucas and Shay B. Cohen and Stefano V. Albrecht"
+      "summary": "Bálint Gyevnár and Massimiliano Tamborski and Cheng Wang and Christopher G. Lucas and Shay B. Cohen and Stefano V. Albrecht"
     },
     {
       "name": "GRIT: Fast, Interpretable, and Verifiable Goal Recognition with Learned Decision Trees for Autonomous Driving",
       "publisher": "IEEE/RSJ International Conference on Intelligent Robots and Systems, IROS 2021",
       "releaseDate": "2021-05-01",
       "url": "https://ieeexplore.ieee.org/abstract/document/9636279",
-      "summary": "Cillian Brewitt and Balint Gyevnar and Samuel Garcin and Stefano V. Albrecht"
+      "summary": "Cillian Brewitt and Bálint Gyevnár and Samuel Garcin and Stefano V. Albrecht"
     },
     {
       "name": "Interpretable Goal-based Prediction and Planning for Autonomous Driving",
       "publisher": "IEEE International Conference on Robotics and Automation, ICRA 2021",
       "releaseDate": "2021-05-01",
       "url": "https://ieeexplore.ieee.org/document/9560849",
-      "summary": "Stefano V. Albrecht and Cillian Brewitt and John Wilhelm and Balint Gyevnar and Francisco Eiras and Mihai Dobre and Subramanian Ramamoorthy"
+      "summary": "Stefano V. Albrecht and Cillian Brewitt and John Wilhelm and Bálint Gyevnár and Francisco Eiras and Mihai Dobre and Subramanian Ramamoorthy"
     }
   ],
   "skills": [
