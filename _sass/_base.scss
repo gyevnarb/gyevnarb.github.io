@@ -4,8 +4,6 @@
 
 // Typography
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 p,
 h1,
 h2,
@@ -19,9 +17,10 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  letter-spacing: 0.25pt;
-  font-weight: 400;
+  font-family: itc-avant-garde-gothic-pro, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.1pt;
 }
 
 hr {
@@ -211,17 +210,9 @@ ul.task-list input[type="checkbox"] {
   }
 
   .more-info {
-    margin-bottom: auto;
-    margin-top: auto;
-    width: 80%;
-    padding-left: 1rem;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: -0.5pt;
-
-    p {
-      display: inline-block;
-      margin: 0;
-    }
+    padding-left: 0.5rem;
   }
 }
 
@@ -751,7 +742,7 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: bold;
       }
 
       .author {
