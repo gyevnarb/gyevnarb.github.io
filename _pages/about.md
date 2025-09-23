@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: Incoming postdoc at CMU
+  more_info: Postdoctoral Research Associate at Carnegie Mellon University
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 
 
 
-Hi, I am Bálint, thanks for stopping by!<br />
+Hello, thanks for stopping by!<br />
 
 My primary research area is the _science of AI co-scientists_: how they amplify existing biases in research production, create epistemic blind spots, and homogenise approaches across disciplines.
 I work with [Atoosa Kasirzadeh](https://kasirzadeh.org/) and [Nihar Shah](https://www.cs.cmu.edu/~nihars/) as a member of the [Institute for Complex Social Dynamics](https://www.cmu.edu/dietrich/social-dynamics/) led by [Kevin Zollman](https://www.kevinzollman.com/).

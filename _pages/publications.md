@@ -27,9 +27,9 @@ Color legend:
 </div>
 
 # Peer Reviewing
-- Program Chair:
+- Program committee member:
     - 2026: AAAI
     - 2025: AIES, XAI
 - Reviewer:
-    - 2025: Nature Communications, NeurIPS, ICRA, IEEE T-ITS, Academic Mindtrek, EMNLP BlackboxNLP
+    - 2025: Artificial Intelligence Review, Nature Communications, NeurIPS, ICRA, IEEE T-ITS, Academic Mindtrek, EMNLP BlackboxNLP
     - 2023: IROS
