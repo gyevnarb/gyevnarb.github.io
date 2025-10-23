@@ -35,6 +35,7 @@ Color legend:
     - [Academic Mindtrek](https://www.mindtrek.org/academic-mindtrek-2025/) (2025)
     - [Artificial Intelligence Review](https://link.springer.com/journal/10462) (2025)
     - [CHI](https://chi2026.acm.org/) (2026)
+    - [ECAI](https://www.eurai.org/ecai) (2023)
     - [EMNLP BlackboxNLP](https://blackboxnlp.github.io/) (2025)
     - [ICRA](https://2025.ieee-icra.org/) (2025)
     - [IEEE T-ITS](https://ieee-itss.org/pub/t-its/) (2025)
