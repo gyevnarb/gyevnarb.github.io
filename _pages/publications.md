@@ -39,6 +39,7 @@ Color legend:
     - [EMNLP BlackboxNLP](https://blackboxnlp.github.io/) (2025)
     - [ICRA](https://2025.ieee-icra.org/) (2025)
     - [IEEE T-ITS](https://ieee-itss.org/pub/t-its/) (2025)
+    - [IASEAI](https://www.iaseai.org/our-programs/iaseai26) (2026)
     - [IROS](https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros/information-for-associate-editors) (2025)
     - [Nature Communications](https://www.nature.com/ncomms/) (2025)
     - [NeurIPS](https://neurips.cc) (2025)
