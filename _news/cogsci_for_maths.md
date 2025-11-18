@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have attended the workshop on the Cognitive Science of Mathematical Understanding, co-oraganised by Tania Lombrozo and Akshay Venkatesh at Princeton University and the Institute for Advanced Studies.
+I attended the workshop on the Cognitive Science of Mathematical Understanding, co-organised by Tania Lombrozo and Akshay Venkatesh.

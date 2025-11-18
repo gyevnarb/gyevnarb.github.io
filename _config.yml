@@ -8,7 +8,7 @@ middle_name:
 last_name: Gyevnár
 email: bgyevnar@andrew.cmu.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Postdoctoral research associate at Carnegie Mellon University researching the risks of AI co-scientists on scientific integrity. Previously, researching explainable multi-agent reinforcement learning.
+  Postdoctoral research associate at Carnegie Mellon University researching the metascience of artificial intelligence. Previously, researching explainable multi-agent reinforcement learning.
 footer_text:
 keywords: metascience, large language models, research integrity, multi-agent systems, agentic AI, explainable AI, reinforcement learning, cognitive science # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -131,8 +131,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: The Blog # blog_name will be displayed in your blog page
-blog_description: and other thoughts
+blog_name: Metascience of AI # blog_name will be displayed in your blog page
+blog_description: or how AI is changing the way we do science
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
