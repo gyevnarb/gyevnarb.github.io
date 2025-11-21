@@ -23,7 +23,7 @@ toc:
   - name: Research Love AI
 ---
 
-_Note: This essay originally appeared as one of the top five selected submissions for the Stanford AI100 Early Career Research Competition. This is a slightly edited and expanded version of the original, available [here](https://ai100.stanford.edu/prize-competition) and as a [pdf](/assets/pdf/essay_lovesexai.pdf)._
+<i>Note: This essay originally appeared as one of the top five selected submissions for the Stanford AI100 Early Career Research Competition. This is a slightly edited and expanded version of the original, available [here](https://ai100.stanford.edu/prize-competition) and as a [pdf](/assets/pdf/essay_lovesexai.pdf).</i>
 
 <br />
 
@@ -34,7 +34,7 @@ Today, technologies such as LLM-powered affective chatbots, diffusion-generated 
 Research interest in **Love AI** has also exploded in recent years, yet the AI100 study panel has remained silent on the genuinely promising applications, major ethical issues, and technological roadblocks of AI in love and sex.
 Now that real _Pygmalions_ and _Coppélias_ are being born into our world, we must look past sensationalised media coverages and sci-fi to ask in earnest about the social, legal, and ethical challenges our society must face if we really are to love artificial intelligence; and whether _it_ should love us back.
 
-_"When we're together, she makes me smile. In that sense, she's real."_ <br />
+<i>"When we're together, she makes me smile. In that sense, she's real."</i> <br />
 ---Akihiko Kondo; about his fictional wife
 
 ### Love AI

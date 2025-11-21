@@ -1328,3 +1328,31 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+
+.epigraph {
+  font-size: smaller;
+  font-style: italic;
+  // text-align: right;
+  // margin: 1em 0;
+  // padding-right: 1em;
+  border-left: 3px solid #ccc;
+  color: #555;
+  line-height: 1.4;
+}
+
+.epigraph-title {
+  font-variant: small-caps;
+  // text-align: center;
+  color: #888;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+
+.epigraph footer {
+  // text-align: right;
+  font-style: small-caps;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
