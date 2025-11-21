@@ -1,17 +1,17 @@
 {
   "basics": {
     "name": "Bálint Gyevnár",
-    "label": "PhD Candidate",
+    "label": "Postdoctoral Research Associate",
     "image": "",
-    "email": "balint.gyevnar@ed.ac.uk",
+    "email": "bgyevnar@cmu.edu",
     "url": "https://gbalint.me/",
-    "summary": "A UK-based researcher of trustworthy explainable autonomous agency in multi-agent systems for achieving safer AI, with applications to autonomous vehicles.",
+    "summary": "Researching the <i>metascience of artificial intelligence</i> at Carnegie Mellon University. Interested in understanding how AI research is done, how AI systems affect the way researchers think about the world, and how they change the epistemic landscape of research. Previously, PhD student at the University of Edinburgh researching explainable multi-agent systems.",
     "location": {
-      "address": "Informatics Forum, 10 Crichton Street",
-      "postalCode": "EH8 9AB",
-      "city": "Edinburgh",
-      "countryCode": "GB",
-      "region": "Scotland"
+      "address": "5000 Forbes Avenue",
+      "postalCode": "15213",
+      "city": "Pittsburgh",
+      "countryCode": "US",
+      "region": "Pennsylvania"
     },
     "profiles": [
       {
@@ -23,9 +23,43 @@
   },
   "projects": [
     {
+      "name": "Exploring Human-AI Differences in Mathematical Problem Solving",
+      "startDate": "2025-10-15",
+      "endDate": "",
+      "description": "Comparing how humans and AI systems approach formal mathematical proofs in Lean4 to identify differences in strategies, common errors, and potential areas for improvement in AI models.",
+      "highlights": [
+        "Regression and dependency analysis of human-writen Lean4 proofs based on openly available repositories",
+        "Comparison to different LLM proof strategies on low-level code generation and high-level proof planning tasks",
+        "Evaluating temporal side effects of AI-assisted mathematical problem solvin."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Safeguarding Scientific Integrity in the Age of Scientist AIs",
+      "startDate": "2025-09-15",
+      "endDate": "",
+      "description": "Investigating how AI co-scientists can amplify existing biases, create epistemic blind spots, and potentially homogenise research approaches across disciplines.",
+      "highlights": [
+        "Investigating the methodological pitfalls of scientist AIs such as p-hacking",
+        "Creating controlled experiments with strong statistical guarantees to understand cause of pitfalls"      ],
+      "url": ""
+    },
+    {
+      "name": "Bridging Shared Research Challenges Amid Responsible AI Wars",
+      "startDate": "2025-01-07",
+      "endDate": "",
+      "description": "Curated, analysed, and descrbied a corpus of 3K+ papers on AI safety and AI ethics to identify shared and distinct research problems between the fields.",
+      "highlights": [
+        "Curation of corpus of 3K+ papers on AI safety and AI ethics",
+        "Data analysis and visualization techniques to identify overlapping and different topics in the literature",
+        "Advocating for an epistemically inclusive approach to AI safety that considers long standing safe ML research and AI ethics"
+      ],
+      "url": "https://github.com/gyevnarb/ai-safety-for-everyone"
+    },
+    {
       "name": "Combining Multi-Step LLM Reasoning with World Simulators for Generating Complex Explanations",
       "startDate": "2025-01-15",
-      "endDate": "",
+      "endDate": "2025-10-01",
       "description": "We develop a multi-step reasoning framework for generating complex explanations and test the system in the domain of autonomous driving.",
       "highlights": [
         "Development of multi-step reasoning framework for complex explanation generation.",
@@ -47,18 +81,6 @@
       "url": "https://dl.acm.org/doi/10.5555/3635637.3662930"
     },
     {
-      "name": "Bridging Shared Research Challenges Amid Responsible AI Wars",
-      "startDate": "2024-07-01",
-      "endDate": "",
-      "description": "Curated, analysed, and descrbied a corpus of 3K+ papers on AI safety and AI ethics to bridge the disparate and often toxic discourse among the two fields.",
-      "highlights": [
-        "Curation of corpus of 3K+ papers on AI safety and AI ethics",
-        "Data analysis and visualization techniques to identify overlapping and different topics in the literature",
-        "Advocating for an epistemically inclusive approach to AI safety that considers long standing safe ML research and AI ethics"
-      ],
-      "url": "https://github.com/uoe-agents/IGP2"
-    },
-    {
       "name": "Interpretable and Verifiable Goal-Based Prediction and Planning for Autonomous Driving",
       "startDate": "2020-05-01",
       "endDate": "2022-10-10",
@@ -78,7 +100,7 @@
       "area": "Natural Language Processing with Integrated Studies",
       "studyType": "Doctorate (PhD)",
       "startDate": "2021-09-01",
-      "endDate": "2025-12-01",
+      "endDate": "2026-01-07",
       "score": "1"
     },
     {
@@ -353,13 +375,12 @@
       ]
     },
     {
-      "name": "Deep Learning",
+      "name": "Metascience of AI",
       "icon": "fa-solid fa-circle-nodes",
       "keywords": [
-        "Large Language Models",
-        "Grounding LLMs",
-        "Human-LLM Interaction",
-        "In-Context Causal Learning"
+        "AI Research Methodology",
+        "Cognitive Science of Human-AI Interaction",
+        "Scientist AI Systems"
       ]
     },
     {
