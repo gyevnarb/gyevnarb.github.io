@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I attended the workshop on the Cognitive Science of Mathematical Understanding, co-organised by Tania Lombrozo and Akshay Venkatesh.
+I attended the workshop and [wrote a post](/blog/2025/math-understand-cogsci) about the Cognitive Science of Mathematical Understanding, co-organised by Tania Lombrozo and Akshay Venkatesh.

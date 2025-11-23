@@ -125,7 +125,7 @@ Maybe there is beauty to be found in using LLMs for maths though. As [Barry Mazu
 
 So what <i>is</i> mathematical understanding?
 
-I have dissected the question into yet many more questions, related to knowledge, connections, intuition, externalization, and aesthetics, and I am certain I have missed so many more aspects. For each of these questions, AI systems have a role to play, but it is ever-so-crucial to retain our humanity in doing mathematics. Doing that consciously seems like a grand challenge, and it seems we will have to revisit the question of what is [mathematical understanding](https://gbalint.me/blog/2025/math-understand-cogsci/) year after year, much like a doctor checks up on their patient every year.
+I have dissected the question into yet many more questions, related to knowledge, connections, intuition, externalization, and aesthetics, and I am certain I have missed so many more aspects. For each of these questions, AI systems have a role to play, but it is ever-so-crucial to retain our humanity in doing mathematics. Doing that consciously seems like a grand challenge, and it seems we will have to revisit the question of what is [mathematical understanding](/blog/2025/math-understand-cogsci/) year after year, much like a doctor checks up on their patient every year.
 
 
 
