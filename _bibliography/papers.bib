@@ -1,17 +1,25 @@
 ---
 ---
 
-@misc{gyevnar2025axis,
-    abbr={arXiv},
+
+@inproceedings{gyevnar2025axis,
+    abbr={AAMAS},
+    selected={true},
     bibtex_show={true},
     title={Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour},
     author={Bálint Gyevnár and Christopher G. Lucas and Stefano V. Albrecht and Shay B. Cohen},
-    year={2025},
+    year={2026},
     month = {May},
     arxiv={2505.17801},
-    url={https://arxiv.org/abs/2505.17801},
+    url={https://openreview.net/forum?id=CairhkJonj},
+    html={https://openreview.net/forum?id=CairhkJonj},
     code={https://github.com/gyevnarb/axs},
-    abstract={Autonomous multi-agent systems (MAS) are useful for automating complex tasks but raise trust concerns due to risks like miscoordination and goal misalignment. Explainability is vital for trust calibration, but explainable reinforcement learning for MAS faces challenges in state/action space complexity, stakeholder needs, and evaluation. Using the counterfactual theory of causation and LLMs' summarisation capabilities, we propose Agentic eXplanations via Interrogative Simulation (AXIS). AXIS generates intelligible causal explanations for pre-trained multi-agent policies by having an LLM interrogate an environment simulator using queries like 'whatif' and 'remove' to observe and synthesise counterfactual information over multiple rounds. We evaluate AXIS on autonomous driving across 10 scenarios for 5 LLMs with a novel evaluation methodology combining subjective preference, correctness, and goal/action prediction metrics, and an external LLM as evaluator. Compared to baselines, AXIS improves perceived explanation correctness by at least 7.7% across all models and goal prediction accuracy by 23% for 4 models, with improved or comparable action prediction accuracy, achieving the highest scores overall.}
+    location = {Paphos, Cyprus},
+    series = {AAMAS '26},
+    publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+    address = {Richland, SC},
+    booktitle = {Proceedings of the 25th International Conference on Autonomous Agents and Multiagent Systems},
+    abstract={Autonomous multi-agent systems (MAS) are useful for automating complex tasks but raise trust concerns due to risks such as miscoordination or goal misalignment. Explainability is vital for users' trust calibration, but explainable MAS face challenges due to complex environments, the human factor, and non-standardised evaluation. Leveraging the counterfactual effect size model and LLMs, we propose Agentic eXplanations via Interrogative Simulation (AXIS). AXIS generates human-centred action explanations for multi-agent policies by having an LLM interrogate an environment simulator using prompts like 'whatif' and 'remove' to observe and synthesise counterfactual information over multiple rounds. We evaluate AXIS on autonomous driving across ten scenarios for five LLMs with a comprehensive methodology combining robustness, subjective preference, correctness, and goal/action prediction with an external LLM as evaluator. Compared to baselines, AXIS improves perceived explanation correctness by at least 7.7% across all models and goal prediction accuracy by 23% for four models, with comparable action prediction accuracy, achieving the highest scores overall. Our code is open-sourced at this https URL. }
 }
 
 @article{gyevnar2025AIsafety,
@@ -114,7 +122,7 @@
     author = {Gyevnar, Balint and Wang, Cheng and Lucas, Christopher G. and Cohen, Shay B. and Albrecht, Stefano V.},
     title = {Causal Explanations for Sequential Decision-Making in Multi-Agent Systems},
     year = {2024},
-    month = {May.},
+    month = {May},
     publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
     address = {Richland, SC},
     booktitle = {Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems},
@@ -163,7 +171,7 @@
 }
 
 @inproceedings{gyevnar2022humanCentric,
-    abbrev={IJCAI},
+    abbr={IJCAI},
     bibtex_show={true},
     code = {https://github.com/uoe-agents/xavi-ai4ad},
     slides = {slides/ijcai-2022-ai4ad.pdf},
