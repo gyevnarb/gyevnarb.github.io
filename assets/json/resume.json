@@ -206,7 +206,7 @@
   "publications": [
     {
       "name": "Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour",
-      "publisher": "Under review",
+      "publisher": "25th International Conference on Autonomous Agents and Multiagent Systems",
       "releaseDate": "2025-05-25",
       "url": "http://arxiv.org/abs/2505.17801",
       "summary": "Bálint Gyevnár and Christopher G. Lucas and Stefano V. Albrecht and Shay B. Cohen"

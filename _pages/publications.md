@@ -30,6 +30,7 @@ Color legend:
 - Program committee member:
     - [AAAI](https://aaai.org/conference/aaai/) (2026)
     - [AIES](https://www.aies-conference.com/) (2025)
+    - [FAccT](https://facctconference.org/) (2026)
     - [XAI](https://xaiworldconference.com/) (2025)
 - Reviewer:
     - [Academic Mindtrek](https://www.mindtrek.org/academic-mindtrek-2025/) (2025)
@@ -38,8 +39,9 @@ Color legend:
     - [ECAI](https://www.eurai.org/ecai) (2023)
     - [EMNLP BlackboxNLP](https://blackboxnlp.github.io/) (2025)
     - [ICRA](https://2025.ieee-icra.org/) (2025)
-    - [IEEE T-ITS](https://ieee-itss.org/pub/t-its/) (2025)
+    - [IEEE Transactions on Intelligent Transportation Systems](https://ieee-itss.org/pub/t-its/) (2025)
     - [IASEAI](https://www.iaseai.org/our-programs/iaseai26) (2026)
     - [IROS](https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros/information-for-associate-editors) (2025)
+    - [International Journal of Human-Computer Interaction](https://www.tandfonline.com/toc/hihc20/current) (2026)
     - [Nature Communications](https://www.nature.com/ncomms/) (2025)
     - [NeurIPS](https://neurips.cc) (2025)
