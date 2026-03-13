@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-03-02 21:15-0000
+date: 2026-03-12 21:15-0000
 inline: true
 related_posts: false
 ---
 
-I am giving an invited talk at IVADO/MILA in Montreal at the [Workshop on Social Reasoning and the Ecology of Thought](https://ivado.ca/en/events/social-reasoning-and-the-ecology-of-thought/) on "Human and AI Solution Paths in Formalizing Expert Mathematics".
+I gave an invited talk at IVADO in Montréal on ["Human and AI Solution Paths in Formalizing Expert Mathematics"](assets/pdf/slides/ivado-maths.pdf) the Workshop on Social Reasoning and the Ecology of Thought.
