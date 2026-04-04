@@ -100,7 +100,7 @@
       "area": "Natural Language Processing with Integrated Studies",
       "studyType": "Doctorate (PhD)",
       "startDate": "2021-09-01",
-      "endDate": "2026-01-07",
+      "endDate": "2026-05-07",
       "score": "1"
     },
     {
@@ -196,7 +196,7 @@
       "summary": "The inaugural TAS Early Career Researcher (ECR) Awards were initiated to celebrate outstanding contributions made by PhD students and postdoctoral researchers to any area of Trustworthy Autonomous Systems research in the last three years. Balint was awarded £4000 by the UKRI TAS Hub to achieve his vision for more trustworthy autonomous systems (TAS) through explainability and conversations."
     },
     {
-      "title": "\"Shape the Future of ITS\" Competition",
+      "title": "Shape the Future of ITS Competition",
       "date": "2021-06-01",
       "awarder": "IEEE Intelligent Transportation Systems Society (ITSS)",
       "url": "https://ieeexplore.ieee.org/document/9889156",
@@ -205,39 +205,46 @@
   ],
   "publications": [
     {
+      "name": "Bridging the Gap in the Responsible AI Divides",
+      "publisher": "arXiv prerint 2603.14495",
+      "releaseDate": "2026-03-25",
+      "url": "https://arxiv.org/pdf/2603.14495",
+      "summary": "Bálint Gyevnár, Atoosa Kasirzadeh"
+    },
+    {
       "name": "Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour",
       "publisher": "25th International Conference on Autonomous Agents and Multiagent Systems",
       "releaseDate": "2025-05-25",
       "url": "http://arxiv.org/abs/2505.17801",
-      "summary": "Bálint Gyevnár and Christopher G. Lucas and Stefano V. Albrecht and Shay B. Cohen"
+      "summary": "Bálint Gyevnár, Christopher G. Lucas, Stefano V. Albrecht, Shay B. Cohen"
     },
     {
       "name": "AI Safety for Everyone",
       "publisher": "Nature Machine Intelligence",
       "releaseDate": "2025-02-25",
       "url": "https://www.nature.com/articles/s42256-025-01020-y",
-      "summary": "Bálint Gyevnár and Atoosa Kasirzadeh"
+      "summary": "Bálint Gyevnár, Atoosa Kasirzadeh"
     },
     {
       "name": "Objective Metrics for Human-Subjects Evaluation in Explainable Reinforcement Learning",
       "publisher": "Multi-Disciplinary Conference on Reinforcement Learning and Decision Making, RLDM 2025",
       "releaseDate": "2025-02-03",
       "url": "https://arxiv.org/abs/2501.19256",
-      "summary": "Bálint Gyevnár and Mark Towers"
+      "summary": "Bálint Gyevnár, Mark Towers"
     },
     {
       "name": "Causal Explanations for Sequential Decision-Making in Multi-Agent Systems",
       "publisher": "23rd International Conference on Autonomous Agents and Multiagent Systems, AAMAS 2024",
       "releaseDate": "2024-05-01",
       "url": "https://dl.acm.org/doi/10.5555/3635637.3662930",
-      "summary": "Bálint Gyevnár and Cheng Wang and Christopher G. Lucas and Shay B. Cohen and Stefano V. Albrecht"
+      "summary": "Bálint Gyevnár, Cheng Wang, Christopher G. Lucas, Shay B. Cohen, Stefano V. Albrecht"
     },
     {
       "name": "Explainable AI for Safe and Trustworthy Autonomous Driving: A Systematic Review",
       "publisher": "IEEE Transactions on Intelligent Transportation Systems",
       "releaseDate": "2024-12-01",
       "url": "https://ieeexplore.ieee.org/document/10716567",
-      "summary": "Anton Kuznietsov* and Bálint Gyevnár* and Cheng Wang and Steven Peters and Stefano V. Albrecht"
+      "summary": "Anton Kuznietsov*, Bálint Gyevnár*, Cheng Wang, Steven Peters, Stefano V. Albrecht"
     },
     {
       "name": "Towards Trustworthy Autonomous Systems via Conversations and Explanations",
@@ -251,35 +258,35 @@
       "publisher": "ACM CHI conference on Human Factors in Computing Systems",
       "releaseDate": "2024-12-01",
       "url": "https://arxiv.org/abs/2403.08828",
-      "summary": "Bálint Gyevnár and Stephanie Droop and Tadeg Quillien and Shay B. Cohen and Neil R. Bramley and Christopher G. Lucas and Stefano V. Albrecht"
+      "summary": "Bálint Gyevnár, Stephanie Droop, Tadeg Quillien, Shay B. Cohen, Neil R. Bramley, Christopher G. Lucas, Stefano V. Albrecht"
     },
     {
       "name": "Bridging the Transparency Gap: What Can Explainable AI Learn From the AI Act?",
       "publisher": "26th European Conference on Artificial Intelligence, ECAI 2023",
       "releaseDate": "2023-05-01",
       "url": "https://ebooks.iospress.nl/doi/10.3233/FAIA230367",
-      "summary": "Bálint Gyevnár and Nick Ferguson and Burkhard Schafer"
+      "summary": "Bálint Gyevnár, Nick Ferguson, Burkhard Schafer"
     },
     {
       "name": "A Human-Centric Method for Generating Causal Explanations in Natural Language for Autonomous Vehicle Motion Planning",
       "publisher": "IJCAI 2022 Workshop on Artificial Intelligence for Autonomous Driving, AI4AD 2022",
       "releaseDate": "2022-05-01",
       "url": "https://arxiv.org/abs/2206.08783",
-      "summary": "Bálint Gyevnár and Massimiliano Tamborski and Cheng Wang and Christopher G. Lucas and Shay B. Cohen and Stefano V. Albrecht"
+      "summary": "Bálint Gyevnár, Massimiliano Tamborski, Cheng Wang, Christopher G. Lucas, Shay B. Cohen, Stefano V. Albrecht"
     },
     {
       "name": "GRIT: Fast, Interpretable, and Verifiable Goal Recognition with Learned Decision Trees for Autonomous Driving",
       "publisher": "IEEE/RSJ International Conference on Intelligent Robots and Systems, IROS 2021",
       "releaseDate": "2021-05-01",
       "url": "https://ieeexplore.ieee.org/abstract/document/9636279",
-      "summary": "Cillian Brewitt and Bálint Gyevnár and Samuel Garcin and Stefano V. Albrecht"
+      "summary": "Cillian Brewitt, Bálint Gyevnár, Samuel Garcin, Stefano V. Albrecht"
     },
     {
       "name": "Interpretable Goal-based Prediction and Planning for Autonomous Driving",
       "publisher": "IEEE International Conference on Robotics and Automation, ICRA 2021",
       "releaseDate": "2021-05-01",
       "url": "https://ieeexplore.ieee.org/document/9560849",
-      "summary": "Stefano V. Albrecht and Cillian Brewitt and John Wilhelm and Bálint Gyevnár and Francisco Eiras and Mihai Dobre and Subramanian Ramamoorthy"
+      "summary": "Stefano V. Albrecht, Cillian Brewitt, John Wilhelm, Bálint Gyevnár, Francisco Eiras, Mihai Dobre, Subramanian Ramamoorthy"
     }
   ],
   "skills": [
@@ -387,7 +394,7 @@
       "name": "Robotics",
       "icon": "fa-solid fa-robot",
       "keywords": [
-        "Reinforecement Learning",
+        "Reinforcement Learning",
         "Autonomous Vehicles",
         "Multi-Agent Systems"
       ]

@@ -17,15 +17,15 @@ social: true # includes social icons at the bottom of the page
 ***
 
 
-My research is concerned with <b>artificial intelligence (AI) in science and the science in AI.</b>
-I am interested in computational (e.g. algorithms) and empirical methods (e.g. cognitive experiments) of understanding how AI can be used to safely and sustainably enhance human scientific discovery.
+I am interested in the metascience of <b>AI in science and the science in AI.</b>
+My research uses computational (e.g. algorithms) and empirical methods (e.g. cognitive experiments) of understanding how AI can be used to safely and sustainably enhance human scientific discovery.
 I am working with [Atoosa Kasirzadeh](https://kasirzadeh.org/) and [Nihar Shah](https://www.cs.cmu.edu/~nihars/) at the intersection of machine learning, cognitive science, and the philosophy of science.
 During my PhD, I worked on explainable multi-agent reinforcement learning under the supervision of [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/), [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/), and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/) at the University of Edinburgh, Scotland.
 
 I am currently most curious about three questions:
 - <b>How do we protect scientific integrity in the age of agentic AI scientists? </b> What are the methodological pitfalls of scientific AI systems, and how do we create controlled computational tools with statistical guarantees to prevent them?
-- <b>How does the use of AI in science affect the way scientists think and act?</b> What are the epistemological dangers of delegating scientific thinking to AI systems, and how does AI change the high-level conceptual and low-level methodological steps of science?
-- <b>How do scientific communities change as a result of scientific AI deployment?</b> What are the effects of AI-accelerated scientific discovery on research communities' interests, and what are scientists' beliefs and desires for AI in science?
+- <b>How does the use of AI affect the epistemics of science?</b> What are the dangers of delegating scientific thinking to AI systems, how does AI change the high-level conceptual and low-level methodological steps of science, are we in danger of illusions of understanding?
+- <b>How do scientific communities change as the result of AI adoption?</b> What are the effects of AI-accelerated scientific discovery on research communities' interests, what are scientists' beliefs and desires for AI in science, how is the scientific community of knowledge affected?
 
 
 <!-- , which I like to describe as the study of giving interacting AI agents the ability to explain themselves. -->
