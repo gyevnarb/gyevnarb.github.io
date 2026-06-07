@@ -10,6 +10,10 @@
   url: https://arxiv.org/
   color: "#b31b1b"
 
+"SSRN":
+  url: https://www.ssrn.com/ssrn/
+  color: "#b31b1b"
+
 "AAMAS":
   url: https://www.ifaamas.org/
   color: "#3b004a"

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour](https://dl.acm.org/doi/10.65109/MCSD1905) was accepted to AAMAS 2026. Reach out if you are going to Cyprus next May!
+Our paper [Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour](https://dl.acm.org/doi/10.65109/MCSD1905) was accepted to AAMAS 2026.
