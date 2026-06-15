@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our new preprint on [AI Epistemic Risks: Emerging Mechanisms & Evidence](https://dl.acm.org/doi/10.65109/MCSD1905) involving a broad range of scientists, including Yoshua Bengio, is now available.
+Our new preprint on [AI Epistemic Risks: Emerging Mechanisms & Evidence](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6873005) involving a broad range of scientists, including Yoshua Bengio, is now available.
