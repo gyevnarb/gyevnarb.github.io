@@ -17,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 ***
 
 
-I am interested in the metascience of <b>AI in science and the science in AI.</b>
+I am interested in <b> responsible AI for science</b> and the <b>science of responsible AI.</b>
 My research uses computational (e.g. algorithms) and empirical methods (e.g. cognitive experiments) of understanding how AI can be used to safely and sustainably enhance human scientific discovery.
 I am working with [Atoosa Kasirzadeh](https://kasirzadeh.org/) and [Nihar Shah](https://www.cs.cmu.edu/~nihars/) at the intersection of machine learning, cognitive science, and the philosophy of science.
 During my PhD, I worked on explainable multi-agent reinforcement learning under the supervision of [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/), [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/), and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/) at the University of Edinburgh, Scotland.
