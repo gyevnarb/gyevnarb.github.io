@@ -30,6 +30,10 @@
   - firstname: ["Burkhard", "B."]
     url: https://www.law.ed.ac.uk/people/professor-burkhard-schafer
 
+"shah":
+  - firstname: ["Nihar", "Nihar B.", "N. B.", "N.B."]
+    url: https://www.cs.cmu.edu/~nihars/
+
 "brewitt":
   - firstname: ["Cillian", "C."]
     url: https://scholar.google.com/citations?user=PLz6FbUAAAAJ&hl=en

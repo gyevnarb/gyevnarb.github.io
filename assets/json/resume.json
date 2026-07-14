@@ -205,6 +205,13 @@
   ],
   "publications": [
     {
+      "name": "Distributed Denial of Science: How Indirect Data Poisoning of AI Systems Can Industrialize Scientific Fraud",
+      "publisher": "arXiv prerint 2607.10712",
+      "releaseDate": "2026-07-14",
+      "url": "https://arxiv.org/pdf/2607.10712",
+      "summary": "Bálint Gyevnár, Atoosa Kasirzadeh, Nihar B. Shah"
+    },
+    {
       "name": "Bridging the Gap in the Responsible AI Divides",
       "publisher": "arXiv prerint 2603.14495",
       "releaseDate": "2026-03-25",

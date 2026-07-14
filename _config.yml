@@ -166,9 +166,11 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-# external_sources:
-#   # - name: medium.com
-# #     rss_url: https://medium.com/@al-folio/feed
+external_sources:
+  - name: Indirect Data Poisoning of Autonomous Research Agents Can Industrialize Scientific Fraud
+    posts:
+      - url: https://gbalint.me/indirect-data-poisoning/
+        published_date: 2026-07-14
 #   - name: Agents Blog
 #     posts:
 #       - url: https://agents-lab.org/blog/explainable-autonomous-vehicle-intelligence/
@@ -200,7 +202,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 7 # leave blank to include all the news in the `_news` folder
+  limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
