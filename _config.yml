@@ -70,7 +70,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 acm_id: # your dl.acm.org/profile/id
 blogger_url: # your blogger URL
-bluesky_url: https://bsky.app/profile/gbalint.bsky.social # your bluesky URL
+bluesky_url: # your bluesky URL
 dblp_url: # your DBLP profile url
 discord_id: # your discord id (18-digit unique numerical identifier)
 facebook_id: # your facebook id
@@ -171,6 +171,8 @@ external_sources:
     posts:
       - url: https://gbalint.me/indirect-data-poisoning/
         published_date: 2026-07-14
+    categories: [research]
+    tags: [metascience, ai-scientist, ai, scientific-fraud]
 #   - name: Agents Blog
 #     posts:
 #       - url: https://agents-lab.org/blog/explainable-autonomous-vehicle-intelligence/
