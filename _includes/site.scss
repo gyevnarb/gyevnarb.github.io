@@ -8,8 +8,8 @@
   --yellow: #e2a70f;
   --ink: #16150f;
   --grey: #9a958a;
-  --text: "neue-haas-grotesk-text", "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --display: "neue-haas-grotesk-display", "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --text: "neue-haas-grotesk-text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --display: "neue-haas-grotesk-display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --measure: 46rem;
   --gap: clamp(1.25rem, 4vw, 2.5rem);
   color-scheme: light dark;
@@ -46,7 +46,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.2; margin: 0; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.2; margin: 0; }
 h1 { text-wrap: balance; }
 p, ul, ol, dl, figure, pre, blockquote { margin: 0 0 1em; }
 img { max-width: 100%; height: auto; display: block; }
@@ -76,7 +76,7 @@ a:hover { color: var(--red); text-decoration-color: currentColor; }
   font-family: var(--display);
 }
 .bar a { text-decoration: none; }
-.brand { display: inline-flex; align-items: center; gap: .45em; font-size: 2.3rem; font-weight: 500; letter-spacing: -.01em; line-height: 1.1; }
+.brand { display: inline-flex; align-items: center; gap: .45em; font-size: 2.3rem; font-weight: 600; letter-spacing: -.01em; line-height: 1.1; }
 .mark { width: 1.6em; height: .45em; flex: none; }
 .mark circle { fill: var(--blue); }
 .mark rect { fill: var(--red); }
@@ -134,7 +134,7 @@ main { padding: clamp(1.5rem, 4.5vw, 2.5rem) 0 2rem; }
 .pubs ol.bibliography > li + li { margin-top: 1.75rem; }
 .by-year { display: grid; grid-template-columns: 5rem 1fr; gap: 0 1.5rem; margin-top: 2.5rem; }
 .by-year h2.bibliography {
-  font-size: 1.6rem; font-weight: 500; font-variant-numeric: tabular-nums;
+  font-size: 1.6rem; font-weight: 600; font-variant-numeric: tabular-nums;
   border-top: 2px solid var(--red); padding-top: .5rem; margin-top: 2.5rem;
 }
 .by-year ol.bibliography { border-top: 1px solid var(--line); padding-top: 1.25rem !important; margin-top: 2.5rem !important; }
@@ -181,7 +181,7 @@ main { padding: clamp(1.5rem, 4.5vw, 2.5rem) 0 2rem; }
   font-size: clamp(1.9rem, 5.4vw, 3rem); letter-spacing: -.015em; line-height: 1.08; margin-bottom: .6rem;
 }
 .blog-head { margin-bottom: 2.5rem; }
-.posts .post-link { font-family: var(--display); font-size: 1.15rem; font-weight: 500; }
+.posts .post-link { font-family: var(--display); font-size: 1.15rem; font-weight: 600; }
 .ext { margin-left: .25rem; color: var(--muted); }
 
 .post-head { margin-bottom: 2rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
@@ -196,7 +196,7 @@ main { padding: clamp(1.5rem, 4.5vw, 2.5rem) 0 2rem; }
 .post .prose figure { margin: 2rem 0; }
 .post .prose figcaption { font-size: .88rem; color: var(--muted); margin-top: .5rem; }
 .post .prose blockquote { margin: 1.5rem 0; padding-left: 1.25rem; border-left: 3px solid var(--red); }
-.epigraph-title { font-family: var(--display); font-weight: 500; margin-bottom: .5rem; }
+.epigraph-title { font-family: var(--display); font-weight: 600; margin-bottom: .5rem; }
 .epigraph footer { color: var(--muted); font-size: .95rem; }
 .cite, .fn { font-size: .78em; }
 .cite a, .fn a { text-decoration: none; color: var(--blue); }

@@ -105,7 +105,7 @@ Maybe understanding is having externalizable and intuitive knowledge of generali
 
 After all, there is no more intrinsic truth value to Gauss’s pairing proof that $1 + 2 + … + N = N(N+1)/2$ as opposed to a straightforward proof by induction. Similarly, rote application of algebraic manipulations to show that the sum of odd numbers is a square number:
 
-$$\displaylines{(n+1)^2 = n^2 + 2n+1 = (n-1)^2 + 2n-1 +2n+1 = … \\= 1 + 3 + … + 2n-1 + 2n + 1}$$
+$$\begin{gathered}(n+1)^2 = n^2 + 2n+1 = (n-1)^2 + 2n-1 +2n+1 = … \\= 1 + 3 + … + 2n-1 + 2n + 1\end{gathered}$$
 
 is equally correct as the below proof without words. So why is it that we each feel one proof may be more beautiful than the other?
 

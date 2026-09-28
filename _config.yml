@@ -75,7 +75,7 @@ filtered_bibtex_keywords:
   [abbr, abstract, annotation, arxiv, award, award_name, bibtex_show, blog, code, html, pdf, poster, selected, slides, supp, website]
 
 include: [_pages]
-exclude: [Gemfile, Gemfile.lock, README.md, vendor]
+exclude: [Gemfile, Gemfile.lock, README.md, vendor, blogger]
 
 plugins:
   - jekyll-scholar

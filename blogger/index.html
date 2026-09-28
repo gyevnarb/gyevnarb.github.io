@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blogger · gbalint.me</title>
+<link rel="stylesheet" href="https://use.typekit.net/eez4bau.css">
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<style>
+:root {
+  --bg: #f4f1ea; --fg: #16150f; --muted: #5e5b53; --line: #d8d2c4; --panel: #fbfaf6;
+  --red: #c4302b; --blue: #1f4e9a; --yellow: #e2a70f; --ok: #2f7d3a;
+  --sans: "neue-haas-grotesk-text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --display: "neue-haas-grotesk-display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 14px/1.45 var(--sans); display: flex; flex-direction: column; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: inherit; }
+
+/* top bar */
+.top { display: flex; align-items: center; gap: 1rem; padding: .7rem 1rem; border-bottom: 2px solid var(--fg); flex-wrap: wrap; }
+.brand { font: 600 1.15rem/1 var(--display); display: flex; align-items: center; gap: .5rem; margin-right: auto; }
+.brand svg { width: 1.9rem; height: .55rem; }
+.status { color: var(--muted); font-size: .85rem; }
+.btn { background: none; border: 1px solid var(--fg); padding: .35rem .75rem; cursor: pointer; }
+.btn:hover { background: var(--fg); color: var(--bg); }
+.btn.primary { background: var(--fg); color: var(--bg); }
+.btn.primary:hover { background: var(--red); border-color: var(--red); }
+.btn.small { padding: .15rem .5rem; font-size: .85rem; }
+select.btn { padding-right: 1.5rem; max-width: 18rem; }
+
+/* layout */
+.main { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; }
+.left { display: flex; flex-direction: column; min-height: 0; border-right: 1px solid var(--line); }
+.right { display: flex; flex-direction: column; min-height: 0; }
+.tabs { display: flex; gap: 1.25rem; padding: 0 1rem; border-bottom: 1px solid var(--line); }
+.tabs button { background: none; border: 0; border-bottom: 2px solid transparent; padding: .6rem 0 .45rem; cursor: pointer; font-family: var(--display); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .78rem; color: var(--muted); }
+.tabs button[aria-selected="true"] { color: var(--fg); border-color: var(--red); }
+.tabs .count { font-weight: 400; color: var(--muted); }
+.pane { flex: 1; min-height: 0; overflow: auto; display: none; }
+.pane.on { display: flex; flex-direction: column; }
+.pad { padding: 1rem; }
+
+/* write */
+.toolbar { display: flex; flex-wrap: wrap; gap: .3rem; padding: .5rem 1rem; border-bottom: 1px solid var(--line); background: var(--panel); }
+.toolbar button { background: none; border: 1px solid transparent; padding: .2rem .45rem; cursor: pointer; min-width: 1.9rem; }
+.toolbar button:hover { border-color: var(--fg); }
+.toolbar .sep { width: 1px; background: var(--line); margin: 0 .2rem; }
+#md { flex: 1; width: 100%; resize: none; border: 0; padding: 1rem 1.25rem; background: var(--panel); font: 13.5px/1.65 var(--mono); outline: none; tab-size: 2; }
+.foot { display: flex; gap: 1.25rem; padding: .4rem 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; flex-wrap: wrap; }
+
+/* details form */
+.form { display: grid; grid-template-columns: 9rem 1fr; gap: .6rem 1rem; align-items: center; }
+.form label { color: var(--muted); font-size: .85rem; }
+.form input, .form textarea, .form select { width: 100%; border: 1px solid var(--line); background: var(--panel); padding: .4rem .5rem; }
+.form input:focus, .form textarea:focus, #md:focus-visible { outline: 2px solid var(--blue); outline-offset: -1px; }
+.form .hint { grid-column: 2; color: var(--muted); font-size: .8rem; margin-top: -.35rem; }
+.form h3 { grid-column: 1 / -1; margin: 1rem 0 0; font: 600 .78rem var(--display); letter-spacing: .08em; text-transform: uppercase; border-top: 1px solid var(--fg); padding-top: .5rem; }
+.form .row { display: flex; gap: .75rem; align-items: center; }
+code, .code { font-family: var(--mono); font-size: .85em; }
+pre.fm { font: 12px/1.5 var(--mono); background: var(--panel); border: 1px solid var(--line); padding: .75rem; overflow: auto; white-space: pre; margin: 0; }
+
+/* references */
+.refbar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; padding: .75rem 1rem; border-bottom: 1px solid var(--line); }
+.refbar input[type=search], .refbar input[type=text] { flex: 1; min-width: 10rem; border: 1px solid var(--line); background: var(--panel); padding: .35rem .5rem; }
+.drop { border: 1px dashed var(--muted); padding: .75rem; text-align: center; color: var(--muted); margin: .75rem 1rem 0; }
+.drop.over { border-color: var(--red); color: var(--red); }
+.refs { list-style: none; margin: 0; padding: .5rem 0; }
+.refs li { display: grid; grid-template-columns: 1fr auto; gap: .2rem 1rem; padding: .55rem 1rem; border-bottom: 1px solid var(--line); }
+.refs li:hover { background: var(--panel); }
+.refs .key { font: .8rem var(--mono); color: var(--blue); }
+.refs .key .n { color: var(--red); margin-left: .4rem; }
+.refs .txt { grid-column: 1; font-size: .85rem; color: var(--muted); }
+.refs .acts { grid-row: 1 / span 2; grid-column: 2; display: flex; gap: .3rem; align-items: start; }
+details.paste { margin: .75rem 1rem; }
+details.paste summary { cursor: pointer; color: var(--muted); }
+details.paste textarea { width: 100%; height: 8rem; margin: .5rem 0; font: 12px/1.4 var(--mono); border: 1px solid var(--line); background: var(--panel); padding: .5rem; }
+
+/* checks */
+.checks { list-style: none; margin: 0; padding: 0; }
+.checks li { padding: .55rem 1rem .55rem 2.2rem; border-bottom: 1px solid var(--line); position: relative; }
+.checks li::before { content: ""; position: absolute; left: 1rem; top: .95rem; width: .6rem; height: .6rem; }
+.checks .ok::before { background: var(--ok); border-radius: 50%; }
+.checks .warn::before { background: var(--yellow); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.checks .err::before { background: var(--red); }
+
+/* preview */
+.pbar { display: flex; gap: 1rem; align-items: center; padding: .45rem 1rem; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
+.pbar label { white-space: nowrap; }
+.pbar .url { font-family: var(--mono); margin-right: auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#preview { flex: 1; width: 100%; border: 0; background: #f4f1ea; }
+
+/* toast + modal */
+.toast { position: fixed; bottom: 1rem; left: 50%; transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: .6rem 1rem; max-width: 90vw; z-index: 20; }
+.toast.err { background: var(--red); }
+dialog { border: 2px solid var(--fg); background: var(--bg); padding: 1.25rem; max-width: 34rem; }
+dialog::backdrop { background: rgba(0,0,0,.25); }
+dialog h2 { font: 600 1.1rem var(--display); margin: 0 0 .75rem; }
+dialog .acts { display: flex; gap: .5rem; justify-content: flex-end; margin-top: 1rem; }
+[hidden] { display: none !important; }
+
+@media (max-width: 900px) {
+  .main { grid-template-columns: 1fr; grid-template-rows: minmax(22rem, 1fr) minmax(22rem, 1fr); }
+  .left { border-right: 0; border-bottom: 2px solid var(--fg); }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 36 10" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#1f4e9a"/><rect x="13" width="10" height="10" fill="#c4302b"/><path d="M26 10 31 0 36 10z" fill="#e2a70f"/></svg>
+    Blogger
+  </div>
+  <span class="status" id="status"></span>
+  <button class="btn" id="btn-new" title="Start a new post">New</button>
+  <select class="btn" id="open" title="Open an existing post from _posts/"><option value="">Open…</option></select>
+  <button class="btn" id="btn-download" title="Download the .md and .bib files">Download</button>
+  <button class="btn primary" id="btn-save" title="Write to _posts/ and assets/bibliography/ (Ctrl/Cmd+S)">Save to site</button>
+</header>
+
+<div class="main">
+  <section class="left">
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="write" aria-selected="true">Write</button>
+      <button role="tab" data-tab="details">Details</button>
+      <button role="tab" data-tab="refs">References <span class="count" id="ref-count"></span></button>
+      <button role="tab" data-tab="checks">Checks <span class="count" id="check-count"></span></button>
+    </nav>
+
+    <!-- WRITE -->
+    <div class="pane on" data-pane="write">
+      <div class="toolbar" id="toolbar">
+        <button data-act="h3" title="Section heading (### )">H</button>
+        <button data-act="bold" title="Bold (Ctrl/Cmd+B)"><b>B</b></button>
+        <button data-act="italic" title="Italic (Ctrl/Cmd+I)"><i>I</i></button>
+        <button data-act="link" title="Link (Ctrl/Cmd+K)">↗</button>
+        <span class="sep"></span>
+        <button data-act="cite" title="Cite a reference (Ctrl/Cmd+Shift+C)">[1]</button>
+        <button data-act="footnote" title="Footnote (Ctrl/Cmd+Shift+F)">¹</button>
+        <span class="sep"></span>
+        <button data-act="quote" title="Block quote">❝</button>
+        <button data-act="epigraph" title="Epigraph (titled quote with attribution)">Ep</button>
+        <button data-act="figure" title="Insert a figure (image with caption)">▣</button>
+        <button data-act="math" title="Display equation">∑</button>
+        <button data-act="code" title="Code block">{ }</button>
+        <button data-act="hr" title="Divider">—</button>
+      </div>
+      <textarea id="md" spellcheck="true" placeholder="Write your post in Markdown…&#10;&#10;Use ### for section headings (they become the table of contents).&#10;Cite with the [1] button, add footnotes with ¹."></textarea>
+      <div class="foot"><span id="wc"></span><span id="saved"></span></div>
+    </div>
+
+    <!-- DETAILS -->
+    <div class="pane" data-pane="details">
+      <div class="pad form">
+        <label for="f-title">Title</label><input id="f-title">
+        <label for="f-desc">Description</label><textarea id="f-desc" rows="2"></textarea>
+        <span class="hint">Shown under the title and on the blog list.</span>
+        <label for="f-slug">Slug</label><input id="f-slug" placeholder="auto from title">
+        <label for="f-date">Date</label><input id="f-date" type="datetime-local" step="1">
+        <label for="f-tags">Tags</label><input id="f-tags" placeholder="ai, philosophy">
+        <label for="f-cats">Categories</label><input id="f-cats" placeholder="essay, conference-notes">
+
+        <h3>Author</h3>
+        <label for="f-author">Name</label><input id="f-author">
+        <label for="f-aurl">URL</label><input id="f-aurl">
+        <label for="f-aff">Affiliation</label><input id="f-aff">
+
+        <h3>Options</h3>
+        <label for="f-math">Math (KaTeX)</label>
+        <select id="f-math"><option value="auto">Automatic (when $…$ is used)</option><option value="on">Always on</option><option value="off">Off</option></select>
+        <label for="f-toc">Contents list</label>
+        <div class="row"><input id="f-toc" type="checkbox" style="width:auto" checked><span class="hint" style="margin:0">Built from your ### headings</span></div>
+        <label for="f-onlycited">Bibliography</label>
+        <div class="row"><input id="f-onlycited" type="checkbox" style="width:auto" checked><span class="hint" style="margin:0">Save only the references that are cited</span></div>
+
+        <h3>Front matter</h3>
+        <div style="grid-column: 1 / -1"><pre class="fm" id="fm"></pre></div>
+      </div>
+    </div>
+
+    <!-- REFERENCES -->
+    <div class="pane" data-pane="refs">
+      <div class="refbar">
+        <label class="btn small" style="cursor:pointer">Import .bib<input type="file" id="bibfile" accept=".bib,.bibtex,text/plain" hidden multiple></label>
+        <input type="text" id="doi" placeholder="Add by DOI, e.g. 10.1038/s42256-025-01020-y">
+        <button class="btn small" id="btn-doi">Add</button>
+      </div>
+      <div class="refbar">
+        <input type="search" id="refsearch" placeholder="Search references (author, title, year, key)…">
+        <select class="btn small" id="refsort"><option value="key">Sort: key</option><option value="year">Sort: year</option><option value="cited">Sort: cited first</option></select>
+      </div>
+      <div class="drop" id="drop">Drop .bib files here</div>
+      <details class="paste"><summary>Paste BibTeX</summary>
+        <textarea id="bibpaste" placeholder="@article{key, title={...}, ...}"></textarea>
+        <button class="btn small" id="btn-paste">Add entries</button>
+      </details>
+      <ul class="refs" id="reflist"></ul>
+      <p class="pad" id="refempty" style="color:var(--muted)">No references yet. Import a .bib file, paste BibTeX, or add by DOI. Click <b>cite</b> to insert a citation at the cursor.</p>
+    </div>
+
+    <!-- CHECKS -->
+    <div class="pane" data-pane="checks">
+      <ul class="checks" id="checks"></ul>
+    </div>
+  </section>
+
+  <section class="right">
+    <div class="pbar"><span class="url" id="url"></span><label><input type="checkbox" id="sync" checked> sync scroll</label></div>
+    <iframe id="preview" title="Preview"></iframe>
+  </section>
+</div>
+
+<dialog id="dlg"><h2 id="dlg-title"></h2><div id="dlg-body"></div><div class="acts" id="dlg-acts"></div></dialog>
+<input type="file" id="imgfile" accept="image/*" hidden>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const md = $("#md");
+const DRAFT_KEY = "blogger-draft-v1";
+const WPM = 180; // same reading speed as the site
+
+/* ---------------- state ---------------- */
+const state = {
+  file: null,          // existing _posts file name when editing
+  orig: null,          // {day, slug, bibname} of the opened post, to keep its file names
+  bib: new Map(),      // key -> {type, key, fields, raw}
+  dirty: false,
+  server: false,
+};
+
+/* ---------------- helpers ---------------- */
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const slugify = s => s.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "")
+  .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+const pad2 = n => String(n).padStart(2, "0");
+function nowLocal() {
+  const d = new Date();
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}T${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}`;
+}
+function toast(msg, err) {
+  const t = document.createElement("div");
+  t.className = "toast" + (err ? " err" : ""); t.textContent = msg;
+  document.body.append(t); setTimeout(() => t.remove(), err ? 6000 : 2800);
+}
+function dialog(title, bodyHTML, buttons) {
+  return new Promise(res => {
+    const d = $("#dlg");
+    $("#dlg-title").textContent = title; $("#dlg-body").innerHTML = bodyHTML;
+    const acts = $("#dlg-acts"); acts.innerHTML = "";
+    buttons.forEach(([label, val, primary]) => {
+      const b = document.createElement("button");
+      b.className = "btn" + (primary ? " primary" : ""); b.textContent = label;
+      b.onclick = () => { d.close(); res(val); };
+      acts.append(b);
+    });
+    d.onclose = () => res(d.returnValue || null);
+    d.showModal();
+  });
+}
+function download(name, text) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([text], { type: "text/plain" }));
+  a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+/* ---------------- BibTeX ---------------- */
+const ACCENTS = { "'": "́", "`": "̀", "^": "̂", '"': "̈", "~": "̃", "=": "̄", ".": "̇", "u": "̆", "v": "̌", "H": "̋", "c": "̧", "k": "̨" };
+const SPECIAL = { "ss": "ß", "o": "ø", "O": "Ø", "ae": "æ", "AE": "Æ", "oe": "œ", "OE": "Œ", "aa": "å", "AA": "Å", "l": "ł", "L": "Ł", "i": "ı", "&": "&", "%": "%", "$": "$", "_": "_", "#": "#" };
+function delatex(s) {
+  if (!s) return "";
+  return s
+    .replace(/\\([a-zA-Z]+|[&%$_#])\s*\{\}/g, (m, c) => SPECIAL[c] ?? m)
+    .replace(/\{\\([ssoOlLiaeAEoOE]{1,2})\}/g, (m, c) => SPECIAL[c] ?? m)
+    .replace(/\\([&%$_#])/g, "$1")
+    .replace(/\{?\\([`'^"~=.uvHck])\s*\{?\\?([a-zA-Z])\}?\}?/g, (m, a, ch) => (ch + ACCENTS[a]).normalize("NFC"))
+    .replace(/\\textit\{([^}]*)\}|\\emph\{([^}]*)\}/g, "$1$2")
+    .replace(/---/g, "—").replace(/--/g, "–").replace(/``|''/g, '"')
+    .replace(/~/g, " ").replace(/[{}]/g, "").replace(/\s+/g, " ").trim();
+}
+function parseBib(text) {
+  const out = []; let i = 0; const strings = {};
+  while ((i = text.indexOf("@", i)) !== -1) {
+    const m = /^@\s*([a-zA-Z]+)\s*([{(])/.exec(text.slice(i));
+    if (!m) { i++; continue; }
+    const type = m[1].toLowerCase(), open = m[2], close = open === "{" ? "}" : ")";
+    let j = i + m[0].length, depth = 1;
+    const start = j;
+    while (j < text.length && depth) { const c = text[j]; if (c === open || c === "{") depth++; else if (c === close || c === "}") depth--; j++; }
+    const body = text.slice(start, j - 1), raw = text.slice(i, j);
+    i = j;
+    if (type === "comment" || type === "preamble") continue;
+    if (type === "string") { const s = /^\s*(\w+)\s*=\s*[{"]([\s\S]*)[}"]\s*$/.exec(body); if (s) strings[s[1].toLowerCase()] = s[2]; continue; }
+    const comma = body.indexOf(",");
+    if (comma < 0) continue;
+    const key = body.slice(0, comma).trim(); const fields = {};
+    let k = comma + 1;
+    while (k < body.length) {
+      const f = /^\s*([\w:.+-]+)\s*=\s*/.exec(body.slice(k));
+      if (!f) break;
+      k += f[0].length; let val = "";
+      while (k < body.length) {
+        let c = body[k];
+        if (c === "{") { let d = 1, s = ++k; while (k < body.length && d) { if (body[k] === "{") d++; else if (body[k] === "}") d--; k++; } val += body.slice(s, k - 1); }
+        else if (c === '"') { let s = ++k, d = 0; while (k < body.length && (body[k] !== '"' || d)) { if (body[k] === "{") d++; else if (body[k] === "}") d--; k++; } val += body.slice(s, k); k++; }
+        else { const w = /^[^,#\s}]+/.exec(body.slice(k)); if (w) { val += strings[w[0].toLowerCase()] ?? w[0]; k += w[0].length; } }
+        const rest = /^\s*#\s*/.exec(body.slice(k)); if (rest) { k += rest[0].length; continue; }
+        break;
+      }
+      fields[f[1].toLowerCase()] = val.trim();
+      const sep = /^\s*,?/.exec(body.slice(k)); k += sep[0].length;
+    }
+    out.push({ type, key, fields, raw: raw.trim() });
+  }
+  return out;
+}
+function splitAuthors(s) {
+  return delatex(s).split(/\s+and\s+/i).map(a => a.trim()).filter(Boolean).map(a => {
+    if (a.includes(",")) { const [last, first = ""] = a.split(/\s*,\s*/); return { last, first }; }
+    const parts = a.split(/\s+/); return { last: parts.pop(), first: parts.join(" ") };
+  });
+}
+const initials = f => f.split(/[\s-]+/).filter(p => /^\p{L}/u.test(p)).map(p => p[0].toUpperCase() + ".").join(" ");
+function apa(e) {
+  const f = e.fields; const au = splitAuthors(f.author || f.editor || "");
+  const names = au.map(a => a.first ? `${a.last}, ${initials(a.first)}` : a.last);
+  let who = names.length > 20 ? names.slice(0, 19).join(", ") + ", … " + names.at(-1)
+    : names.length > 1 ? names.slice(0, -1).join(", ") + ", & " + names.at(-1) : names[0] || "";
+  const year = f.year || (f.date || "").slice(0, 4) || "n.d.";
+  const title = delatex(f.title || e.key);
+  const venue = delatex(f.journal || f.booktitle || f.publisher || f.howpublished || f.institution || f.school || "");
+  let vol = f.volume ? `, ${f.volume}` : ""; if (f.number) vol += `(${f.number})`;
+  const pages = f.pages ? `, ${delatex(f.pages)}` : "";
+  const link = f.doi ? `https://doi.org/${f.doi.replace(/^https?:\/\/(dx\.)?doi\.org\//, "")}` : (f.url || "");
+  return `${esc(who)}${who ? " " : ""}(${esc(year)}). ${esc(title)}.` +
+    (venue ? ` <i>${esc(venue)}</i>${esc(vol)}${esc(pages)}.` : "") +
+    (link ? ` <a href="${esc(link)}">${esc(link)}</a>` : "");
+}
+function short(e) {
+  const au = splitAuthors(e.fields.author || e.fields.editor || "");
+  const who = au.length ? au[0].last + (au.length > 2 ? " et al." : au.length === 2 ? " & " + au[1].last : "") : e.key;
+  return `${who} (${e.fields.year || "n.d."}) — ${delatex(e.fields.title || "")}`;
+}
+function addBib(text, label) {
+  const entries = parseBib(text); let added = 0, replaced = 0;
+  for (const e of entries) { if (state.bib.has(e.key)) replaced++; else added++; state.bib.set(e.key, e); }
+  if (!entries.length) toast(`No BibTeX entries found${label ? " in " + label : ""}`, true);
+  else toast(`${added} added${replaced ? `, ${replaced} updated` : ""}${label ? " from " + label : ""}`);
+  changed();
+}
+
+/* ---------------- document model ---------------- */
+const CITE = /<d-cite\s+key="([^"]+)"\s*(?:\/>|>\s*<\/d-cite>)/g;
+const NOTE = /<d-footnote>([\s\S]*?)<\/d-footnote>/g;
+function citedKeys(text) {
+  const order = []; let m; CITE.lastIndex = 0;
+  while ((m = CITE.exec(text))) for (const k of m[1].split(",").map(s => s.trim())) if (!order.includes(k)) order.push(k);
+  return order;
+}
+function headings(text) {
+  const out = []; const re = /^###\s+(.+?)\s*#*\s*$/gm; let m;
+  const noCode = text.replace(/```[\s\S]*?```/g, "");
+  while ((m = re.exec(noCode))) out.push(m[1].replace(/[*_`]/g, ""));
+  return out;
+}
+const INLINE_MATH = /(^|[^\\$])(\$[^\s$](?:[^$\n]*?[^\s\\$])?\$)/g;
+const usesMath = text => { const t = text.replace(/```[\s\S]*?```/g, ""); INLINE_MATH.lastIndex = 0; return /\$\$[\s\S]+?\$\$/.test(t) || INLINE_MATH.test(t); };
+const words = text => text.replace(/<[^>]+>/g, " ").replace(/[#*_`>\[\]()$]/g, " ").split(/\s+/).filter(Boolean).length;
+
+function meta() {
+  const title = $("#f-title").value.trim();
+  const date = $("#f-date").value || nowLocal();
+  const slug = $("#f-slug").value.trim() || slugify(title) || "untitled";
+  const o = state.orig;
+  // an opened post keeps its file names unless its slug or date changes
+  const keep = o && slug === o.slug && date.slice(0, 10) === o.date;
+  const day = keep ? o.day : date.slice(0, 10);
+  const file = keep ? state.file : `${day}-${slug}.md`;
+  const text = md.value;
+  const keys = citedKeys(text);
+  const hasBib = keys.length > 0 || state.bib.size > 0;
+  return {
+    title, date, slug, file, day, year: date.slice(0, 4),
+    bibname: !hasBib ? "" : keep && o.bibname ? o.bibname : `${day}-${slug}.bib`,
+    desc: $("#f-desc").value.trim(),
+    tags: $("#f-tags").value.split(",").map(s => s.trim()).filter(Boolean),
+    cats: $("#f-cats").value.split(",").map(s => s.trim()).filter(Boolean),
+    author: $("#f-author").value.trim(), aurl: $("#f-aurl").value.trim(), aff: $("#f-aff").value.trim(),
+    math: $("#f-math").value === "on" || ($("#f-math").value === "auto" && usesMath(text)),
+    toc: $("#f-toc").checked ? headings(text) : [],
+    keys,
+  };
+}
+const yq = s => JSON.stringify(s); // YAML double-quoted scalar
+function frontMatter(m) {
+  const L = ["---", `title: ${yq(m.title || "Untitled")}`, `date: ${m.date.replace("T", " ")}${m.date.length === 16 ? ":00" : ""}`];
+  if (m.desc) L.push(`description: ${yq(m.desc)}`);
+  if (m.tags.length) L.push(`tags: ${m.tags.join(", ")}`);
+  if (m.cats.length) L.push(`categories: ${m.cats.join(", ")}`);
+  if (m.author) {
+    L.push("authors:", `  - name: ${yq(m.author)}`);
+    if (m.aurl) L.push(`    url: ${m.aurl}`);
+    if (m.aff) L.push("    affiliations:", `      name: ${yq(m.aff)}`);
+  }
+  L.push("");
+  if (m.bibname) L.push(`bibliography: ${m.bibname}`);
+  if (m.math) L.push("math: true");
+  if (m.toc.length) { L.push("", "toc:"); m.toc.forEach(t => L.push(`  - name: ${yq(t)}`)); }
+  L.push("---", "");
+  return L.join("\n");
+}
+function bibText(m) {
+  const keys = $("#f-onlycited").checked ? m.keys.filter(k => state.bib.has(k)) : [...state.bib.keys()];
+  return keys.map(k => state.bib.get(k).raw).join("\n\n") + (keys.length ? "\n" : "");
+}
+function parseFront(text) {
+  const m = /^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/.exec(text);
+  if (!m) return { fm: {}, body: text };
+  const fm = {}; const lines = m[1].split("\n");
+  const un = v => { v = v.trim(); if (/^".*"$/.test(v)) { try { return JSON.parse(v); } catch { return v.slice(1, -1); } } return v.replace(/^'(.*)'$/, "$1"); };
+  let section = null;
+  for (const line of lines) {
+    let k;
+    if ((k = /^([a-z_]+):\s*(.*)$/.exec(line))) { section = k[1]; if (k[2]) fm[k[1]] = un(k[2]); continue; }
+    if (section === "authors") {
+      if ((k = /^\s+-\s*name:\s*(.*)$/.exec(line)) && !fm.author) fm.author = un(k[1]);
+      else if ((k = /^\s+url:\s*(.*)$/.exec(line)) && !fm.aurl) fm.aurl = un(k[1]);
+      else if ((k = /^\s{5,}name:\s*(.*)$/.exec(line)) && !fm.aff) fm.aff = un(k[1]);
+    }
+  }
+  return { fm, body: m[2].replace(/^\n+/, "") };
+}
+
+/* ---------------- preview ---------------- */
+const frame = $("#preview");
+let frameReady = false;
+function initFrame() {
+  const d = frame.contentDocument;
+  d.open();
+  d.write(`<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://use.typekit.net/eez4bau.css">
+<link rel="stylesheet" href="${state.server ? "/site.css" : "../_includes/site.scss"}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"><\/script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"><\/script>
+<style>.missing{color:#c4302b;font-weight:600} main{padding-top:2rem}</style>
+</head><body><main><article class="post" id="post"></article></main></body></html>`);
+  d.close();
+  frame.onload = () => { frameReady = true; render(); };
+  setTimeout(() => { frameReady = true; render(); }, 400);
+}
+marked.use({
+  gfm: true,
+  renderer: {
+    heading(text, level, raw) { return `<h${level} id="${slugify(raw)}">${text}</h${level}>\n`; },
+  },
+});
+function renderHTML(m) {
+  let text = md.value;
+  // protect math from Markdown
+  const math = [];
+  text = text.replace(/```[\s\S]*?```/g, s => s.replace(/\$/g, "\uE002"))
+    .replace(/\$\$([\s\S]+?)\$\$/g, (s) => { math.push(s); return `\uE000${math.length - 1}\uE001`; })
+    .replace(INLINE_MATH, (s, pre, x) => { math.push(x); return `${pre}\uE000${math.length - 1}\uE001`; })
+    .replace(/\uE002/g, "$");
+  // citations, numbered by first appearance
+  const order = []; const missing = new Set();
+  text = text.replace(CITE, (s, keys) => {
+    const links = keys.split(",").map(k => k.trim()).map(k => {
+      if (!order.includes(k)) order.push(k);
+      if (!state.bib.has(k)) missing.add(k);
+      const n = order.indexOf(k) + 1, e = state.bib.get(k);
+      return `<a href="#ref-${esc(k)}" title="${esc(e ? short(e) : "missing: " + k)}"${e ? "" : ' class="missing"'}>${n}</a>`;
+    });
+    return `<span class="cite">[${links.join(", ")}]</span>`;
+  });
+  const notes = [];
+  text = text.replace(NOTE, (s, inner) => { notes.push(inner.trim()); const n = notes.length; return `<sup class="fn"><a href="#fn-${n}" id="fnref-${n}">${n}</a></sup>`; });
+  let html = marked.parse(text).replace(/\uE000(\d+)\uE001/g, (s, i) => esc(math[+i]));
+  let tail = "";
+  if (notes.length) tail += `<section class="notes"><h2>Notes</h2><ol>${notes.map((t, i) => `<li id="fn-${i + 1}">${marked.parseInline(t)} <a href="#fnref-${i + 1}">&#8617;</a></li>`).join("")}</ol></section>`;
+  if (order.length) tail += `<section class="notes refs"><h2>References</h2><ol>${order.map(k => `<li id="ref-${esc(k)}">${state.bib.has(k) ? apa(state.bib.get(k)) : `<span class="missing">Missing reference: ${esc(k)}</span>`}</li>`).join("")}</ol></section>`;
+  const minutes = Math.floor(words(md.value) / WPM) + 1;
+  const d = new Date(m.date);
+  const when = isNaN(d) ? "" : d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+  const byline = m.author ? `${m.aurl ? `<a href="${esc(m.aurl)}">${esc(m.author)}</a>` : esc(m.author)}${m.aff ? ", " + esc(m.aff) : ""}<br>` : "";
+  const toc = m.toc.length ? `<nav class="toc" aria-label="Contents"><ol>${m.toc.map(t => `<li><a href="#${slugify(t)}">${esc(t)}</a></li>`).join("")}</ol></nav>` : "";
+  return `<header class="post-head"><h1>${esc(m.title || "Untitled")}</h1>${m.desc ? `<p class="lede">${esc(m.desc)}</p>` : ""}
+<p class="meta">${byline}<time>${esc(when)}</time> &middot; ${minutes} min read</p></header>${toc}<div class="prose">${html}</div>${tail}`;
+}
+let renderTimer;
+function render() {
+  if (!frameReady) return;
+  const m = meta();
+  const d = frame.contentDocument, post = d.getElementById("post");
+  if (!post) return;
+  const w = frame.contentWindow, y = w.scrollY;
+  post.innerHTML = renderHTML(m);
+  if (m.math && w.renderMathInElement) {
+    try { w.renderMathInElement(post.querySelector(".prose"), { throwOnError: false, delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }] }); } catch (e) {}
+  }
+  w.scrollTo(0, y);
+  // update side info
+  const wc = words(md.value);
+  $("#wc").textContent = `${wc.toLocaleString()} words · ${Math.floor(wc / WPM) + 1} min read · ${m.keys.length} cited · ${(md.value.match(NOTE) || []).length} footnotes`;
+  $("#url").textContent = `/blog/${m.year}/${m.slug}/  ·  _posts/${m.file}`;
+  $("#fm").textContent = frontMatter(m);
+  renderChecks(m);
+}
+function changed() {
+  state.dirty = true;
+  clearTimeout(renderTimer); renderTimer = setTimeout(() => { render(); renderRefs(); saveDraft(); }, 150);
+}
+
+/* ---------------- references list ---------------- */
+function renderRefs() {
+  const q = $("#refsearch").value.trim().toLowerCase();
+  const keys = citedKeys(md.value);
+  let list = [...state.bib.values()];
+  if (q) list = list.filter(e => (e.key + " " + delatex(e.fields.author || "") + " " + delatex(e.fields.title || "") + " " + (e.fields.year || "")).toLowerCase().includes(q));
+  const sort = $("#refsort").value;
+  list.sort((a, b) => sort === "year" ? (b.fields.year || "").localeCompare(a.fields.year || "")
+    : sort === "cited" ? (keys.includes(b.key) - keys.includes(a.key)) || a.key.localeCompare(b.key)
+    : a.key.localeCompare(b.key));
+  $("#reflist").innerHTML = list.map(e => {
+    const n = keys.indexOf(e.key);
+    return `<li><span class="key">${esc(e.key)}${n >= 0 ? `<span class="n">[${n + 1}]</span>` : ""}</span>
+      <span class="acts"><button class="btn small" data-cite="${esc(e.key)}" title="Insert at cursor; if the cursor is right after a citation, adds to it">cite</button><button class="btn small" data-del="${esc(e.key)}" title="Remove from bibliography">×</button></span>
+      <span class="txt">${apa(e)}</span></li>`;
+  }).join("");
+  $("#refempty").hidden = state.bib.size > 0;
+  $("#ref-count").textContent = state.bib.size ? `(${state.bib.size})` : "";
+}
+$("#reflist").addEventListener("click", e => {
+  const c = e.target.closest("[data-cite]"), d = e.target.closest("[data-del]");
+  if (c) { insertCite(c.dataset.cite); }
+  if (d) { state.bib.delete(d.dataset.del); changed(); }
+});
+
+/* ---------------- checks ---------------- */
+function renderChecks(m) {
+  const text = md.value, items = [];
+  const add = (lvl, msg) => items.push([lvl, msg]);
+  if (!m.title) add("err", "Add a title (Details tab)."); else add("ok", "Title set.");
+  if (!m.desc) add("warn", "Add a short description; it appears on the blog list."); else add("ok", "Description set.");
+  const missing = m.keys.filter(k => !state.bib.has(k));
+  if (missing.length) add("err", `Cited but not in the bibliography: ${missing.map(esc).join(", ")}.`);
+  else if (m.keys.length) add("ok", `All ${m.keys.length} cited references found.`);
+  const unused = [...state.bib.keys()].filter(k => !m.keys.includes(k));
+  if (unused.length) add("warn", `${unused.length} reference${unused.length > 1 ? "s are" : " is"} not cited${$("#f-onlycited").checked ? " and won't be saved" : ""}: ${unused.slice(0, 8).map(esc).join(", ")}${unused.length > 8 ? "…" : ""}.`);
+  const other = (text.replace(/```[\s\S]*?```/g, "").match(/^#{1,2}\s|^#{4,}\s/gm) || []).length;
+  if (other) add("warn", "Use ### for section headings; other levels won't appear in the contents list and look inconsistent with other posts.");
+  const noAlt = (text.match(/!\[\]\(|<img(?![^>]*\balt=)[^>]*>/g) || []).length;
+  if (noAlt) add("warn", `${noAlt} image${noAlt > 1 ? "s have" : " has"} no alt text.`);
+  if (/<d-cite[^>]*[^/]>(?!\s*<\/d-cite>)/.test(text)) add("err", "A <d-cite> tag is not closed; use <d-cite key=\"…\"/>.");
+  const opens = (text.match(/<d-footnote>/g) || []).length, closes = (text.match(/<\/d-footnote>/g) || []).length;
+  if (opens !== closes) add("err", "A footnote is missing its closing </d-footnote>.");
+  const localImgs = [...text.matchAll(/(?:src=["']|\]\()\/(assets\/[^"')\s]+)/g)].map(x => x[1]);
+  if (localImgs.length) add("ok", `${localImgs.length} local image${localImgs.length > 1 ? "s" : ""} referenced.`);
+  if (!state.server) add("warn", "Not connected to the local server: run python3 blogger/serve.py to open/save posts directly. Download still works.");
+  $("#checks").innerHTML = items.map(([l, t]) => `<li class="${l}">${t}</li>`).join("");
+  const bad = items.filter(i => i[0] !== "ok").length;
+  $("#check-count").textContent = bad ? `(${bad})` : "";
+}
+
+/* ---------------- editing helpers ---------------- */
+function replaceSel(before, after = "", placeholder = "") {
+  const s = md.selectionStart, e = md.selectionEnd, sel = md.value.slice(s, e) || placeholder;
+  md.setRangeText(before + sel + after, s, e, "end");
+  if (!md.value.slice(s, e) && placeholder) { md.selectionStart = s + before.length; md.selectionEnd = s + before.length + sel.length; }
+  md.focus(); changed();
+}
+function insertBlock(text, selectFrom, selectLen) {
+  const s = md.selectionStart;
+  const pre = s > 0 && md.value[s - 1] !== "\n" ? "\n\n" : (s > 1 && md.value[s - 2] !== "\n" ? "\n" : "");
+  md.setRangeText(pre + text + "\n", s, md.selectionEnd, "end");
+  if (selectFrom != null) { md.selectionStart = s + pre.length + selectFrom; md.selectionEnd = md.selectionStart + selectLen; }
+  md.focus(); changed();
+}
+function linePrefix(prefix) {
+  const v = md.value, s = v.lastIndexOf("\n", md.selectionStart - 1) + 1;
+  let e = v.indexOf("\n", md.selectionEnd); if (e < 0) e = v.length;
+  const lines = v.slice(s, e).split("\n").map(l => l.startsWith(prefix) ? l.slice(prefix.length) : prefix + l.replace(/^#+\s*/, ""));
+  md.setRangeText(lines.join("\n"), s, e, "end"); md.focus(); changed();
+}
+function insertCite(key) {
+  const s = md.selectionStart, before = md.value.slice(0, s);
+  const m = /<d-cite\s+key="([^"]*)"\s*\/>$/.exec(before);
+  if (m) {
+    const keys = m[1].split(",").map(k => k.trim()).filter(Boolean);
+    if (!keys.includes(key)) keys.push(key);
+    md.setRangeText(`<d-cite key="${keys.join(",")}"/>`, s - m[0].length, s, "end");
+  } else {
+    md.setRangeText(`<d-cite key="${key}"/>`, s, md.selectionEnd, "end");
+  }
+  md.focus(); changed(); toast(`Cited ${key}`);
+}
+async function pickCite() {
+  if (!state.bib.size) { showTab("refs"); toast("Import a .bib file first", true); return; }
+  const opts = [...state.bib.values()].sort((a, b) => a.key.localeCompare(b.key)).map(e => `<option value="${esc(e.key)}">${esc(short(e))}</option>`).join("");
+  const s = md.selectionStart, end = md.selectionEnd;
+  const v = await dialog("Cite", `<input id="cite-q" list="cite-list" style="width:100%;padding:.4rem;border:1px solid #d8d2c4" placeholder="Type a key, author or title…" autofocus><datalist id="cite-list">${opts}</datalist><p style="color:#5e5b53;font-size:.85rem">Tip: separate several keys with commas.</p>`,
+    [["Cancel", null], ["Insert", "ok", true]]);
+  const q = document.getElementById("cite-q")?.value.trim();
+  if (v !== "ok" || !q) return;
+  md.selectionStart = s; md.selectionEnd = end;
+  const keys = q.split(",").map(x => x.trim()).filter(Boolean).map(x => state.bib.has(x) ? x
+    : ([...state.bib.values()].find(e => short(e).toLowerCase().includes(x.toLowerCase()))?.key || x));
+  keys.forEach(insertCite);
+}
+async function insertFigure() {
+  const src = await dialog("Figure", `
+    <p><label>Image URL or site path<br><input id="fig-src" style="width:100%;padding:.4rem;border:1px solid #d8d2c4" placeholder="/assets/img/blog/figure.png"></label></p>
+    ${state.server ? `<p><button class="btn small" type="button" id="fig-up">Upload image to assets/img/blog/…</button></p>` : ""}
+    <p><label>Alt text (describe the image)<br><input id="fig-alt" style="width:100%;padding:.4rem;border:1px solid #d8d2c4"></label></p>
+    <p><label>Caption (optional)<br><input id="fig-cap" style="width:100%;padding:.4rem;border:1px solid #d8d2c4"></label></p>`,
+    [["Cancel", null], ["Insert", "ok", true]]);
+  if (src !== "ok") return;
+  const url = $("#fig-src").value.trim(); if (!url) return;
+  const alt = $("#fig-alt").value.trim(), cap = $("#fig-cap").value.trim();
+  insertBlock(`<figure>\n<img src="${esc(url)}" alt="${esc(alt)}"/>\n${cap ? `<figcaption>${esc(cap)}</figcaption>\n` : ""}</figure>`);
+}
+document.addEventListener("click", e => {
+  if (e.target.id !== "fig-up") return;
+  const inp = $("#imgfile");
+  inp.onchange = async () => {
+    const f = inp.files[0]; if (!f) return;
+    const name = slugify(f.name.replace(/\.[^.]+$/, "")) + (f.name.match(/\.[^.]+$/)?.[0].toLowerCase() || ".png");
+    const data = await new Promise(r => { const fr = new FileReader(); fr.onload = () => r(fr.result.split(",")[1]); fr.readAsDataURL(f); });
+    const res = await fetch("/api/image", { method: "POST", body: JSON.stringify({ name, data }) }).then(r => r.json());
+    if (res.url) { $("#fig-src").value = res.url; toast(`Uploaded to ${res.url}`); } else toast(res.error || "Upload failed", true);
+    inp.value = "";
+  };
+  inp.click();
+});
+const ACTIONS = {
+  h3: () => linePrefix("### "),
+  bold: () => replaceSel("**", "**", "bold text"),
+  italic: () => replaceSel("_", "_", "italic text"),
+  link: () => { const s = md.value.slice(md.selectionStart, md.selectionEnd); replaceSel("[", "](https://)", s || "link text"); },
+  cite: pickCite,
+  footnote: () => replaceSel("<d-footnote>", "</d-footnote>", "Footnote text"),
+  quote: () => linePrefix("> "),
+  epigraph: () => { const t = `<blockquote class="epigraph">\n    <div class="epigraph-title">Title</div>\n    <p>\n    Quoted text\n    </p>\n    <footer>— Author</footer>\n</blockquote>`; insertBlock(t, t.indexOf("Title"), 5); },
+  figure: insertFigure,
+  math: () => insertBlock("$$\nE = mc^2\n$$", 3, 8),
+  code: () => insertBlock("```\ncode\n```", 4, 4),
+  hr: () => insertBlock("---"),
+};
+$("#toolbar").addEventListener("click", e => { const b = e.target.closest("[data-act]"); if (b) ACTIONS[b.dataset.act](); });
+md.addEventListener("keydown", e => {
+  const mod = e.metaKey || e.ctrlKey;
+  if (e.key === "Tab") { e.preventDefault(); md.setRangeText("  ", md.selectionStart, md.selectionEnd, "end"); changed(); return; }
+  if (!mod) return;
+  const k = e.key.toLowerCase();
+  if (k === "b" && !e.shiftKey) { e.preventDefault(); ACTIONS.bold(); }
+  else if (k === "i" && !e.shiftKey) { e.preventDefault(); ACTIONS.italic(); }
+  else if (k === "k") { e.preventDefault(); ACTIONS.link(); }
+  else if (k === "c" && e.shiftKey) { e.preventDefault(); ACTIONS.cite(); }
+  else if (k === "f" && e.shiftKey) { e.preventDefault(); ACTIONS.footnote(); }
+});
+document.addEventListener("keydown", e => { if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "s") { e.preventDefault(); save(); } });
+md.addEventListener("input", changed);
+md.addEventListener("paste", e => { // paste a DOI or BibTeX straight into the text? keep as text
+  const t = e.clipboardData.getData("text"); if (/^\s*@\w+\s*\{/.test(t) && t.includes("=")) { e.preventDefault(); addBib(t, "clipboard"); showTab("refs"); }
+});
+md.addEventListener("scroll", () => {
+  if (!$("#sync").checked || !frameReady) return;
+  const r = md.scrollTop / Math.max(1, md.scrollHeight - md.clientHeight);
+  const w = frame.contentWindow, h = w.document.documentElement;
+  w.scrollTo(0, r * (h.scrollHeight - w.innerHeight));
+});
+document.querySelectorAll(".form input, .form textarea, .form select").forEach(el => el.addEventListener("input", changed));
+$("#f-title").addEventListener("input", () => { if (!state.file && !$("#f-slug").dataset.touched) $("#f-slug").placeholder = slugify($("#f-title").value) || "auto from title"; });
+$("#f-slug").addEventListener("input", e => { e.target.dataset.touched = "1"; e.target.value = e.target.value.toLowerCase().replace(/[^a-z0-9-]+/g, "-"); });
+
+/* ---------------- tabs ---------------- */
+function showTab(t) {
+  document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === t));
+  document.querySelectorAll(".pane").forEach(p => p.classList.toggle("on", p.dataset.pane === t));
+}
+document.querySelector(".tabs").addEventListener("click", e => { const b = e.target.closest("[data-tab]"); if (b) showTab(b.dataset.tab); });
+
+/* ---------------- references import ---------------- */
+async function readFiles(files) { for (const f of files) addBib(await f.text(), f.name); }
+$("#bibfile").addEventListener("change", e => { readFiles(e.target.files); e.target.value = ""; });
+const drop = $("#drop");
+["dragenter", "dragover"].forEach(ev => document.addEventListener(ev, e => { if ([...e.dataTransfer.types].includes("Files")) { e.preventDefault(); drop.classList.add("over"); } }));
+["dragleave", "drop"].forEach(ev => document.addEventListener(ev, () => drop.classList.remove("over")));
+document.addEventListener("drop", e => {
+  if (!e.dataTransfer.files.length) return;
+  e.preventDefault();
+  const files = [...e.dataTransfer.files];
+  const bibs = files.filter(f => /\.(bib|bibtex|txt)$/i.test(f.name));
+  if (bibs.length) { readFiles(bibs); showTab("refs"); }
+});
+$("#btn-paste").onclick = () => { addBib($("#bibpaste").value, "pasted text"); $("#bibpaste").value = ""; };
+$("#btn-doi").onclick = async () => {
+  const doi = $("#doi").value.trim().replace(/^https?:\/\/(dx\.)?doi\.org\//, "").replace(/^doi:/i, "");
+  if (!doi) return;
+  try {
+    const r = await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}/transform/application/x-bibtex`);
+    if (!r.ok) throw new Error(`Crossref returned ${r.status}`);
+    let bib = (await r.text()).trim();
+    // Crossref keys look like Smith_2020; make them like the site's (smith2020firstword)
+    const e = parseBib(bib)[0];
+    if (e) {
+      const au = splitAuthors(e.fields.author || ""); const first = (delatex(e.fields.title || "").match(/[A-Za-z]{4,}/) || [""])[0];
+      const key = slugify((au[0]?.last || "ref")).replace(/-/g, "") + (e.fields.year || "") + first.charAt(0).toUpperCase() + first.slice(1).toLowerCase();
+      bib = bib.replace(/^(@\s*\w+\s*\{)\s*[^,]+,/, `$1${key},`);
+    }
+    addBib(bib, "Crossref"); $("#doi").value = "";
+  } catch (err) { toast(`DOI lookup failed: ${err.message}`, true); }
+};
+$("#refsearch").addEventListener("input", renderRefs);
+$("#refsort").addEventListener("change", renderRefs);
+
+/* ---------------- draft, open, save ---------------- */
+function fields() {
+  return { title: $("#f-title").value, desc: $("#f-desc").value, slug: $("#f-slug").value, date: $("#f-date").value,
+    tags: $("#f-tags").value, cats: $("#f-cats").value, author: $("#f-author").value, aurl: $("#f-aurl").value, aff: $("#f-aff").value,
+    math: $("#f-math").value, toc: $("#f-toc").checked, onlycited: $("#f-onlycited").checked };
+}
+function setFields(f) {
+  for (const [k, id] of Object.entries({ title: "f-title", desc: "f-desc", slug: "f-slug", date: "f-date", tags: "f-tags", cats: "f-cats", author: "f-author", aurl: "f-aurl", aff: "f-aff", math: "f-math" }))
+    if (f[k] !== undefined) $("#" + id).value = f[k];
+  if (f.toc !== undefined) $("#f-toc").checked = f.toc;
+  if (f.onlycited !== undefined) $("#f-onlycited").checked = f.onlycited;
+  $("#f-slug").dataset.touched = f.slug ? "1" : "";
+}
+function saveDraft() {
+  try {
+    localStorage.setItem(DRAFT_KEY, JSON.stringify({ file: state.file, orig: state.orig, fields: fields(), text: md.value, bib: [...state.bib.values()].map(e => e.raw).join("\n\n") }));
+    $("#saved").textContent = "Draft kept in this browser " + new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  } catch (e) {}
+}
+function loadDraft() {
+  try { const d = JSON.parse(localStorage.getItem(DRAFT_KEY) || "null"); if (!d) return false;
+    state.file = d.file; state.orig = d.orig || null; setFields(d.fields); md.value = d.text || ""; state.bib.clear(); parseBib(d.bib || "").forEach(e => state.bib.set(e.key, e)); return true;
+  } catch (e) { return false; }
+}
+function defaults() {
+  setFields({ title: "", desc: "", slug: "", date: nowLocal(), tags: "", cats: "", author: "Bálint Gyevnár", aurl: "https://gbalint.me/", aff: "Carnegie Mellon University, Pittsburgh, PA, USA", math: "auto", toc: true, onlycited: true });
+}
+async function newPost() {
+  if (state.dirty && md.value.trim()) {
+    const ok = await dialog("Start a new post?", "<p>The current draft will be cleared. Save or download it first if you want to keep it.</p>", [["Cancel", null], ["Start new", "ok", true]]);
+    if (ok !== "ok") return;
+  }
+  state.file = null; state.orig = null; state.bib.clear(); md.value = ""; defaults(); state.dirty = false;
+  setStatus(); render(); renderRefs(); saveDraft(); showTab("details"); $("#f-title").focus();
+}
+async function openPost(file) {
+  const r = await fetch(`/api/post?file=${encodeURIComponent(file)}`).then(r => r.json());
+  if (r.error) return toast(r.error, true);
+  const { fm, body } = parseFront(r.text);
+  if (fm.redirect) toast("This is a link post (redirect); only its front matter is editable here.");
+  const [day, ...rest] = [file.slice(0, 10), file.slice(11).replace(/\.md$/, "")];
+  let date = fm.date ? fm.date.replace(" ", "T").slice(0, 19) : day + "T12:00:00";
+  if (date.length === 10) date += "T12:00:00";
+  setFields({ title: fm.title || "", desc: fm.description || "", slug: rest[0], date, tags: fm.tags || "", cats: fm.categories || "",
+    author: fm.author || "", aurl: fm.aurl || "", aff: fm.aff || "", math: fm.math === "true" ? "on" : "auto", toc: true, onlycited: false });
+  md.value = body; state.bib.clear(); parseBib(r.bib).forEach(e => state.bib.set(e.key, e));
+  state.file = file; state.orig = { day, slug: rest[0], date: date.slice(0, 10), bibname: r.bibname || "" }; state.dirty = false;
+  setStatus(); render(); renderRefs(); saveDraft(); toast(`Opened ${file}`);
+}
+function setStatus() { $("#status").textContent = state.file ? `Editing _posts/${state.file}` : "New post"; }
+async function save() {
+  const m = meta();
+  if (!m.title) { showTab("details"); toast("Add a title before saving", true); return; }
+  const text = frontMatter(m) + "\n" + md.value.replace(/\s+$/, "") + "\n";
+  const bib = m.bibname ? bibText(m) : "";
+  if (!state.server) { download(m.file, text); if (bib) setTimeout(() => download(m.bibname, bib), 300); toast("Downloaded (server not running)"); return; }
+  const missing = m.keys.filter(k => !state.bib.has(k));
+  if (missing.length) {
+    const go = await dialog("Missing references", `<p>These cited keys are not in the bibliography and will show as missing on the site:</p><p><code>${missing.map(esc).join(", ")}</code></p>`, [["Cancel", null], ["Save anyway", "ok", true]]);
+    if (go !== "ok") return;
+  }
+  let overwrite = state.file === m.file;
+  if (!overwrite) {
+    const ex = await fetch(`/api/exists?file=${encodeURIComponent(m.file)}`).then(r => r.json());
+    if (ex.exists) {
+      const go = await dialog("Overwrite?", `<p><code>_posts/${esc(m.file)}</code> already exists.</p>`, [["Cancel", null], ["Overwrite", "ok", true]]);
+      if (go !== "ok") return; overwrite = true;
+    }
+  }
+  if (state.file && state.file !== m.file) {
+    const go = await dialog("Rename post?", `<p>The date or slug changed, so the post will be saved as <code>${esc(m.file)}</code> and <code>${esc(state.file)}</code> removed. Its URL will change to <code>/blog/${esc(m.year)}/${esc(m.slug)}/</code>.</p>`, [["Cancel", null], ["Rename", "ok", true]]);
+    if (go !== "ok") return;
+  }
+  const res = await fetch("/api/save", { method: "POST", body: JSON.stringify({ file: m.file, text, bibname: m.bibname, bib, overwrite, previous: state.file }) }).then(r => r.json());
+  if (res.error) return toast(res.error, true);
+  state.file = m.file; state.orig = { day: m.day, slug: m.slug, date: m.date.slice(0, 10), bibname: m.bibname }; state.dirty = false; setStatus(); saveDraft(); refreshList();
+  toast("Saved: " + res.written.join(", "));
+}
+$("#btn-save").onclick = save;
+$("#btn-new").onclick = newPost;
+$("#btn-download").onclick = () => { const m = meta(); download(m.file, frontMatter(m) + "\n" + md.value.replace(/\s+$/, "") + "\n"); if (m.bibname) setTimeout(() => download(m.bibname, bibText(m)), 300); };
+$("#open").onchange = async e => {
+  const f = e.target.value; e.target.value = ""; if (!f) return;
+  if (state.dirty && md.value.trim()) {
+    const ok = await dialog("Open another post?", "<p>Unsaved changes in the current draft will be lost.</p>", [["Cancel", null], ["Open", "ok", true]]);
+    if (ok !== "ok") return;
+  }
+  openPost(f);
+};
+async function refreshList() {
+  const posts = await fetch("/api/posts").then(r => r.json());
+  $("#open").innerHTML = `<option value="">Open…</option>` + posts.map(p => `<option value="${esc(p.file)}">${esc(p.file.slice(0, 10))} · ${esc(p.title || p.file)}${p.external ? " (link)" : ""}</option>`).join("");
+}
+window.addEventListener("beforeunload", e => { if (state.dirty) saveDraft(); });
+
+/* ---------------- start ---------------- */
+(async () => {
+  try { const r = await fetch("/api/posts"); state.server = r.ok && location.protocol.startsWith("http"); } catch (e) { state.server = false; }
+  if (state.server) refreshList(); else { $("#open").disabled = true; $("#btn-save").textContent = "Download"; }
+  if (!loadDraft()) defaults();
+  state.dirty = false; setStatus(); initFrame(); renderRefs();
+  const q = new URLSearchParams(location.search).get("open");
+  if (q && state.server) openPost(q);
+})();
+</script>
+</body>
+</html>
