@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I gave an invited talk at IVADO in Montréal on ["Human and AI Solution Paths in Formalizing Expert Mathematics"](/assets/pdf/slides/ivado-maths.pdf) the Workshop on Social Reasoning and the Ecology of Thought.
+I gave an invited talk at IVADO in Montréal on "Human and AI Solution Paths in Formalizing Expert Mathematics" at the Workshop on Social Reasoning and the Ecology of Thought ([slides](/assets/pdf/slides/ivado-maths.pdf), [video](https://www.youtube.com/watch?v=7eX-1wX9HG8)).
