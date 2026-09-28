@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign words = content | strip_html | number_of_words %}
+<article class="post">
+  <header class="post-head">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+    <p class="meta">
+      {% for a in page.authors %}{% if a.url %}<a href="{{ a.url }}">{{ a.name }}</a>{% else %}{{ a.name }}{% endif %}{% if a.affiliations.name %}, {{ a.affiliations.name }}{% endif %}<br>{% endfor %}
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> &middot; {{ words | divided_by: 180 | plus: 1 }} min read
+    </p>
+  </header>
+  {% if page.toc %}
+  <nav class="toc" aria-label="Contents">
+    <ol>{% for h in page.toc %}<li><a href="#{{ h.name | slugify }}">{{ h.name }}</a></li>{% endfor %}</ol>
+  </nav>
+  {% endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+  <!--post-notes-->
+</article>

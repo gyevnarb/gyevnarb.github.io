@@ -1,32 +1,27 @@
 ---
-layout: page
-permalink: /publications/
 title: publications
-description: Publications by categories in reversed chronological order.
-nav: true
-nav_order: 1
+permalink: /publications/
+description: Publications by Bálint Gyevnár in reverse chronological order.
+toggles: true
 ---
-
-<!-- _pages/publications.md -->
 
 This page contains a list of all my publications in chronological order.
 A full list of <a href="#peer-reviewing">my peer reviewing</a> are at the bottom of the page.
 
-Color legend:
-<span style="background-color: #3b004a; color: white; padding: 2pt; border-radius: 2pt;">Conference</span>  <span style="background-color: #00369f; color: white; padding: 2pt; border-radius: 2pt;">Journal</span>  <span style="background-color: #004500; color: white; padding: 2pt; border-radius: 2pt;">Award</span>  <span style="background-color: #b31b1b; color: white; padding: 2pt; border-radius: 2pt;">Preprint</span>
+<ul class="legend" aria-label="Colour legend">
+  <li class="pub-conference">Conference</li>
+  <li class="pub-journal">Journal</li>
+  <li class="pub-award">Award</li>
+  <li class="pub-preprint">Preprint</li>
+  <li class="pub-thesis">Thesis</li>
+</ul>
 
-
-<!-- Bibsearch Feature -->
-
-<!-- {% include bib_search.liquid %} -->
-
-<div class="publications">
-
+<div class="pubs by-year">
 {% bibliography %}
-
 </div>
 
-# Peer Reviewing
+<section class="block peer" markdown="1">
+## Peer Reviewing {#peer-reviewing}
 - Program committee member:
     - [AAAI](https://aaai.org/conference/aaai/) (2026)
     - [AIES](https://www.aies-conference.com/) (2025)
@@ -43,5 +38,11 @@ Color legend:
     - [IASEAI](https://www.iaseai.org/our-programs/iaseai26) (2026)
     - [IROS](https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros/information-for-associate-editors) (2025)
     - [International Journal of Human-Computer Interaction](https://www.tandfonline.com/toc/hihc20/current) (2026)
+    - [Journal of Autonomous Agents and Multi-Agent Systems](https://link.springer.com/journal/10458) (2026)
     - [Nature Communications](https://www.nature.com/ncomms/) (2025)
     - [NeurIPS](https://neurips.cc) (2025)
+    - [NeurIPS AI4Metascience](https://ai4metascience.org/) (2026)
+- Grant reviewer:
+    - [Survival and Flourishing Fund](https://survivalandflourishing.fund/) (2025–)
+    - [UK Research and Innovation](https://www.ukri.org/) (2026)
+</section>

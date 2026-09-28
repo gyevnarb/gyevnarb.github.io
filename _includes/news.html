@@ -1,0 +1,9 @@
+{% assign news = site.news | sort: "date" | reverse %}
+<ol class="dated">
+  {% for item in news limit: include.limit %}
+  <li>
+    <time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+    <div>{{ item.content | markdownify | remove: "<p>" | remove: "</p>" | strip }}</div>
+  </li>
+  {% endfor %}
+</ol>

@@ -1,0 +1,16 @@
+<ol class="dated posts">
+  {% for post in site.posts limit: include.limit %}
+  {% assign minutes = post.read_time | default: nil %}
+  {% unless minutes %}{% assign minutes = post.content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}{% endunless %}
+  <li>
+    <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    <div>
+      <a class="post-link" href="{{ post.redirect | default: post.url | relative_url }}">{{ post.title }}</a>{% if post.redirect %}<span class="ext" aria-label="(external)">&#8599;</span>{% endif %}
+      {% if include.full %}
+      <p>{{ post.description }}</p>
+      <p class="meta">{{ minutes }} min read</p>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>

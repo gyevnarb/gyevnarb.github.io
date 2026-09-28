@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Love, Sex, and AI
 date: 2024-12-22 15:40:16
 description: "Love AI: How will we love in the age of AI agents?"
@@ -12,7 +11,6 @@ authors:
       name: University of Edinburgh, United Kingdom
 
 bibliography: 2024-12-22-love-sex-ai.bib
-citation: true
 
 toc:
   - name: Love AI

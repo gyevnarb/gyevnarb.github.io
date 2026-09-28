@@ -1,67 +1,19 @@
-"AAAI":
-  url: https://aaai.org/
-  color: "#3b004a"
-
-"IEEE T-ITS":
-  url: https://ieee-itss.org/pub/t-its/
-  color: "#00369f"
-
-"arXiv":
-  url: https://arxiv.org/
-  color: "#b31b1b"
-
-"SSRN":
-  url: https://www.ssrn.com/ssrn/
-  color: "#b31b1b"
-
-"AAMAS":
-  url: https://www.ifaamas.org/
-  color: "#3b004a"
-
-"ECAI":
-  url: https://www.eurai.org/
-  color: "#3b004a"
-
-"AI100":
-  url: https://ai100.stanford.edu/
-  color: "#004500"
-
-"UKRI":
-  url: https://tas.ac.uk/
-  color: "#004500"
-
-"IEEE ITSS":
-  url: https://ieee-itss.org/
-  color: "#004500"
-
-"IJCAI":
-  url: https://www.ijcai.org/
-  color: "#3b004a"
-
-"Entropy":
-  url: https://www.mdpi.com/journal/entropy
-  color: "#00369f"
-
-"IEEE IROS":
-  url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros
-  color: "#3b004a"
-
-"IEEE ICRA":
-  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
-  color: "#3b004a"
-
-"IEEE T-ITS":
-  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979
-  color: "#00369f"
-
-"CHI":
-  url: https://chi2025.acm.org/
-  color: "#3b004a"
-
-"RLDM":
-  url: https://rldm.org/
-  color: "#3b004a"
-
-"Nat. Mac. Intell.":
-  url: https://www.nature.com/natmachintell/
-  color: "#00369f"
+# kind: conference | journal | award | preprint | thesis (sets the colour rule)
+"AAAI": { url: https://aaai.org/, kind: conference }
+"AAMAS": { url: https://www.ifaamas.org/, kind: conference }
+"CHI": { url: https://chi2025.acm.org/, kind: conference }
+"ECAI": { url: https://www.eurai.org/, kind: conference }
+"IEEE ICRA": { url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra, kind: conference }
+"IEEE IROS": { url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros, kind: conference }
+"IJCAI": { url: https://www.ijcai.org/, kind: conference }
+"RLDM": { url: https://rldm.org/, kind: conference }
+"Entropy": { url: https://www.mdpi.com/journal/entropy, kind: journal }
+"IEEE T-ITS": { url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979, kind: journal }
+"Nat. Mac. Intell.": { url: https://www.nature.com/natmachintell/, kind: journal }
+"AI100": { url: https://ai100.stanford.edu/, kind: award }
+"IEEE ITSS": { url: https://ieee-itss.org/, kind: award }
+"UKRI": { url: https://tas.ac.uk/, kind: award }
+"arXiv": { url: https://arxiv.org/, kind: preprint }
+"SSRN": { url: https://www.ssrn.com/ssrn/, kind: preprint }
+"PhD Thesis": { kind: thesis }
+"AI Commun.": { url: https://journals.sagepub.com/home/aic, kind: journal }

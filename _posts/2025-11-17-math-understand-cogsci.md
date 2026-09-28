@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Mathematical Understanding and Artificial Intelligence
 date: 2025-11-10 15:40:16
 description: "Thoughts and notes from the workshop on the Cognitive Science of Mathematical Understanding"
@@ -12,7 +11,7 @@ authors:
       name: Carnegie Mellon University, Pittsburgh, PA, USA
 
 bibliography: 2025-11-17-math-understand-cogsci.bib
-citation: true
+math: true
 
 toc:
   - name: Knowledge

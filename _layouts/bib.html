@@ -1,0 +1,54 @@
+{% assign venue = site.data.venues[entry.abbr] %}
+{% assign kind = venue.kind | default: "other" %}
+<article class="pub pub-{{ kind }}" id="{{ entry.key }}">
+  <p class="pub-venue">
+    {% if venue.url %}<a href="{{ venue.url }}">{{ entry.abbr }}</a>{% else %}{{ entry.abbr }}{% endif %}
+    <span class="sr-only">({{ kind }})</span>
+  </p>
+  <h3 class="pub-title">{{ entry.title }}</h3>
+  <p class="pub-authors">
+    {%- for author in entry.author_array -%}
+      {%- assign last = author.last | remove: "*" -%}
+      {%- assign mark = "" -%}{%- if author.last contains "*" -%}{%- assign mark = "<sup>*</sup>" -%}{%- endif -%}
+      {%- assign co = nil -%}
+      {%- assign co_key = last | slugify: "latin" -%}
+      {%- for c in site.data.coauthors[co_key] -%}{%- if c.firstname contains author.first -%}{%- assign co = c.url -%}{%- break -%}{%- endif -%}{%- endfor -%}
+      {%- unless forloop.first -%}{%- if forloop.last -%}{%- if forloop.length > 2 -%},{%- endif %} and {% else -%}, {% endif -%}{%- endunless -%}
+      {%- if site.scholar.last_name contains last and site.scholar.first_name contains author.first -%}
+        <strong>{{ author.first }} {{ last }}</strong>{{ mark }}
+      {%- elsif co -%}
+        <a href="{{ co }}">{{ author.first }} {{ last }}</a>{{ mark }}
+      {%- else -%}
+        {{ author.first }} {{ last }}{{ mark }}
+      {%- endif -%}
+    {%- endfor -%}
+  </p>
+  <p class="pub-where">
+    {%- assign where = entry.booktitle | default: entry.journal | default: entry.school | default: entry.publisher -%}
+    {%- if where %}<em>{{ where }}</em>{% endif -%}
+    {%- if entry.volume %}, {{ entry.volume }}{% if entry.number %}({{ entry.number }}){% endif %}{% endif -%}
+    {%- if entry.pages %}, {{ entry.pages | replace: "--", "–" | replace: "-", "–" }}{% endif -%}
+    {%- if entry.location %}, {{ entry.location }}{% endif -%}
+    {%- if where or entry.location %}, {% endif -%}
+    {%- if entry.month %}{{ entry.month | remove: "." | capitalize }} {% endif %}{{ entry.year -}}
+  </p>
+  {% if entry.annotation %}<p class="pub-note">{{ entry.annotation }}</p>{% endif %}
+  <p class="pub-links">
+    {%- if entry.abstract %}<button type="button" aria-expanded="false" aria-controls="{{ entry.key }}-abs">abstract</button>{% endif -%}
+    {%- if entry.award %}<button type="button" aria-expanded="false" aria-controls="{{ entry.key }}-award">{{ entry.award_name | default: "award" }}</button>{% endif -%}
+    {%- if entry.bibtex_show %}<button type="button" aria-expanded="false" aria-controls="{{ entry.key }}-bib">bibtex</button>{% endif -%}
+    {%- if entry.arxiv %}<a href="https://arxiv.org/abs/{{ entry.arxiv }}">arxiv</a>{% endif -%}
+    {%- if entry.pdf %}<a href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}">pdf</a>{% endif -%}
+    {%- if entry.html %}<a href="{{ entry.html }}">html</a>{% endif -%}
+    {%- if entry.doi %}<a href="https://doi.org/{{ entry.doi }}">doi</a>{% endif -%}
+    {%- if entry.code %}<a href="{{ entry.code }}">code</a>{% endif -%}
+    {%- if entry.slides %}<a href="{% if entry.slides contains '://' %}{{ entry.slides }}{% else %}{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}{% endif %}">slides</a>{% endif -%}
+    {%- if entry.poster %}<a href="{% if entry.poster contains '://' %}{{ entry.poster }}{% else %}{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}{% endif %}">poster</a>{% endif -%}
+    {%- if entry.website %}<a href="{{ entry.website }}">website</a>{% endif -%}
+    {%- if entry.blog %}<a href="{{ entry.blog }}">blog</a>{% endif -%}
+    {%- if entry.supp %}<a href="{% if entry.supp contains '://' %}{{ entry.supp }}{% else %}{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}{% endif %}">supp</a>{% endif -%}
+  </p>
+  {% if entry.abstract %}<div class="pub-panel" id="{{ entry.key }}-abs" hidden><p>{{ entry.abstract }}</p></div>{% endif %}
+  {% if entry.award %}<div class="pub-panel" id="{{ entry.key }}-award" hidden><p>{{ entry.award }}</p></div>{% endif %}
+  {% if entry.bibtex_show %}<div class="pub-panel" id="{{ entry.key }}-bib" hidden><pre>{{ entry.bibtex | hide_custom_bibtex }}</pre></div>{% endif %}
+</article>

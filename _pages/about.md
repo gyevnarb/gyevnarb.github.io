@@ -1,43 +1,27 @@
 ---
-layout: about
+layout: home
 title: about
 permalink: /
-subtitle: <i>Safeguarding scientific integrity in the age of AI scientists</i>
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: Postdoctoral Research Associate at Carnegie Mellon University
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+position: Postdoctoral Research Associate, Institute for Complex Social Dynamics, Carnegie Mellon University
+toggles: true
 ---
 
-***
-
-
-I am interested in the <b>epistemic security of automated science</b>.
-My research uses computational (e.g. algorithms) and empirical methods (e.g. cognitive experiments, user studies) of understanding how AI can be used to safely and sustainably enhance human scientific discovery.
-I am working with [Atoosa Kasirzadeh](https://kasirzadeh.org/) and [Nihar Shah](https://www.cs.cmu.edu/~nihars/) at the intersection of machine learning, cognitive science, and the philosophy of science.
-During my PhD, I worked on explainable multi-agent reinforcement learning under the supervision of [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/), [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/), and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/) at the University of Edinburgh, Scotland.
+I study the <b>metascience of AI</b>: how AI is changing the way science is done, what it can claim to know, and how scientific communities are organised.
+I combine computational methods with cognitive experiments and user studies, working with [Atoosa Kasirzadeh](https://kasirzadeh.org/) and [Nihar Shah](https://www.cs.cmu.edu/~nihars/) at the intersection of machine learning, cognitive science, and the philosophy of science.
+I completed my [PhD](https://era.ed.ac.uk/items/8d02a5aa-e2ae-4243-99b7-f639a3a14289) at the University of Edinburgh on explaining multi-agent behaviour through counterfactual reasoning, supervised by [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/), [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/), and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/).
 
 I am currently most curious about three questions:
-- <b>How do we protect scientific integrity in the age of agentic AI scientists? </b> What are the methodological pitfalls of scientific AI systems, and how do we create controlled computational tools with statistical guarantees to prevent them?
-- <b>How does the use of AI affect the epistemics of science?</b> What are the dangers of delegating scientific thinking to AI systems, how does AI change the high-level conceptual and low-level methodological steps of science, are we in danger of illusions of understanding?
-- <b>How do scientific communities change as the result of AI adoption?</b> What are the effects of AI-accelerated scientific discovery on research communities' interests, what are scientists' beliefs and desires for AI in science, how is the scientific community of knowledge affected?
 
+- <b>How do we protect scientific integrity when AI agents do research?</b>
+  What are the methodological pitfalls of scientific AI systems, and how can we guard against them with statistical guarantees?
+  For example, we showed that [poisoning open datasets](https://arxiv.org/abs/2607.10712) can steer AI research agents to fraudulent conclusions in half of all runs, and built [greCAPTCHA](https://arxiv.org/abs/2609.20481) to test whether authors understand their own papers.
+- <b>How does AI change what scientists know, and how they come to know it?</b>
+  What happens when we hand scientific reasoning over to AI, and are we at risk of illusions of understanding?
+  See our work on [AI epistemic risks](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6873005) and my notes on [mathematical understanding](/blog/2025/math-understand-cogsci/).
+- <b>How are scientific communities changing as they adopt AI?</b>
+  How does AI-accelerated discovery reshape what researchers work on, and what do scientists actually want from AI?
+  See [AI Safety for Everyone](https://doi.org/10.1038/s42256-025-01020-y) and [Bridging the Gap in the Responsible AI Divides](https://arxiv.org/abs/2603.14495).
 
-<!-- , which I like to describe as the study of giving interacting AI agents the ability to explain themselves. -->
-
-If you are curious about any of the above topics, then don't hesitate to reach out through the various channels at the bottom of this page! I am currently based in Pittsburgh, PA, USA.
+If any of this interests you, get in touch through the links at the bottom of this page. I am based in Pittsburgh, PA, USA.
 
 <i>(My name is pronounced BAH-lint [baːlint])</i>
-
-<!-- I am a member of the [Institute for Complex Social Dynamics](https://www.cmu.edu/dietrich/social-dynamics/) led by [Kevin Zollman](https://www.kevinzollman.com/). -->
-
-<!-- <img src="assets/img/background.jpg" alt="View of a corrie in the Scottish Highlands" width="80%" /> -->
-<!-- <i>I like hiking a lot. This image is a view of a corrie from Beinn Bhan near Applecross, Scotland shot by me.</i> -->
-
-
-<!-- <br /> -->

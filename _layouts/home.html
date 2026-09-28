@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="intro">
+  {% if page.subtitle %}<h1 class="tagline">{{ page.subtitle }}</h1>{% else %}<h1 class="sr-only">{{ site.title }}</h1>{% endif %}
+  <figure class="portrait">
+    <picture>
+      <source srcset="{{ '/assets/img/portrait.webp' | relative_url }}" type="image/webp">
+      <img src="{{ '/assets/img/portrait.jpg' | relative_url }}" width="640" height="640" alt="Portrait of {{ site.author }}">
+    </picture>
+    <figcaption>{{ page.position }}</figcaption>
+  </figure>
+  <div class="prose">
+    {{ content }}
+  </div>
+</section>
+
+<section class="block">
+  <h2><a href="{{ '/news/' | relative_url }}">news</a></h2>
+  {% include news.html limit=3 %}
+</section>
+
+<section class="block">
+  <h2><a href="{{ '/blog/' | relative_url }}">latest posts</a></h2>
+  {% include posts.html limit=3 %}
+</section>
+
+<section class="block">
+  <h2><a href="{{ '/publications/' | relative_url }}">selected publications</a></h2>
+  <div class="pubs">{% bibliography --group_by none --query @*[selected=true]* %}</div>
+</section>
+
+<section class="block contact">
+  {% include social.html %}
+</section>
