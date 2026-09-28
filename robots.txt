@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://gyevnarb.github.io/sitemap.xml
+Sitemap: https://gbalint.me/sitemap.xml
