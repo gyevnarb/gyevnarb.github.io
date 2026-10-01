@@ -45,6 +45,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+body.wide { max-width: calc(82rem + 2 * var(--gap)); }
 
 h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.2; margin: 0; }
 h1 { text-wrap: balance; }

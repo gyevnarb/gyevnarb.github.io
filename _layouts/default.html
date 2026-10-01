@@ -7,6 +7,7 @@
   <title>{{ doc_title }}</title>
   <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
   <meta name="color-scheme" content="light dark">
+  {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
@@ -23,7 +24,7 @@
     onload="renderMathInElement(document.querySelector('.prose'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false}]})"></script>
   {% endif %}
 </head>
-<body>
+<body{% if page.wide %} class="wide"{% endif %}>
   <header class="bar">
     <a class="brand" href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>
       <svg class="mark" viewBox="0 0 36 10" aria-hidden="true"><circle cx="5" cy="5" r="5"/><rect x="13" width="10" height="10"/><path d="M26 10 31 0 36 10z"/></svg>

@@ -1,0 +1,644 @@
+[
+  {
+    "code": "UK",
+    "country": "United Kingdom",
+    "flag": "🇬🇧",
+    "titles": "Lecturer / Assistant Professor (≈Asst Prof, but permanent) → Senior Lecturer / Associate Professor (≈Assoc Prof) → Reader (≈senior Assoc Prof, research-heavy; being phased out at many places) → Professor (≈Full Prof, a personal chair). Russell Group places increasingly use the US titles (Asst/Assoc/Full Professor) for the same grades. Oxbridge: Associate Professor + college fellowship. Also: UKRI Future Leaders / Royal Society URF / Turing fellowships as research-only routes into lectureships.",
+    "tenure": "No tenure track. Lectureships are open-ended ('permanent') contracts from day one, subject to a probation period of 1–3 years (usually 3 for new lecturers, often tied to completing a PGCert/HEA Fellowship). Security is contractual, not tenure; redundancy is possible, and 2024–26 saw widespread financially driven cuts (especially at post-92 and mid-table universities). Promotion is by annual internal rounds against published criteria, not up-or-out.",
+    "hiring_cycle": "Rolling all year, with most CS/informatics ads Oct–Mar. Closing dates are usually 3–6 weeks after posting; interviews are 3–8 weeks after closing; offers within days of interview. Typical ad-to-offer time is 2–4 months, and start dates are flexible (often Sept or Jan). Many departments run 'cluster' hires in areas such as AI safety or responsible AI. Hiring has been constrained since 2024 by sector finances, so apply broadly.",
+    "process": "Online application: CV, cover letter / supporting statement that explicitly maps to each Essential/Desirable criterion in the person specification (shortlisting is literally scored against it), research statement, teaching statement, sometimes a 2-page 5-year plan; references are often contacted only at shortlist (3 referees). Interview is usually a single day: a 20–30 min research seminar or job talk (sometimes plus a 10–15 min teaching presentation to students/staff), meetings with the group or students, then a formal 45–60 min panel (Head of School, 2–4 academics, an HR rep, sometimes an external member). The panel asks standard questions (research vision, funding plans, teaching, EDI, citizenship). A decision is often made the same evening or within 48h, with a phone call from the Head of School. Salary and start-up can be negotiated after the verbal offer.",
+    "salary": "Lecturer is usually Grade 8 on the national 51-point single pay spine (JNCHES; Oxford/Cambridge/Imperial/UCL/LSE have local scales). Roughly £44k–£57k (≈€51k–€66k) in 2025/26, e.g. spine point 37 = £47,389 after the 1.4% uplift of 1 Aug 2025. Plus London weighting of about £3–5k. The 2026/27 national offer (1.8%) was rejected by the unions and, as of Aug 2026, not implemented, so expect 2025/26 rates. Senior Lecturer (Grade 9) is about £57k–£67k. USS pension adds a large employer contribution (14.5%).",
+    "teaching_load": "Varies widely and is tracked through a workload allocation model (WAM). Research-intensive: about 1–2 modules/yr plus supervising project students (UG/MSc dissertations are a large hidden load), often reduced in year 1. Teaching-intensive/post-92: 2–4 modules. Expect assessment, moderation and external examiner processes, and admin roles (e.g., admissions tutor) after probation.",
+    "language": "English. No other language expected.",
+    "visa": "EU citizen: post-Brexit, free movement is gone. If you lived in the UK before 31 Dec 2020 (e.g., during the Edinburgh PhD) you may hold EUSS pre-settled/settled status. Check it is still valid: settled status lapses after 5 years' continuous absence, pre-settled after 2 years. With valid status you need no visa. Otherwise, as for non-EU: Skilled Worker visa (employer-sponsored; lecturer salaries clear the threshold) or, better, Global Talent visa (endorsement by the Royal Society/British Academy/RAEng/UKRI). Candidates are fast-tracked if they hold an eligible fellowship or a senior research/academic post. Fees: £561 endorsement + £205 visa, plus the Immigration Health Surcharge of £1,035/yr paid upfront. Global Talent is not tied to an employer and can lead to ILR in 3 years.",
+    "boards": [
+      {
+        "name": "jobs.ac.uk",
+        "url": "https://www.jobs.ac.uk"
+      },
+      {
+        "name": "Times Higher Education Jobs",
+        "url": "https://www.timeshighereducation.com/unijobs"
+      },
+      {
+        "name": "UKRI opportunities (fellowships)",
+        "url": "https://www.ukri.org/opportunity/"
+      },
+      {
+        "name": "Alan Turing Institute careers",
+        "url": "https://www.turing.ac.uk/work-turing"
+      },
+      {
+        "name": "AI Security Institute (UK AISI) careers",
+        "url": "https://www.aisi.gov.uk/careers"
+      }
+    ],
+    "tips": [
+      "Write the supporting statement as headed sections matching each person-spec criterion, with evidence. Panels use it as a scoring grid, and not addressing an 'Essential' item often means automatic rejection.",
+      "Show REF-awareness: name your 3–5 strongest outputs and say why they are 3*/4* (originality, significance, rigour), plus any impact-case potential (e.g., AI policy or regulatory uptake).",
+      "Name specific UKRI/EPSRC/ESRC/Leverhulme/ERC calls you will apply to in years 1–3, and mention the UKRI Future Leaders Fellowship as a route. Funding-plan questions are near-universal.",
+      "Look at the department's existing modules and say which ones you can teach on day one, plus one new module (e.g., AI safety & interpretability).",
+      "Your Edinburgh PhD is a real asset: UK referees and familiarity with the UK system reassure panels. Mention the UK AISI and Turing ecosystem connections.",
+      "Negotiate after the verbal offer: spine point (ask to start higher on the grade given postdoc years), start-up, reduced first-year teaching and relocation. Base pay above the grade is rare."
+    ],
+    "startup": "Modest by US standards. Typically £0–£30k plus a PhD studentship (sometimes 1–2 funded students at research-intensives), a laptop and conference money. Big packages (£100k+) are rare outside flagship hires or fellowship holders. Expect to fund your group via UKRI (New Investigator Awards, EPSRC standard grants), ERC (UK associated to Horizon Europe since 2024), Leverhulme and industry."
+  },
+  {
+    "code": "DE",
+    "country": "Germany",
+    "flag": "🇩🇪",
+    "titles": "Wissenschaftliche/r Mitarbeiter/in or Postdoc → Nachwuchsgruppenleiter/in (Emmy Noether, ERC StG, Max Planck/Helmholtz group leader) or Juniorprofessor/in W1 (≈Asst Prof) → W2 Professor (≈Assoc Prof, can be tenured) → W3 Professor (≈Full Prof / chair, Lehrstuhl). Tenure-track W1→W2/W3 or W2→W3 positions (Tenure-Track-Programm) are the closest to the US system. Fachhochschulen (HAW) hire W2 professors with a required 3+ years of experience outside academia.",
+    "tenure": "Tenured professors are usually Beamte (civil servants) for life, or employees on permanent contracts if over the state's age limit (often 45–52) or non-EU. W1 Juniorprofessur is 6 years (3+3 after an interim evaluation). With Tenure Track (TT) it converts to W2/W3 after a positive evaluation against criteria agreed in advance. Without TT, you must win a W2/W3 call (Ruf) elsewhere. 'Hausberufungsverbot' means internal promotion is generally not possible except via TT, so moving is the norm. Below the professorship almost everything is fixed-term under the WissZeitVG.",
+    "hiring_cycle": "Ads are all year (DIE ZEIT, academics.de, university sites), with deadlines usually 4–8 weeks out. The Berufungsverfahren is slow: typically 9–18 months from ad to Ruf, then 2–6 months of Berufungsverhandlungen (negotiation) and a start 3–12 months later. Total ad-to-start time is often 1.5–2 years. Max Planck, Helmholtz, CISPA, ELLIS units, DFKI and Tübingen AI Center/Hertie AI hire group leaders faster (3–6 months).",
+    "process": "Berufungsverfahren: a Berufungskommission (professors, a WiMi, a student, an equal opportunity officer) screens a large pack: tabular CV (Lebenslauf), publication list, list of Drittmittel (grants), teaching record (Lehrerfahrung, with course titles, SWS hours and evaluations), a research and teaching concept, copies of degree certificates and the top 3–5 papers. A shortlist of 4–8 is invited to a 'Vorsingen' (literally 'audition'): a 30–45 min public research talk plus Q&A, often a 20–30 min Lehrprobe (a sample lecture pitched to Bachelor students on a topic set by the committee or chosen from a list), and a Kommissionsgespräch (a 30–60 min interview on research, teaching, third-party funding, fit with the faculty and self-governance). After this come 2–3 external comparative reviews (vergleichende Gutachten), a ranked list (Dreierliste, 'list of three'), approval by the faculty council and senate, and then the Ruf (formal offer) from the president or ministry. Negotiation (Berufungsverhandlung) covers W salary supplements, staff positions, equipment and budget.",
+    "salary": "Federal states set their own W-Besoldung pay scales (monthly base salary, gross, 12x/yr; some states add a Christmas bonus). W1 is about €5,400–€6,200/mo. W2 base (2025) is about €6,800–€7,700/mo, e.g. Bayern W2 starts at €6,824 with experience steps, and Baden-Württemberg W2 is €7,661 flat. On top come negotiable Leistungsbezüge (performance bonuses), often €500–€2,000+/mo at the Ruf. W2 therefore totals about €85k–€110k/yr. As a Beamter you pay no pension contributions and take private health insurance. Institutes (MPI/Helmholtz) pay group leaders on TVöD/TV-L E14–E15 (about €5,000–€7,000/mo) or W2 equivalents.",
+    "teaching_load": "Set by state regulation (Lehrverpflichtungsverordnung): W2/W3 at universities teach 8–9 SWS (Semesterwochenstunden, weekly contact hours per semester, i.e. about 2–3 courses per semester). W1 teaches 4–6 SWS, often rising after evaluation. HAW/FH teach 18 SWS. Exam and thesis supervision loads are high in large CS programs.",
+    "language": "Many CS master's programs are in English, and English-only is increasingly accepted for W1/TT hires at TUM, Saarbrücken, Tübingen, Munich and KIT, among others. However, almost all calls expect the ability to teach in German within 2–5 years (often written into the Berufungsvereinbarung), especially for Bachelor teaching and committee work. Showing a German-learning plan matters.",
+    "visa": "EU citizen: free movement; just register the address (Anmeldung). Beamter status is possible for EU citizens. Non-EU: EU Blue Card (professors clear the salary threshold easily), plus §18d research permits; the Blue Card leads to settlement after 21–27 months. Non-EU professors are often employed rather than made Beamte.",
+    "boards": [
+      {
+        "name": "academics.de (DIE ZEIT)",
+        "url": "https://www.academics.de"
+      },
+      {
+        "name": "Forschung & Lehre job board (DHV)",
+        "url": "https://www.wisswelt.de"
+      },
+      {
+        "name": "EURAXESS Germany",
+        "url": "https://www.euraxess.de"
+      },
+      {
+        "name": "Max Planck Society jobs",
+        "url": "https://www.mpg.de/stellenboerse"
+      },
+      {
+        "name": "Helmholtz jobs",
+        "url": "https://www.helmholtz.de/en/career/jobs/"
+      },
+      {
+        "name": "DAAD GAIN / research-in-germany",
+        "url": "https://www.research-in-germany.org"
+      }
+    ],
+    "tips": [
+      "Prepare a German-style tabular CV with a teaching section listing each course, semester, SWS and role. An optional photo is still common, although not required. Include a Drittmittel table with amounts and your role.",
+      "The Lehrprobe is scored seriously: pitch it at the Bachelor level, interact with the audience, and don't give a research talk in disguise.",
+      "Get the Berufungsverhandlung right: before accepting, negotiate Leistungsbezüge, WiMi positions (e.g., 2 x E13 permanently), a Sekretariat share, start-up funds and Rufabwehr leverage. After you sign, leverage is gone.",
+      "Apply for the DFG Emmy Noether programme (up to 6 years, own group, from 2–4 years post-PhD) or the ERC StG with a German host. Both are strong routes into W2 calls.",
+      "Check the state's Verbeamtung age limit before negotiating (e.g., 45 in some states, 50–52 in others). Being over it affects the pension, so negotiate compensation."
+    ],
+    "startup": "Negotiated in the Berufungsverhandlung. Typical W2/W3 packages: 1–3 permanently funded doctoral/postdoc positions (Grundausstattung), a Sekretariat share, €50k–€300k one-off equipment/start-up, plus an annual budget. W1 packages are smaller (1 WiMi + €20k–€50k). Research institutes (MPI, CISPA, Helmholtz) offer strong core funding for group leaders (3–5 positions)."
+  },
+  {
+    "code": "NL",
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "titles": "Universitair Docent (UD, Assistant Professor ≈Asst Prof) → Universitair Hoofddocent (UHD, Associate Professor ≈Assoc Prof) → Hoogleraar (Full Professor, ≈Full Prof). UD1/UD2 and UHD1/UHD2 subgrades. Professors by special appointment (bijzonder hoogleraar) are part-time.",
+    "tenure": "Tenure-track UD posts are common: typically a 4–6 year temporary contract with a permanent contract (vast contract) granted after meeting agreed criteria (publications, grants, BKO/UTQ teaching qualification, supervision). Many universities now hire UDs directly on permanent contracts after a 1–2 year probation ('Recognition & Rewards' reform). Promotion to UHD and Hoogleraar is via career paths (e.g., research, teaching or impact profiles).",
+    "hiring_cycle": "Rolling all year, with a concentration Sept–Mar. Deadlines are about 4–6 weeks after the ad. There are 1–2 interview rounds 3–6 weeks after closing, and offers within 2–6 weeks. Ad to offer typically takes 2–4 months. Sector-wide budget cuts (2025–2026) have reduced openings, especially in humanities/social sciences, but AI hiring (Dutch AI Coalition, ELLIS units in Amsterdam/Delft) continues.",
+    "process": "The pack: cover letter, CV, research statement (often a 2–5 page plan), teaching statement with evaluations, 2–3 referees. The selection committee (benoemingsadviescommissie, BAC) includes a student member and often an HR/diversity advisor. Interviews: round 1 is a 45–60 min committee interview, often online. Round 2 is a research presentation (20–30 min) and sometimes a teaching demo or lecture, plus meetings with the dean. The committee values 'team science', open science and a teaching vision (Recognition & Rewards). An 'assessment' (psychometric test) is sometimes used for senior posts.",
+    "salary": "CAO Nederlandse Universiteiten. UD is scale 11–12: scale 11 = €4,537–€6,209/mo and scale 12 = €5,495–€6,963/mo gross (1 Jan 2025 tables; +2% and +€100 structural from 1 Jul 2025). Plus 8% holiday allowance and an 8.3% year-end bonus, so a new UD earns about €65k–€85k/yr total. UHD is scale 13–14. The 30% ruling (tax-free allowance for recruits from abroad, reducing to 27% from 2027) applies if you lived more than 150 km from the Dutch border for 16 of the last 24 months (CMU qualifies).",
+    "teaching_load": "Typically 40% teaching, 40% research, 20% admin as the nominal split, though in practice teaching often expands. 2–4 courses per year, plus significant BSc/MSc thesis supervision. Teaching is organised in blocks/quarters.",
+    "language": "Most MSc and many BSc programmes are in English. The 2024–26 'internationalisation' policy (WIB bill) pushes Dutch-taught BSc programmes, and many contracts now expect you to learn Dutch to B1/B2 within 2–5 years.",
+    "visa": "EU citizen: free movement, register at the gemeente (municipality) and get a BSN (citizen service number). Non-EU: universities are recognised sponsors under the Highly Skilled Migrant scheme (kennismigrant), with no salary threshold for researchers. EU Blue Card also possible. Processing takes about 2–4 weeks.",
+    "boards": [
+      {
+        "name": "AcademicTransfer",
+        "url": "https://www.academictransfer.com"
+      },
+      {
+        "name": "Werken bij de universiteiten (UNL)",
+        "url": "https://www.universiteitenvannederland.nl"
+      },
+      {
+        "name": "EURAXESS Netherlands",
+        "url": "https://www.euraxess.nl"
+      },
+      {
+        "name": "NWO (Veni/Vidi funding)",
+        "url": "https://www.nwo.nl/en"
+      }
+    ],
+    "tips": [
+      "Mention the BKO/UTQ (University Teaching Qualification): you must obtain it within 1–2 years. Existing teaching training (e.g., CMU Eberly Center, UK PGCert/HEA Fellowship) can be partially recognised, so say so.",
+      "Frame the research plan around NWO Veni (≤3 years post-PhD, ~€320k) or Vidi eligibility, plus ERC StG. Committees ask about grant plans explicitly.",
+      "Speak to Recognition & Rewards: open science, team contributions, public engagement and interdisciplinary teaching count as much as output counts.",
+      "Ask for the 30% ruling to be applied from the start (the employer files it within 4 months of the start date) and check the 'vast' criteria in writing before accepting.",
+      "Housing is the biggest practical hurdle in Amsterdam/Utrecht/Delft. Ask the international office for help at offer stage."
+    ],
+    "startup": "Usually small: often €0–€50k, occasionally 1 PhD position ('sector plan' or start-up package). Some places (TU Delft, UvA AI, Radboud) offer 1–2 PhD students via sector plans or AI programmes. The expectation is that you win NWO Veni/Vidi, NWA, ERC, or EU Horizon consortium grants within 2–3 years."
+  },
+  {
+    "code": "CH",
+    "country": "Switzerland",
+    "flag": "🇨🇭",
+    "titles": "Assistant Professor (tenure track, or non-TT fixed-term, e.g. SNSF Starting Grant-funded) → Associate Professor (tenured, ≈Assoc Prof) → Full Professor (Ordentliche/r Professor/in). At the cantonal universities (UZH, Bern, Basel, Geneva, Lausanne) also Assistenzprofessur mit/ohne Tenure Track and ausserordentliche Professur. Also Idiap and IDSIA research institutes.",
+    "tenure": "The ETH domain (ETH Zurich, EPFL) runs a US-style TT: 4+2 years (4-year contract, extendable to 6 years), with tenure evaluation by international letters leading to Associate Professor. Cantonal universities offer TT Assistant Professorships (often 6 years) and non-TT ones (e.g., SNSF-funded). The TT promotion rate at ETH/EPFL is high (~70–80%) but the evaluation is rigorous.",
+    "hiring_cycle": "ETH/EPFL: ads Aug–Nov with deadlines Oct–Jan; shortlist visits Jan–Apr; ETH Board appointment months later. Ad to start takes about 12–18 months. Cantonal universities take 9–15 months. The process is less seasonal than in the US, but CS follows a roughly US-like calendar.",
+    "process": "Pack: cover letter, CV, publication list, research statement (5-year plan), teaching statement, top 3 papers, names of 3–5 referees (letters often solicited for shortlist). Visits are usually 1–2 days: a public research talk (~45 min), a committee interview, meetings with faculty and the president/VP faculty, and sometimes a teaching sample. At ETH the committee proposes to the President, who proposes to the ETH Board. At cantonal universities the process is Berufungsverfahren-like, with a Probevorlesung (sample lecture) common in German-speaking places.",
+    "salary": "Among the highest academic salaries in the world. ETH/EPFL Assistant Professor about CHF 125k–165k/yr (≈€133k–€176k). Associate Professor about CHF 170k–220k, Full Professor CHF 200k–260k+. Cantonal universities pay somewhat less (Asst Prof about CHF 110k–150k). Note the cost of living (Zurich/Geneva rents about CHF 2.5k–4k/mo for a 2–3 room flat) and mandatory private health insurance (about CHF 400–600/mo per adult).",
+    "teaching_load": "ETH/EPFL: about 1 course per semester for Assistant Professors, sometimes reduced. Cantonal universities: often 4–6 hours/week per semester. Teaching quality is monitored via student evaluations.",
+    "language": "ETH/EPFL: English is fine, with the expectation of acquiring German (ETH) or French (EPFL) for BSc teaching within a few years. Cantonal universities in French-speaking areas (UNIGE, UNIL) and in Zurich/Bern/Basel may expect the local language for BSc teaching within 2–3 years.",
+    "visa": "EU citizen: the Agreement on the Free Movement of Persons (AFMP) applies; Hungarian citizens get a B permit (5 years) with an employment contract; register at the commune within 14 days. Non-EU: requires work permit quotas, but universities obtain them routinely for professors. The spouse/partner may work.",
+    "boards": [
+      {
+        "name": "ETH Zurich faculty positions",
+        "url": "https://ethz.ch/en/the-eth-zurich/working-teaching-and-research/faculty/open-faculty-positions.html"
+      },
+      {
+        "name": "EPFL faculty positions",
+        "url": "https://www.epfl.ch/about/working/faculty-positions/"
+      },
+      {
+        "name": "myScience.ch jobs",
+        "url": "https://www.myscience.ch/jobs"
+      },
+      {
+        "name": "SNSF funding (Starting Grants / Ambizione)",
+        "url": "https://www.snf.ch/en"
+      },
+      {
+        "name": "Academics.ch / Jobs.ch",
+        "url": "https://www.jobs.ch"
+      }
+    ],
+    "tips": [
+      "ETH/EPFL tenure-track calls are highly competitive and US-like: think in terms of a 'big vision' research statement, strong letters and top-venue papers.",
+      "The SNSF Starting Grant (Switzerland's replacement for the ERC StG, open 2–8 years post-PhD) funds your own Assistant Professorship-level position. It is an excellent entry route to cantonal universities.",
+      "Switzerland's Horizon Europe association was restored from 2025, so ERC StG is again possible with a Swiss host.",
+      "At the Swiss AI Initiative (ETH+EPFL), CSCS compute and ETH AI Center fellowships create AI-safety/alignment hiring opportunities. Name them in your plan.",
+      "Negotiate start-up, PhD/postdoc positions and housing help. Salary is scale-based but has some flexibility at the entry step."
+    ],
+    "startup": "Generous. ETH/EPFL TT Assistant Professors typically get CHF 1–2M+ over 4–6 years, including core-funded PhD/postdoc positions and equipment. Cantonal universities offer less (CHF 200k–600k plus 1–2 positions). SNSF grants are the main external funding."
+  },
+  {
+    "code": "DK",
+    "country": "Denmark",
+    "flag": "🇩🇰",
+    "titles": "Postdoc → Adjunkt / Tenure-track Assistant Professor (≈Asst Prof) → Lektor (Associate Professor, permanent, ≈Assoc Prof) → Professor (≈Full Prof); also Professor MSO (5-year special professor post).",
+    "tenure": "Tenure-track Adjunkt posts are usually 3–6 years. Many universities (DTU, KU, AU, ITU) offer formal tenure track leading to Lektor after evaluation. Lektor is permanent. Hiring can also be directly at Lektor level for strong postdocs (often via an open call).",
+    "hiring_cycle": "Rolling, with deadlines about 4–8 weeks after the ad. Expert assessment committee (bedømmelsesudvalg) evaluation takes 1–3 months after closing, followed by interviews. Ad to offer takes about 3–6 months.",
+    "process": "The application goes through an online portal: cover letter, CV, publication list, research plan, teaching portfolio (with evidence of teaching and pedagogy training), and up to 5 selected publications. An expert committee writes a formal written assessment of each candidate ('qualified / not qualified'), which you can see and respond to. Shortlisted candidates are interviewed (30–60 min), often with a presentation and sometimes a trial lecture. Referees are often contacted late.",
+    "salary": "AC collective agreement (state): base salary scale plus negotiated supplements (tillæg) and a 17.1% pension contribution on top. Adjunkt is about DKK 45k–55k/mo (≈€6.0k–€7.4k) including supplements. Lektor is about DKK 55k–63k/mo. High taxes (~40–50%), but the researcher tax scheme (forskerordning: 27% + AM tax for 7 years) applies if you are recruited from abroad at a salary above the threshold (about DKK 78k/mo in 2025, which a Lektor often doesn't reach, so check).",
+    "teaching_load": "Typically 40% teaching, 40% research, 20% admin by norm hours. Tenure-track Adjunkts are required to complete university pedagogy training (adjunktpædagogikum/universitetspædagogikum).",
+    "language": "Most MSc and many BSc programmes are taught in English. Contracts expect you to learn Danish to the level needed for committee work within 3–6 years, and Danish courses are free.",
+    "visa": "EU citizen: EU residence document (registration certificate); get a CPR number and MitID. Non-EU: Fast-track scheme via certified universities, or Pay Limit scheme/Researcher scheme.",
+    "boards": [
+      {
+        "name": "Jobindex / university vacancies (e.g., jobportal.ku.dk)",
+        "url": "https://www.jobindex.dk"
+      },
+      {
+        "name": "EURAXESS Denmark",
+        "url": "https://www.euraxess.dk"
+      },
+      {
+        "name": "Academic Positions",
+        "url": "https://academicpositions.com"
+      },
+      {
+        "name": "Pioneer Centre for AI (Copenhagen)",
+        "url": "https://www.aicentre.dk"
+      }
+    ],
+    "tips": [
+      "The written assessment is decisive: address every qualification criterion in the ad explicitly, and include a teaching portfolio with evidence (evaluations, course design, pedagogy training).",
+      "Private foundations (Novo Nordisk Foundation, Villum, Carlsberg) are major funders. Villum Young Investigator is a strong route for CS/AI, and the Carlsberg Foundation funds philosophy/HPS work.",
+      "Aim for the Pioneer Centre for AI, ITU, DTU Compute, and KU/AU philosophy and cognitive science groups for XAI and metascience work.",
+      "Check forskerordning eligibility early: it requires that you have not been tax-liable in Denmark in the previous 10 years and that the salary threshold is met."
+    ],
+    "startup": "Modest: typically a PhD student and some operating costs. Much depends on external funding (DFF Sapere Aude, Villum, Novo Nordisk, ERC)."
+  },
+  {
+    "code": "SE",
+    "country": "Sweden",
+    "flag": "🇸🇪",
+    "titles": "Postdoc → Biträdande lektor (Associate Senior Lecturer ≈tenure-track Asst Prof; 4–6 years) → Lektor (Senior Lecturer, permanent ≈Assoc Prof) → Docent (a title, not a post, ≈Habilitation; needed for main PhD supervision) → Professor (≈Full Prof). Some universities (KTH) use Assistant/Associate Professor titles in English.",
+    "tenure": "Biträdande lektor is a tenure-track post (Higher Education Ordinance: max 4–6 years, with a right to be assessed for promotion to Lektor). Lektor is a permanent appointment. Promotion to Professor is by application and external review. Early career eligibility: usually PhD within the last 5–7 years.",
+    "hiring_cycle": "Rolling all year. Deadlines are about 3–6 weeks after the ad. External experts (sakkunniga) write assessments, then there are interviews and a trial lecture. The process takes 4–8 months, and can be longer due to the formal expert review.",
+    "process": "The application is via an online portal (Varbi, ReachMee). It includes a CV, research and teaching statements, a teaching portfolio (strongly weighted in Sweden, with pedagogical merits as a formal criterion) and a publication list with the top 5–10 papers. Two external experts rank candidates in written reports. Shortlist interviews come with a research presentation and often a trial lecture (provföreläsning). The recruitment committee (anställningsnämnd) decides. Candidates can appeal decisions (överklaga).",
+    "salary": "Individually negotiated (no fixed scale). Biträdande lektor is about SEK 45k–55k/mo (≈€3.9k–€4.8k; SULF 2024 median about SEK 45k–49k). Lektor is about SEK 50k–65k/mo. Plus generous pensions (ITP-like, about 4.5–30% contributions) and 28–35 days of vacation. The expert tax relief (expertskattelättnad: 25% of salary tax-free for 5 years) applies if salary exceeds 1.5 x the price base amount (≈SEK 88k/mo in 2025, slightly higher in 2026), or via the expert-competence route assessed by the Forskarskattenämnden (the expert tax board). Most junior academics use the latter.",
+    "teaching_load": "Biträdande lektor has substantial research time (often 60–80% research). Lektor teaches about 50–70% unless externally funded. Teaching is organized in courses and study periods.",
+    "language": "English teaching is common at MSc level and at KTH/Chalmers. Contracts often expect Swedish for BSc teaching/administration within 2–5 years.",
+    "visa": "EU citizen: right of residence; register with the Skatteverket (tax agency) to get a personnummer (ID number). Non-EU: work permit via the Migration Agency, or the EU Blue Card; research permits are fast.",
+    "boards": [
+      {
+        "name": "Varbi / University vacancies",
+        "url": "https://www.varbi.com"
+      },
+      {
+        "name": "Academic Positions Sweden",
+        "url": "https://academicpositions.com"
+      },
+      {
+        "name": "EURAXESS Sweden",
+        "url": "https://www.euraxess.se"
+      },
+      {
+        "name": "WASP / WASP-HS (AI programmes)",
+        "url": "https://wasp-sweden.org"
+      }
+    ],
+    "tips": [
+      "Pedagogical merits are formally assessed. Include a teaching portfolio with reflection, evidence of university teaching training (ideally 10 weeks' worth; you may be asked to complete it within 2 years), course development and supervision.",
+      "The WASP and WASP-HS programmes (Wallenberg-funded AI) fund AI assistant professorships including humanities/social science. XAI and AI ethics fit WASP-HS well.",
+      "Swedish Research Council (VR) starting grants and ERC StG are the main ways to build a group; mention them.",
+      "Salary is negotiable, so research SULF salary statistics and negotiate before signing."
+    ],
+    "startup": "Varies: typically a start-up of SEK 1–4M (≈€90k–€360k) for tenure-track posts at research-intensives (KTH, Chalmers, Lund, Uppsala), often covering a PhD student. WASP-funded posts come with larger packages."
+  },
+  {
+    "code": "FI",
+    "country": "Finland",
+    "flag": "🇫🇮",
+    "titles": "Postdoc/University Researcher → Assistant Professor (tenure track ≈Asst Prof) → Associate Professor (≈Assoc Prof, often permanent) → Full Professor (≈Full Prof). University Lecturer (yliopistonlehtori) is a permanent teaching-focused post. The Docent (dosentti) title is honorary.",
+    "tenure": "Formal tenure track at Aalto, Helsinki, Tampere and Oulu: Assistant Professor for 3–5 years, evaluated for Associate Professor (permanent or fixed-term), then Full Professor. Early-career eligibility is usually within about 7 years of the PhD.",
+    "hiring_cycle": "Many tenure-track calls open in the autumn, with deadlines Oct–Jan. External reviewers' reports come 2–4 months after closing, followed by interviews and a teaching demo. Ad to decision takes about 5–9 months. The Finnish Center for AI (FCAI) runs recurring calls.",
+    "process": "Pack: CV (often following TENK, the Finnish research integrity board's CV template), publication list, research plan, teaching portfolio (a Finnish teaching portfolio usually has a reflective section), and 5–10 selected publications. External experts (2–3) provide statements. The shortlist is invited to interview with a research presentation and a teaching demonstration. The decision is made by the President or Dean.",
+    "salary": "University pay system (YPJ, a two-part scale of job demands and personal performance). Tenure-track Assistant Professor about €4,500–€5,500/mo gross (union survey: average €5,541/mo in Sept 2025). Associate Professor about €5,500–€7,000/mo. Aalto has its own system and often pays higher. Plus a 50% holiday bonus on the holiday pay month.",
+    "teaching_load": "Tenure-track: about 20–40% teaching, much research time. University Lecturer: 60%+ teaching.",
+    "language": "Mostly English at MSc and PhD level, and English is the working language in AI. Finnish or Swedish is expected for some BSc teaching and administrative duties (at bilingual universities language requirements are formal).",
+    "visa": "EU citizen: register the right of residence with Migri. Non-EU: specialist/researcher residence permits or the EU Blue Card; a fast track (about 2 weeks) exists for specialists and researchers.",
+    "boards": [
+      {
+        "name": "Aalto University careers",
+        "url": "https://www.aalto.fi/en/careers-at-aalto"
+      },
+      {
+        "name": "University of Helsinki jobs",
+        "url": "https://www.helsinki.fi/en/about-us/careers"
+      },
+      {
+        "name": "EURAXESS Finland",
+        "url": "https://www.euraxess.fi"
+      },
+      {
+        "name": "FCAI (Finnish Center for AI)",
+        "url": "https://fcai.fi"
+      }
+    ],
+    "tips": [
+      "Research Council of Finland Academy Research Fellow grants (5 years, own group) are a strong way into tenure track.",
+      "Include a reflective teaching philosophy with evidence. Finnish committees value pedagogical training (e.g., 25–60 ECTS university pedagogy).",
+      "Helsinki's philosophy of science and cognitive science community (e.g., TINT centre for philosophy of the social sciences) and Aalto's human-centred AI groups fit a metascience/XAI profile.",
+      "Salaries are modest, but taxation and social security are predictable. Consider the negotiable 'personal performance' pay component."
+    ],
+    "startup": "Tenure-track packages often include 1 PhD student/postdoc and some operating costs (~€50k–€200k). Aalto typically offers stronger packages."
+  },
+  {
+    "code": "NO",
+    "country": "Norway",
+    "flag": "🇳🇴",
+    "titles": "Postdoc → Førsteamanuensis (Associate Professor, permanent; ≈Asst/Assoc Prof as the entry permanent rung) → Professor (≈Full Prof, by application-based competency promotion). Also Innstegsstilling (tenure-track Associate Professor, 6 years) and Universitetslektor (a teaching post without a PhD requirement).",
+    "tenure": "Førsteamanuensis posts are usually permanent from the start (with a 6-month probation). Newer tenure-track (innstegsstilling) posts are 6-year contracts leading to Professor if evaluated positively. Promotion to Professor is by personal competence application (opprykk).",
+    "hiring_cycle": "Rolling. Deadlines are about 3–6 weeks after the ad. An expert committee (sakkyndig komité) takes 2–4 months, then interviews and a trial lecture. Ad to offer takes about 4–8 months. Under Norwegian public law, applicant lists (søkerlister) are public, but you can ask to be exempted (not guaranteed).",
+    "process": "The application is via Jobbnorge. It includes a CV, publication list, research statement, teaching portfolio (pedagogical competence is a formal requirement, with a 200-hour university pedagogy programme needed within 2 years), and selected works. An expert committee ranks candidates in a written assessment, followed by an interview and a trial lecture.",
+    "salary": "State pay scale (lønnstrinn). Førsteamanuensis is usually advertised at about NOK 650k–800k/yr (≈€55k–€68k), with the level set by experience. Professor starts about NOK 800k–1M. Plus a strong state pension (SPK) and generous leave.",
+    "teaching_load": "Nominally about 45–50% research, 45–50% teaching/admin, with research time a formal entitlement. Teaching loads vary by department.",
+    "language": "English is widely used in research and MSc teaching. Contracts expect Norwegian/Scandinavian proficiency for teaching within 2–3 years, and universities fund courses.",
+    "visa": "EU citizen: Norway is in the EEA; register with the police (EU registration) and get a D-number/personnummer (ID number). Non-EU: skilled worker residence permit via UDI.",
+    "boards": [
+      {
+        "name": "Jobbnorge",
+        "url": "https://www.jobbnorge.no"
+      },
+      {
+        "name": "EURAXESS Norway",
+        "url": "https://www.euraxess.no"
+      },
+      {
+        "name": "Research Council of Norway (FRIPRO)",
+        "url": "https://www.forskningsradet.no/en/"
+      }
+    ],
+    "tips": [
+      "Address the pedagogical competence requirement explicitly, using a teaching portfolio that maps to the national 'basic competence' criteria.",
+      "The Research Council of Norway's FRIPRO early-career grants and the ERC StG are key, and host universities strongly value applicants who bring external funding.",
+      "The NTNU, UiO and UiB AI and philosophy programmes (e.g., NorwAI, Centre for the Study of the Sciences and Humanities at UiB) are relevant targets.",
+      "Norway is generally lower-paid than Switzerland but has an excellent work–life balance and permanent positions from the start."
+    ],
+    "startup": "Usually modest: often a PhD position and some operating funds (NOK 200k–1M). Group funding comes from FRIPRO, ERC, or national programmes."
+  },
+  {
+    "code": "FR",
+    "country": "France",
+    "flag": "🇫🇷",
+    "titles": "Maître de conférences (MCF ≈Asst/Assoc Prof, permanent civil servant) → Professeur des universités (PU ≈Full Prof, requires HDR). Research organisations: Chargé(e) de recherche (CRCN, CNRS/Inria ≈Asst/Assoc Prof, research only, permanent) → Directeur/Directrice de recherche (DR ≈Full Prof). Also Chaire de professeur junior (CPJ ≈tenure-track Asst Prof, 3–6 years leading to PU).",
+    "tenure": "MCF and CR posts are permanent civil-servant posts after a 1-year probation (stage). The CPJ (created in 2021) is a US-style tenure track: 3–6 years, then titularisation (confirmation in post) as PU after evaluation. Institutes such as Inria, CNRS and CEA recruit by national competitive exam (concours).",
+    "hiring_cycle": "Very rigid annual calendar. For MCF/PU you first need CNU qualification: register in the autumn (about Sept–Oct deadline, via the Odyssée platform since 2025), submit the dossier by Dec–Jan and get the result in Feb. Posts are published around Feb–Mar with applications via Galaxie (about Mar–Apr). Auditions happen Apr–May, results in May–Jun, and the start is 1 Sept. CNRS/Inria concours open in Dec–Jan with auditions Mar–May. CPJ calls are on rolling calendars. Note: qualification is waived for candidates already holding an equivalent post abroad (e.g., an Assistant Professor at a foreign university).",
+    "process": "MCF: CNU qualification dossier (CV, PhD report, publications), then an application per post to a comité de sélection. Auditions are short (about 15–20 min presentation + 15–20 min questions, often in French), covering research and teaching fit. The committee produces a ranking and the candidate chooses among offers ('vœux'). CNRS/Inria: a written research project (about 10 pages) plus an audition before a jury nationally (admissibilité), then admission.",
+    "salary": "Civil-service pay scale (grille indiciaire). MCF starts at about €2,400–€2,900/mo gross (net about €2,300 including the guaranteed minimum of 2x the SMIC, the minimum wage), rising to €3,500–€4,500 with seniority, plus the RIPEC bonus (about €4–6k/yr). Postdoc years abroad can be credited (reclassement), which raises the starting step, so ask for it. CRCN is similar. The CPJ pays more (often €3,500–€5,000/mo gross) and comes with about €200k of funding. Salaries are low for Western Europe.",
+    "teaching_load": "MCF/PU: 192 hours of TD-equivalent per year (heavy). New MCFs get a 32-hour reduction (décharge) in the first year(s), and IUF membership or grants give further reductions. CNRS/Inria CR: no teaching obligation.",
+    "language": "French is effectively required for MCF (teaching, auditions, administration). CPJ and Inria/CNRS allow English, with an expectation to learn French. Paris-Saclay, PSL and some graduate schools teach MSc programmes in English.",
+    "visa": "EU citizen: free movement, and you can be a civil servant (fonctionnaire). Non-EU: 'Passeport Talent – chercheur' (4-year residence permit), a straightforward route. Civil-servant posts are open to non-EU nationals for research and teaching posts.",
+    "boards": [
+      {
+        "name": "Galaxie (MCF/PU posts)",
+        "url": "https://www.galaxie.enseignementsup-recherche.gouv.fr"
+      },
+      {
+        "name": "CNRS recruitment",
+        "url": "https://www.cnrs.fr/en/join-us"
+      },
+      {
+        "name": "Inria careers",
+        "url": "https://jobs.inria.fr"
+      },
+      {
+        "name": "EURAXESS France",
+        "url": "https://www.euraxess.fr"
+      }
+    ],
+    "tips": [
+      "Missing the CNU qualification deadline (autumn) costs a full year. Register early, or check whether your foreign post exempts you.",
+      "Inria and CNRS (INS2I for AI; CNRS philosophy of science units like IHPST) are the best routes for research-focused careers, while CPJ posts suit US-style applicants.",
+      "Visit or contact the lab (unité) before auditions. French committees value a known, local fit ('profil de poste') and prior contact is normal.",
+      "Ask for postdoc years to be credited toward the starting salary step (reclassement)."
+    ],
+    "startup": "MCF: minimal (a laptop, sometimes a small €5–20k package). CPJ: about €200k from ANR. CNRS/Inria: access to lab resources and ANR JCJC grants (young researcher grants)."
+  },
+  {
+    "code": "BE",
+    "country": "Belgium",
+    "flag": "🇧🇪",
+    "titles": "Flanders (KU Leuven, Ghent, VUB, Antwerp): Tenure-track Docent (≈Asst Prof) → Hoofddocent (≈Assoc Prof) → Hoogleraar → Gewoon hoogleraar (Full Prof). French-speaking (UCLouvain, ULB, ULiège): Chargé de cours (≈Asst/Assoc Prof) → Professeur → Professeur ordinaire. Also FNRS/FWO research posts.",
+    "tenure": "Flemish universities run tenure-track docent posts (usually 5 years), leading to a permanent Hoofddocent post. Some posts are permanent directly. Francophone Chargé de cours posts are often permanent after 2–3 years.",
+    "hiring_cycle": "Ads Sept–Mar with deadlines about 4–8 weeks later. KU Leuven and Ghent advertise many posts on a semi-annual cycle. Ad to decision takes about 4–8 months, including Board of Governors approval.",
+    "process": "Pack: CV, publication list, research plan, teaching plan, sometimes a 'vision statement' on the post. The shortlist gives a public lecture/presentation, an interview with a selection committee (with an external member), and sometimes a teaching test. The Board approves the appointment.",
+    "salary": "Flanders: Docent is about €5,000–€6,500/mo gross, plus a holiday allowance (about 92% of a month) and 13th month; net pay is lower due to high taxation. Francophone Chargé de cours is similar. The special tax regime for inbound researchers gives a tax-free allowance of up to 35% of gross pay (since 2025) for up to 5+3 years, with no salary threshold for researchers. Other inbound taxpayers need €70k+/yr.",
+    "teaching_load": "Typically 2–4 courses per year, depending on the faculty. Tenure-track docents get reduced loads.",
+    "language": "Flemish universities require Dutch for BSc teaching (a C1 test within about 5 years, as required by decree), but English is fine for MSc programmes. Francophone universities require French.",
+    "visa": "EU citizen: register at the commune (municipality), no work permit. Non-EU: single permit (combined work/residence); the EU Blue Card is possible; researcher permits are fast.",
+    "boards": [
+      {
+        "name": "KU Leuven jobs",
+        "url": "https://www.kuleuven.be/personeel/jobsite/en"
+      },
+      {
+        "name": "Ghent University vacancies",
+        "url": "https://www.ugent.be/en/work/vacancies"
+      },
+      {
+        "name": "EURAXESS Belgium",
+        "url": "https://www.euraxess.be"
+      },
+      {
+        "name": "FWO / FNRS funding",
+        "url": "https://www.fwo.be/en/"
+      }
+    ],
+    "tips": [
+      "Take language requirements (Dutch/French) seriously for Flemish posts: the timeframe is legally mandated.",
+      "FWO and FNRS offer strong early-career funding. KU Leuven's Institute of Philosophy and the Leuven AI institute fit XAI/philosophy of science.",
+      "Apply for the inbound-researcher tax regime (35% tax-free allowance) within 3 months of starting. The employer files it."
+    ],
+    "startup": "Tenure-track docents often get a start-up (€100k–€300k) covering a PhD student. KU Leuven offers a tenure-track start package."
+  },
+  {
+    "code": "AT",
+    "country": "Austria",
+    "flag": "🇦🇹",
+    "titles": "Postdoc → Assistenzprofessor/in (tenure track under §99 (5)/(6) or Laufbahnstelle with a qualification agreement, ≈Asst Prof) → Assoziierte/r Professor/in (tenured, ≈Assoc Prof) → Universitätsprofessor/in (§98, Full Prof; §99 for fixed-term professorships). Also ISTA (Institute of Science and Technology Austria) and IST-style Assistant Professor.",
+    "tenure": "Laufbahnstelle: fixed-term Assistant Professor (about 6 years) with a qualification agreement (Qualifizierungsvereinbarung) specifying targets; when these are met, you get a permanent contract as Associate Professor. Recent §99(5) opportunities offer direct appointment as a tenure-track professor. ISTA runs a US-style 6-7 year tenure track.",
+    "hiring_cycle": "Rolling. §98 calls take 9–18 months (a Berufungsverfahren like Germany's). Laufbahnstellen and §99 posts take about 4–9 months. ISTA hires on a yearly cycle (applications due in the autumn).",
+    "process": "Similar to the German Berufungsverfahren for §98: a Berufungskommission (appointment committee), external reviewers, hearing (Hearing) with a public talk and Lehrprobe, then a ranked list (Dreiervorschlag) and negotiations with the Rektor (vice-chancellor). Laufbahnstellen: a committee and a hearing with a talk and interview.",
+    "salary": "Universities' collective agreement (KV): Assistant Professor (A2) about €5,000–€5,500/mo gross (14 payments/yr, so ≈€70k–€77k/yr). Associate Professor (A1) is about €6,000–€7,000/mo x 14. Full Professor (§98) is individually negotiated (about €7,500–€10,000/mo x 14). ISTA pays competitively.",
+    "teaching_load": "Assistenzprofessor: about 4–6 Semesterstunden (weekly hours per semester). Professor: 6–8 Semesterstunden.",
+    "language": "German is generally expected for BSc teaching at most universities; TU Wien, Vienna CS, JKU Linz and Graz run English MSc programmes. ISTA is English-only (it offers PhD programmes only).",
+    "visa": "EU citizen: free movement; register within 3 days (Meldezettel) and within 4 months get the EU registration certificate (Anmeldebescheinigung). Non-EU: Red-White-Red Card or EU Blue Card; researchers are exempt from the labour market test.",
+    "boards": [
+      {
+        "name": "University of Vienna jobs",
+        "url": "https://jobs.univie.ac.at"
+      },
+      {
+        "name": "ISTA faculty positions",
+        "url": "https://ista.ac.at/en/jobs/faculty/"
+      },
+      {
+        "name": "EURAXESS Austria",
+        "url": "https://www.euraxess.at"
+      },
+      {
+        "name": "FWF (Austrian Science Fund)",
+        "url": "https://www.fwf.ac.at/en"
+      }
+    ],
+    "tips": [
+      "FWF START (large) and ESPRIT/Elise-Richter grants fund independent early-career groups and are strong routes to a tenure-track post.",
+      "Vienna has a strong philosophy of science tradition (Vienna Circle Institute) and growing AI activity (TU Wien, Complexity Science Hub). Frame metascience/XAI accordingly.",
+      "Check the qualification agreement's targets carefully and negotiate them to be realistic (publications, grants, teaching)."
+    ],
+    "startup": "Laufbahnstellen: modest (a PhD student, some funds). §98/ISTA: substantial packages with core-funded positions."
+  },
+  {
+    "code": "IE",
+    "country": "Ireland",
+    "flag": "🇮🇪",
+    "titles": "Assistant Professor / Lecturer (≈Asst Prof, often permanent after probation) → Associate Professor / Senior Lecturer (≈Assoc Prof) → Professor (≈Full Prof). TCD, UCD and University of Galway use the US-style titles.",
+    "tenure": "Posts are either permanent (subject to 1–3 years of probation) or fixed-term (often 3–5 years). Permanent posts are the norm for Assistant Professors. No formal tenure track, but some universities offer 'permanent with probation' posts.",
+    "hiring_cycle": "Rolling, with heavy concentration Nov–Apr. Deadlines are about 3–5 weeks. Interviews come 4–8 weeks later, and offers within 2–4 weeks. Budget constraints in the Irish HE sector ease with the new SFI/Research Ireland structures.",
+    "process": "UK-like: application form or cover letter mapped to criteria, CV, research/teaching statements. Interview day: presentation (15–20 min), panel interview with an external assessor, and a decision often within days.",
+    "salary": "National academic pay scales (public sector). Assistant Professor/Lecturer: about €60k–€95k/yr (Lecturer below the bar about €60k–€85k; Lecturer above the bar about €75k–€95k), plus a public-sector pension. Appointment point is negotiable within the scale based on experience.",
+    "teaching_load": "Typically 2–4 modules/yr plus supervision, similar to the UK.",
+    "language": "English (Irish is not required).",
+    "visa": "EU citizen: free movement; get a PPS number. Non-EU: Critical Skills Employment Permit (researchers/academics are on the critical skills list), or the Hosting Agreement for researchers.",
+    "boards": [
+      {
+        "name": "PublicJobs / University jobs (e.g., jobs.tcd.ie)",
+        "url": "https://www.publicjobs.ie"
+      },
+      {
+        "name": "jobs.ac.uk (Ireland listings)",
+        "url": "https://www.jobs.ac.uk"
+      },
+      {
+        "name": "Research Ireland (formerly SFI/IRC)",
+        "url": "https://www.researchireland.ie"
+      },
+      {
+        "name": "EURAXESS Ireland",
+        "url": "https://www.euraxess.ie"
+      }
+    ],
+    "tips": [
+      "Research Ireland's Frontiers for the Future and ERC StG are key, and ADAPT/Insight SFI research centres offer AI-related hiring.",
+      "Map the application to each criterion as in the UK. Irish panels are very structured.",
+      "Negotiate the entry point on the scale using postdoc years as evidence."
+    ],
+    "startup": "Modest: typically €10k–€50k and, sometimes, a PhD studentship. Funding is expected from Research Ireland and EU programmes."
+  },
+  {
+    "code": "ES",
+    "country": "Spain",
+    "flag": "🇪🇸",
+    "titles": "Profesor Ayudante Doctor (PAD ≈Asst Prof, 6 years, tenure-track since the LOSU reform) → Profesor Permanente Laboral / Profesor Titular de Universidad (PTU ≈Assoc Prof, permanent civil servant) → Catedrático de Universidad (CU ≈Full Prof). Research routes: Ramón y Cajal fellowship (5 years with tenure-track I3 certification), ICREA (Catalonia, permanent) and research centres (BSC, IIIA-CSIC, CVC).",
+    "tenure": "LOSU (2023): PAD is a 6-year tenure-track post, and after ANECA accreditation (or a regional agency's) candidates compete for permanent posts (PTU/permanent contract). Accreditation (acreditación) by ANECA is required for Titular/Catedrático, and the process is bureaucratic. The Ramón y Cajal programme (5 years) leads to a permanent post after the I3 evaluation.",
+    "hiring_cycle": "Posts are published in the official bulletins (BOE and regional gazettes) as 'concursos' (competitive calls). Timelines are irregular (3–12 months). The Ramón y Cajal call is annual (typically opening in winter/spring with results in the autumn). ICREA's call is annual (applications due early in the year).",
+    "process": "Concurso: a committee assesses the CV using merit scoring (baremo), then a public presentation of the candidate's CV and research/teaching project (proyecto docente e investigador). ANECA accreditation is evaluated separately by dossier. Research centres (BSC, IIIA-CSIC) use international-style interviews.",
+    "salary": "Low for Western Europe. PAD is about €2,300–€2,700/mo gross x 14. Profesor Titular is about €3,000–€3,700/mo x 14 plus seniority (trienios) and performance supplements (sexenios, quinquenios). Ramón y Cajal is about €37k–€40k/yr. ICREA is about €60k–€80k+. The Beckham law (flat 24% tax for 6 years) may apply for incoming researchers.",
+    "teaching_load": "PAD: up to 180 hours/yr; Titular: 240 hours/yr (reduced with sexenios). Ramón y Cajal: up to 80 hours/yr.",
+    "language": "Spanish (and Catalan/Basque/Galician regionally) is expected for teaching and administration. Research centres and ICREA are English-friendly.",
+    "visa": "EU citizen: register (certificado de registro) and get an NIE (foreigner ID number). Non-EU: the Researcher/Highly Qualified Professional visa under the Startup Law.",
+    "boards": [
+      {
+        "name": "BOE (official state gazette)",
+        "url": "https://www.boe.es"
+      },
+      {
+        "name": "ICREA",
+        "url": "https://www.icrea.cat"
+      },
+      {
+        "name": "AEI Ramón y Cajal",
+        "url": "https://www.aei.gob.es"
+      },
+      {
+        "name": "EURAXESS Spain",
+        "url": "https://www.euraxess.es"
+      }
+    ],
+    "tips": [
+      "ICREA and Ramón y Cajal are the best entry routes for international researchers, avoiding the concurso bureaucracy for the first years.",
+      "Get ANECA accreditation early. It is dossier-based and long.",
+      "Barcelona (IIIA-CSIC, BSC, UPF) and Madrid have strong AI groups. The Basque BCBL is relevant for cognitive science."
+    ],
+    "startup": "Minimal at universities. Ramón y Cajal comes with about €200k+ of research funding. ICREA hosts provide variable support."
+  },
+  {
+    "code": "IT",
+    "country": "Italy",
+    "flag": "🇮🇹",
+    "titles": "RTT (Ricercatore a tempo determinato in tenure track ≈Asst Prof, 6 years, replacing RTD-A/B since 2022) → Professore Associato (PA ≈Assoc Prof) → Professore Ordinario (PO ≈Full Prof). National Scientific Qualification (ASN, Abilitazione Scientifica Nazionale) is required to become Associato/Ordinario.",
+    "tenure": "RTT is a 6-year non-renewable contract. From year 3, holders with the ASN can be evaluated for promotion to Professore Associato (permanent). The ASN is a national dossier evaluation valid for 11 years. Direct calls ('chiamata diretta') exist for ERC winners and researchers already abroad at an equivalent level.",
+    "hiring_cycle": "Calls are posted on university sites and the Gazzetta Ufficiale, with 30-day deadlines. ASN windows open several times a year (four-month periods). Timelines are 4–12 months.",
+    "process": "The committee evaluates titles and publications and then holds a public interview/seminar (colloquio) on research, with a language test (usually English). Scoring follows the call's criteria. Insider candidates are common, and published calls often signal a specific profile.",
+    "salary": "RTT: about €2,100–€2,500/mo net (≈€38k–€45k/yr gross; set at 120% of a confirmed researcher's starting salary). Associato: about €50k–€70k gross. Low compared to Northern Europe. The 'rientro dei cervelli' (brain gain) regime gives a 50–90% income-tax exemption for returning researchers for several years.",
+    "teaching_load": "RTT: 60–90 hours per year. Associato: 120 hours/yr (full time).",
+    "language": "Italian is expected for BSc teaching and administration. English MSc programmes are growing (Politecnico di Milano, Bocconi, Pisa).",
+    "visa": "EU citizen: register residence (iscrizione anagrafica). Non-EU: researcher visa (Hosting Agreement) or EU Blue Card.",
+    "boards": [
+      {
+        "name": "Bandi MUR (ministry calls)",
+        "url": "https://bandi.mur.gov.it"
+      },
+      {
+        "name": "EURAXESS Italy",
+        "url": "https://euraxess.ec.europa.eu"
+      },
+      {
+        "name": "Bocconi / IIT / FBK careers",
+        "url": "https://www.unibocconi.it"
+      }
+    ],
+    "tips": [
+      "Apply for the ASN early. It is a prerequisite for promotion and a strong signal.",
+      "Direct calls for ERC/Marie Curie winners and 'brain gain' tax breaks make Italy attractive for grant holders.",
+      "Bocconi, IIT, FBK (Trento) and SISSA run international-style hiring with better salaries."
+    ],
+    "startup": "Minimal at public universities. Bocconi/IIT/FBK provide research budgets. PNRR (National Recovery and Resilience Plan) funds (to 2026) financed many posts."
+  },
+  {
+    "code": "HU",
+    "country": "Hungary",
+    "flag": "🇭🇺",
+    "titles": "Tanársegéd (Assistant Lecturer) → Adjunktus (≈Asst Prof) → Egyetemi docens (≈Assoc Prof; habilitation typically needed) → Egyetemi tanár (Full Prof, requires the MTA doktora 'Doctor of Science' title or equivalent). Research institutes: HUN-REN (formerly ELKH/MTA institutes) with Research Fellow → Senior Research Fellow → Scientific Advisor. CEU (Vienna) is separate.",
+    "tenure": "Most universities have been foundation-run since the 2021 'model change' (being reversed by the post-2026 government) and use employment contracts, often fixed-term, rather than civil-servant status. No formal tenure track. Permanence depends on contract type. HUN-REN institutes offer permanent research positions. The Lendület (MTA 'Momentum') programme funds 5-year independent research groups.",
+    "hiring_cycle": "Irregular. Calls are posted on university sites and KOZIGALLAS (the public-sector job portal). Timelines of 1–4 months. Lendület calls are annual.",
+    "process": "Application with CV, publication list, degree certificates and a research/teaching plan. Interviews are usually local and in Hungarian. Selection criteria are published in the call (e.g., number of publications, doctoral degree).",
+    "salary": "Low but rising (2023–2025 increases of about 15–30%). Adjunktus at foundation universities is about HUF 700k–1.1M/mo gross (≈€1,750–€2,750). Docens is about HUF 900k–1.4M. HUN-REN is similar. Lendület group leaders get top-ups. Note: since Dec 2022, foundation-run (public-interest trust) universities have been excluded from Horizon Europe/Erasmus+ under EU rule-of-law conditionality. After the April 2026 election the new government announced the foundations will be phased out; Erasmus+ access was restored, and on 23 Sept 2026 the Commission proposed restoring full Horizon Europe access (pending Council approval).",
+    "teaching_load": "Adjunktus: often 10–16 contact hours/week (heavy). Research institutes have no or light teaching.",
+    "language": "Hungarian for most teaching and administration, though English programmes exist (Semmelweis, BME, Debrecen, ELTE Informatics). A native speaker has a significant advantage.",
+    "visa": "Hungarian citizen: no issues. Non-EU: Hungary Card / Guest Researcher residence permit.",
+    "boards": [
+      {
+        "name": "KOZIGALLAS (public sector jobs)",
+        "url": "https://kozigallas.gov.hu"
+      },
+      {
+        "name": "HUN-REN (research network)",
+        "url": "https://hun-ren.hu"
+      },
+      {
+        "name": "NKFIH (national research funding)",
+        "url": "https://nkfih.gov.hu"
+      }
+    ],
+    "tips": [
+      "Check the host's Horizon Europe eligibility at the time of any ERC/MSCA application. HUN-REN institutes and state universities were always eligible, and foundation universities are expected to regain access once the Council adopts the Sept 2026 Commission proposal.",
+      "HUN-REN SZTAKI (AI), the Rényi Institute and ELTE's cognitive science/philosophy groups are relevant targets.",
+      "A Lendület grant or ERC StG with a Hungarian host is a way to build an independent group with competitive funding."
+    ],
+    "startup": "Minimal. Research funding comes from NKFIH (OTKA grants), Lendület and, where eligible, ERC."
+  },
+  {
+    "code": "CZ-PL",
+    "country": "Czechia & Poland",
+    "flag": "🇨🇿🇵🇱",
+    "titles": "Czechia: Odborný asistent (≈Asst Prof) → Docent (≈Assoc Prof, requires habilitation) → Profesor (≈Full Prof, appointed by the President). Poland: Adiunkt (≈Asst Prof) → Profesor uczelni (≈Assoc Prof; habilitation often expected) → Profesor (the state title, by presidential nomination). Research institutes: Czech Academy of Sciences, IDEAS NCBR (Poland, AI).",
+    "tenure": "Mostly fixed-term (3–5 year) contracts that can be renewed or converted to permanent contracts. Habilitation is key for permanence and seniority. Some new tenure-track schemes (e.g., Charles University Primus/Junior Star grants, Polish IDUB 'excellence initiative' universities) exist.",
+    "hiring_cycle": "Irregular calls on university sites and EURAXESS; open competitions (konkurs) are legally required in Poland. Timelines of 1–4 months.",
+    "process": "Poland: open competition (konkurs) with a CV, publication list and degree certificates, followed by a committee evaluation and interview. Czechia: similar, with interviews and a trial lecture at some universities.",
+    "salary": "Czechia: Odborný asistent about CZK 50k–70k/mo gross (≈€2,000–€2,800). Poland: Adiunkt about PLN 8,000–12,000/mo gross (≈€1,900–€2,800) at public universities; IDEAS NCBR and ERC-funded groups pay considerably more. A lower cost of living partially compensates.",
+    "teaching_load": "Poland: adiunkt about 240 hours/yr (a research-teaching post) or 360 hours (teaching-focused). Czechia: similar.",
+    "language": "The local language is generally needed for BSc teaching and administration, but English is widely used in research and MSc teaching.",
+    "visa": "EU citizen: free movement; register residence. Non-EU: EU Blue Card or scientific residence permits.",
+    "boards": [
+      {
+        "name": "EURAXESS",
+        "url": "https://euraxess.ec.europa.eu"
+      },
+      {
+        "name": "Czech Academy of Sciences careers",
+        "url": "https://www.avcr.cz/en/"
+      },
+      {
+        "name": "Polish National Science Centre (NCN)",
+        "url": "https://www.ncn.gov.pl"
+      },
+      {
+        "name": "Foundation for Polish Science (FNP)",
+        "url": "https://www.fnp.org.pl"
+      }
+    ],
+    "tips": [
+      "Widening-country schemes (ERA Chairs, Teaming, MSCA Widening Fellowships) and national grants (NCN Sonata, GAČR Junior Star, FNP) fund independent groups.",
+      "The ERC StG with a widening-country host is competitive, and host institutions often provide extra support.",
+      "Prague's philosophy/cognitive science groups (Czech Academy of Sciences Institute of Philosophy) and Warsaw's AI groups are relevant targets."
+    ],
+    "startup": "Usually minimal. External grants (NCN, GAČR, FNP, ERC) are expected."
+  },
+  {
+    "code": "IL",
+    "country": "Israel",
+    "flag": "🇮🇱",
+    "titles": "Senior Lecturer (Martze Bakhir ≈Asst Prof, tenure track) → Associate Professor (≈Assoc Prof, usually with tenure) → Full Professor. Lecturer (Martze) is sometimes used for junior posts. Research institutes: the Weizmann Institute uses Senior Scientist → Principal Scientist.",
+    "tenure": "US-like tenure track: about 5–7 years to the tenure decision, evaluated by international external letters. Promotion to Associate Professor usually comes with tenure.",
+    "hiring_cycle": "Applications are often accepted year-round, with major hiring decisions in the autumn/winter. Timelines of 6–12 months.",
+    "process": "Pack: CV, research statement, teaching statement, 3–5 letters. A campus visit with a job talk and meetings with faculty, then committee approvals (department, faculty, university). Strong preference for candidates who did postdocs abroad.",
+    "salary": "Senior Lecturer is about ILS 22k–30k/mo gross (≈€5,500–€7,500), set by the national scale plus research budget supplements.",
+    "teaching_load": "About 2–3 courses per year at research universities.",
+    "language": "Hebrew is expected for BSc teaching after a few years. English is fine for graduate teaching and research.",
+    "visa": "Non-Israeli EU citizen: an A/1–B/1 work visa for academics via the university. Note the current security situation and academic boycott debates when weighing the move.",
+    "boards": [
+      {
+        "name": "Weizmann Institute careers",
+        "url": "https://www.weizmann.ac.il/pages/careers"
+      },
+      {
+        "name": "Technion faculty positions",
+        "url": "https://www.technion.ac.il"
+      },
+      {
+        "name": "Israel Science Foundation",
+        "url": "https://www.isf.org.il"
+      }
+    ],
+    "tips": [
+      "Faculty hiring strongly prefers candidates with strong postdocs abroad, and CMU is ideal.",
+      "Start-up packages are relatively generous (Weizmann, Technion), and ISF grants are the main funding source."
+    ],
+    "startup": "Research universities often offer substantial start-up funds (roughly $200k–$1M, higher at Weizmann), plus ISF grants."
+  }
+]

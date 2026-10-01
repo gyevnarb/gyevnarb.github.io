@@ -3,6 +3,8 @@ name: Deploy site
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "17 5 * * *"  # daily job-listing refresh for /jobs/
   workflow_dispatch:
 
 permissions:
@@ -17,6 +19,24 @@ jobs:
         with:
           ruby-version: "3.3"
           bundler-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # The previous run's listings carry each job's first-seen date (drives the "new" badge)
+      - name: Restore job listings
+        uses: actions/cache/restore@v4
+        with:
+          path: job_tracker/data/jobs.json
+          key: jobs-${{ github.run_id }}
+          restore-keys: jobs-
+      - name: Refresh job listings
+        run: python3 job_tracker/refresh.py || python3 job_tracker/refresh.py --bundle
+      - name: Save job listings
+        if: hashFiles('job_tracker/data/jobs.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: job_tracker/data/jobs.json
+          key: jobs-${{ github.run_id }}
       - name: Build
         run: JEKYLL_ENV=production bundle exec jekyll build
       - name: Deploy

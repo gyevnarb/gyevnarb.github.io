@@ -12,3 +12,5 @@ node_modules/
 vendor
 .idea
 __pycache__/
+job_tracker/data/jobs.json
+job_tracker/data/bundle.js

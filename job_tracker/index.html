@@ -1,0 +1,124 @@
+---
+title: job market
+layout: default
+permalink: /jobs/
+description: Faculty, institute and industry research roles in the UK and Europe.
+wide: true
+noindex: true
+sitemap: false
+---
+<link rel="stylesheet" href="{{ '/job_tracker/app.css' | relative_url }}">
+<div class="jobhub">
+<header class="jh-head">
+  <div>
+    <h1>Job market</h1>
+    <p class="sub">Faculty, institute and industry research roles in the UK and Europe</p>
+  </div>
+  <div class="jh-meta" id="meta"></div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="positions" class="active">Positions</button>
+  <button data-tab="tracker">Tracker <span class="pill" id="trackCount"></span></button>
+  <button data-tab="deadlines">Deadlines</button>
+  <button data-tab="fellowships">Fellowships</button>
+  <button data-tab="watchlist">Watchlist</button>
+  <button data-tab="guides">Country guides</button>
+  <button data-tab="checklist">Checklist</button>
+  <button data-tab="resources">Resources</button>
+</nav>
+
+<div class="jh-main">
+  <section id="positions" class="tab active">
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Search title, org, location…">
+      <div class="chips" id="regionChips"></div>
+      <select id="kind"></select>
+      <select id="source"></select>
+      <label class="range">Relevance ≥ <b id="minScoreVal"></b>
+        <input type="range" id="minScore" min="0" max="12" step="1"></label>
+      <select id="sort">
+        <option value="score">Sort: relevance</option>
+        <option value="deadline">Sort: deadline</option>
+        <option value="posted">Sort: newest</option>
+      </select>
+      <label class="check"><input type="checkbox" id="onlyNew"> New only</label>
+      <label class="check"><input type="checkbox" id="showHidden"> Show hidden &amp; unavailable</label>
+    </div>
+    <p class="count" id="posCount"></p>
+    <div id="posList" class="list"></div>
+  </section>
+
+  <section id="tracker" class="tab">
+    <div class="toolbar">
+      <button class="btn" id="addManual">+ Add an application</button>
+      <button class="btn ghost" id="exportIcs">Export deadlines (.ics)</button>
+      <button class="btn ghost" id="exportJson">Back up (JSON)</button>
+      <label class="btn ghost">Restore <input type="file" id="importJson" accept=".json" hidden></label>
+    </div>
+    <form id="manualForm" class="card form" hidden>
+      <input name="title" placeholder="Position title" required>
+      <input name="org" placeholder="Organisation">
+      <input name="location" placeholder="Location">
+      <input name="url" placeholder="URL">
+      <input name="deadline" type="date">
+      <select name="kind"><option>Faculty</option><option>Industry</option><option>Institute</option><option>Fellowship</option><option>Postdoc</option><option>Other</option></select>
+      <button class="btn">Save</button>
+    </form>
+    <div id="board" class="board"></div>
+  </section>
+
+  <section id="deadlines" class="tab">
+    <div class="toolbar">
+      <label class="check"><input type="checkbox" id="dlTracked" checked> Tracked applications</label>
+      <label class="check"><input type="checkbox" id="dlFellow" checked> Fellowships (high and medium fit)</label>
+      <label class="check"><input type="checkbox" id="dlJobs"> Relevant open positions (UK and Europe, relevance ≥ 6)</label>
+    </div>
+    <div id="dlList"></div>
+  </section>
+
+  <section id="fellowships" class="tab">
+    <div class="toolbar">
+      <input type="search" id="fq" placeholder="Search fellowships…">
+      <select id="fFit"><option value="">Any fit</option><option value="high">High fit</option><option value="medium">Medium+ fit</option></select>
+      <select id="fRegion"><option value="">All regions</option><option>UK</option><option>Europe</option><option>Global</option></select>
+    </div>
+    <div id="fList" class="list"></div>
+  </section>
+
+  <section id="watchlist" class="tab">
+    <div class="toolbar">
+      <input type="search" id="wq" placeholder="Search organisations…">
+      <select id="wKind"></select>
+      <div class="chips" id="wTags"></div>
+      <label class="check"><input type="checkbox" id="wStale"> Not checked in 14+ days</label>
+    </div>
+    <div id="wList" class="grid"></div>
+  </section>
+
+  <section id="guides" class="tab">
+    <div class="guides">
+      <aside id="gNav"></aside>
+      <article id="gBody" class="card"></article>
+    </div>
+  </section>
+
+  <section id="checklist" class="tab">
+    <div class="toolbar">
+      <select id="cRegion"></select>
+      <div class="progress"><div id="cBar"></div></div><span id="cPct"></span>
+    </div>
+    <div id="cList"></div>
+  </section>
+
+  <section id="resources" class="tab">
+    <div class="toolbar"><input type="search" id="rq" placeholder="Search resources…"></div>
+    <div id="rList"></div>
+  </section>
+</div>
+
+<p class="jh-note">Listings refresh daily. Your tracker, checklist, hidden and unavailable ads are saved in this browser only; use Tracker → Back up to keep a copy.</p>
+</div>
+
+<script src="{{ '/job_tracker/data/bundle.js' | relative_url }}"></script>
+<script src="{{ '/job_tracker/app.js' | relative_url }}"></script>

@@ -1,0 +1,969 @@
+[
+  {
+    "id": "edinburgh-informatics",
+    "name": "University of Edinburgh, School of Informatics",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "Edinburgh",
+    "why": "PhD home institution with the Institute for Language, Cognition and Computation, the Autonomous Agents Research Group and a large XAI/responsible-AI community.",
+    "careers_url": "https://www.ed.ac.uk/informatics/about/work-with-us/vacancies",
+    "tags": [
+      "xai",
+      "multi-agent",
+      "ml",
+      "cogsci"
+    ]
+  },
+  {
+    "id": "edinburgh-ctmf",
+    "name": "Centre for Technomoral Futures (Edinburgh Futures Institute)",
+    "kind": "Research institute",
+    "country": "United Kingdom",
+    "city": "Edinburgh",
+    "why": "Shannon Vallor's centre on AI ethics and technomoral futures, a natural fit for AI epistemic risk and public-facing safety work; posts are advertised on the Edinburgh jobs site.",
+    "careers_url": "https://www.ed.ac.uk/jobs",
+    "tags": [
+      "philosophy",
+      "safety",
+      "sts",
+      "policy"
+    ]
+  },
+  {
+    "id": "oxford-cs",
+    "name": "University of Oxford, Department of Computer Science",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "Oxford",
+    "why": "Strong groups in human-centred computing, responsible AI and multi-agent systems (e.g. Michael Wooldridge).",
+    "careers_url": "https://www.cs.ox.ac.uk/aboutus/vacancies/csvacancies.html",
+    "tags": [
+      "multi-agent",
+      "ml",
+      "hci",
+      "safety"
+    ]
+  },
+  {
+    "id": "oxford-oii",
+    "name": "Oxford Internet Institute",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "Oxford",
+    "why": "Social science of AI and the internet, with Sandra Wachter's and Brent Mittelstadt's governance-of-AI and explanation work closely matching XAI and AI-in-society interests.",
+    "careers_url": "https://www.oii.ox.ac.uk/people/vacancies/",
+    "tags": [
+      "xai",
+      "sts",
+      "policy",
+      "safety"
+    ]
+  },
+  {
+    "id": "cambridge-cst",
+    "name": "University of Cambridge, Department of Computer Science and Technology",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "Cambridge",
+    "why": "Home to Cambridge's ML, HCI and AI-safety-adjacent groups (e.g. David Krueger's former group), with regular assistant-professor calls.",
+    "careers_url": "https://www.cst.cam.ac.uk/jobs",
+    "tags": [
+      "ml",
+      "hci",
+      "safety"
+    ]
+  },
+  {
+    "id": "cambridge-lcfi",
+    "name": "Leverhulme Centre for the Future of Intelligence",
+    "kind": "Research institute",
+    "country": "United Kingdom",
+    "city": "Cambridge",
+    "why": "Interdisciplinary AI centre whose Kinds of Intelligence and AI evaluation work (José Hernández-Orallo, Lucy Cheke) bridges cognitive science, AI safety and philosophy.",
+    "careers_url": "https://www.lcfi.ac.uk/get-involved/vacancies",
+    "tags": [
+      "safety",
+      "cogsci",
+      "philosophy",
+      "policy"
+    ]
+  },
+  {
+    "id": "cambridge-hps",
+    "name": "University of Cambridge, Department of History and Philosophy of Science",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "Cambridge",
+    "why": "One of the world's leading HPS departments, right for philosophy-of-science and metascience work on AI; its posts appear in Cambridge's academic vacancies listing.",
+    "careers_url": "https://www.jobs.cam.ac.uk/job/?category=1",
+    "tags": [
+      "philosophy",
+      "metascience",
+      "sts"
+    ]
+  },
+  {
+    "id": "ucl",
+    "name": "University College London (CS, STEaPP, Gatsby)",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "UCL hosts the Research on Research Institute (in STEaPP), the UCL AI Centre and the Gatsby Unit, which together cover metascience and ML.",
+    "careers_url": "https://www.ucl.ac.uk/work-at-ucl/search-ucl-jobs",
+    "tags": [
+      "metascience",
+      "ml",
+      "policy",
+      "cogsci"
+    ]
+  },
+  {
+    "id": "imperial",
+    "name": "Imperial College London",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "Strong in AI and multi-agent systems, including Francesca Toni's argumentation-based XAI group in Computing.",
+    "careers_url": "https://www.imperial.ac.uk/jobs/",
+    "tags": [
+      "xai",
+      "multi-agent",
+      "ml"
+    ]
+  },
+  {
+    "id": "kcl",
+    "name": "King's College London (Informatics and Digital Humanities)",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "Trustworthy autonomous systems, agents research and the Digital Humanities / Science & Technology Studies departments.",
+    "careers_url": "https://www.kcl.ac.uk/jobs/search",
+    "tags": [
+      "multi-agent",
+      "xai",
+      "sts"
+    ]
+  },
+  {
+    "id": "lse",
+    "name": "London School of Economics (Philosophy, Logic & Scientific Method)",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "LSE's philosophy-of-science department (CPNSS) and Data Science Institute suit work bridging metascience and AI.",
+    "careers_url": "https://jobs.lse.ac.uk/",
+    "tags": [
+      "philosophy",
+      "metascience",
+      "policy"
+    ]
+  },
+  {
+    "id": "manchester",
+    "name": "University of Manchester",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "why": "Large CS department with autonomous systems and human-centred AI groups, plus Manchester Institute of Innovation Research (science policy).",
+    "careers_url": "https://www.jobs.manchester.ac.uk/",
+    "tags": [
+      "ml",
+      "metascience",
+      "xai"
+    ]
+  },
+  {
+    "id": "bristol",
+    "name": "University of Bristol",
+    "kind": "University dept",
+    "country": "United Kingdom",
+    "city": "Bristol",
+    "why": "Bristol Interactive AI CDT, Jean Golding Institute and a strong philosophy-of-science centre (Centre for Science and Philosophy).",
+    "careers_url": "https://www.bristol.ac.uk/jobs/find/",
+    "tags": [
+      "xai",
+      "hci",
+      "philosophy"
+    ]
+  },
+  {
+    "id": "turing",
+    "name": "The Alan Turing Institute",
+    "kind": "Research institute",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "UK national institute for data science and AI, with public-policy, AI-ethics and research-integrity programmes.",
+    "careers_url": "https://portal.careers.turing.ac.uk/vacancies/vacancy-search-results.aspx",
+    "tags": [
+      "policy",
+      "safety",
+      "xai",
+      "ml"
+    ]
+  },
+  {
+    "id": "ada-lovelace",
+    "name": "Ada Lovelace Institute",
+    "kind": "Nonprofit",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "Independent research institute on AI and society, whose research roles suit work on public-facing AI safety and epistemic risks.",
+    "careers_url": "https://www.adalovelaceinstitute.org/jobs/",
+    "tags": [
+      "policy",
+      "sts",
+      "safety"
+    ]
+  },
+  {
+    "id": "uk-aisi",
+    "name": "UK AI Security Institute",
+    "kind": "Policy / government",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "Government AI safety institute hiring research scientists in evaluations, societal resilience and science of evals.",
+    "careers_url": "https://www.aisi.gov.uk/careers",
+    "tags": [
+      "safety",
+      "policy",
+      "ml"
+    ]
+  },
+  {
+    "id": "eth-inf",
+    "name": "ETH Zurich, Department of Computer Science",
+    "kind": "University dept",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "why": "Assistant professorships and fellowships in CS, including the Institute for Machine Learning and the SPY Lab (AI security).",
+    "careers_url": "https://inf.ethz.ch/department/open-positions.html",
+    "tags": [
+      "ml",
+      "safety"
+    ]
+  },
+  {
+    "id": "eth-ai-center",
+    "name": "ETH AI Center",
+    "kind": "Research institute",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "why": "Interdisciplinary AI hub with a postdoc fellowship scheme open to AI-and-society topics.",
+    "careers_url": "https://ai.ethz.ch/research/phd-and-postdoc-programs/postdoc-fellowships.html",
+    "tags": [
+      "ml",
+      "safety",
+      "policy"
+    ]
+  },
+  {
+    "id": "uzh",
+    "name": "University of Zurich",
+    "kind": "University dept",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "why": "Digital Society Initiative and Center for Reproducible Science (Leonhard Held), directly relevant to metascience.",
+    "careers_url": "https://jobs.uzh.ch/",
+    "tags": [
+      "metascience",
+      "sts",
+      "philosophy"
+    ]
+  },
+  {
+    "id": "epfl",
+    "name": "EPFL",
+    "kind": "University dept",
+    "country": "Switzerland",
+    "city": "Lausanne",
+    "why": "Top CS school with the Center for Intelligent Systems, the Data Science Lab (Robert West) and computational social science.",
+    "careers_url": "https://www.epfl.ch/about/working/working-at-epfl/job-openings/",
+    "tags": [
+      "ml",
+      "hci",
+      "metascience"
+    ]
+  },
+  {
+    "id": "tum-cit",
+    "name": "TU Munich, School of Computation, Information and Technology",
+    "kind": "University dept",
+    "country": "Germany",
+    "city": "Munich",
+    "why": "Large tenure-track system, plus the TUM Think Tank and the Institute for Ethics in AI.",
+    "careers_url": "https://www.cit.tum.de/en/cit/school/talent-management-diversity/open-positions/",
+    "tags": [
+      "ml",
+      "robotics",
+      "policy"
+    ]
+  },
+  {
+    "id": "lmu",
+    "name": "LMU Munich (job portal)",
+    "kind": "University dept",
+    "country": "Germany",
+    "city": "Munich",
+    "why": "Covers the Munich Center for Machine Learning and the philosophy faculty.",
+    "careers_url": "https://www.lmu.de/en/about-lmu/working-at-lmu/job-portal/",
+    "tags": [
+      "ml",
+      "philosophy",
+      "cogsci"
+    ]
+  },
+  {
+    "id": "lmu-mcmp",
+    "name": "Munich Center for Mathematical Philosophy (LMU)",
+    "kind": "Research institute",
+    "country": "Germany",
+    "city": "Munich",
+    "why": "A leading centre for formal philosophy of science and epistemology (Hannes Leitgeb, Stephan Hartmann), well suited to philosophy-of-science work on AI; posts are on the LMU job portal.",
+    "careers_url": "https://www.lmu.de/en/about-lmu/working-at-lmu/job-portal/",
+    "tags": [
+      "philosophy",
+      "cogsci",
+      "metascience"
+    ]
+  },
+  {
+    "id": "saarland",
+    "name": "Saarland University / Saarland Informatics Campus",
+    "kind": "University dept",
+    "country": "Germany",
+    "city": "Saarbrücken",
+    "why": "A major CS hub including the Center for Perspicuous Computing (explainability) and the Explainable Intelligent Systems philosophy–CS collaboration.",
+    "careers_url": "https://www.uni-saarland.de/en/administration/jobs.html",
+    "tags": [
+      "xai",
+      "philosophy",
+      "ml"
+    ]
+  },
+  {
+    "id": "tuebingen-uni",
+    "name": "University of Tübingen",
+    "kind": "University dept",
+    "country": "Germany",
+    "city": "Tübingen",
+    "why": "The Cluster of Excellence 'Machine Learning for Science' and its philosophy of ML group ask how ML changes scientific practice, the core of metascience-of-AI.",
+    "careers_url": "https://uni-tuebingen.de/en/university/careers/job-vacancies/",
+    "tags": [
+      "metascience",
+      "philosophy",
+      "ml"
+    ]
+  },
+  {
+    "id": "tuebingen-ai",
+    "name": "Tübingen AI Center",
+    "kind": "Research institute",
+    "country": "Germany",
+    "city": "Tübingen",
+    "why": "Recruits independent group leaders and professors across ML, with strong ties to the ML-for-science cluster.",
+    "careers_url": "https://tuebingen.ai/careers",
+    "tags": [
+      "ml",
+      "metascience"
+    ]
+  },
+  {
+    "id": "ellis-tuebingen",
+    "name": "ELLIS Institute Tübingen",
+    "kind": "Research institute",
+    "country": "Germany",
+    "city": "Tübingen",
+    "why": "Hires principal investigators on generous, independent terms; its groups include AI safety and alignment.",
+    "careers_url": "https://institute-tue.ellis.eu/en/jobs",
+    "tags": [
+      "ml",
+      "safety"
+    ]
+  },
+  {
+    "id": "mpi-is",
+    "name": "Max Planck Institute for Intelligent Systems",
+    "kind": "Research institute",
+    "country": "Germany",
+    "city": "Tübingen / Stuttgart",
+    "why": "Includes the Social Foundations of Computation department (Moritz Hardt) on ML's scientific and societal foundations.",
+    "careers_url": "https://is.mpg.de/career",
+    "tags": [
+      "ml",
+      "metascience",
+      "safety"
+    ]
+  },
+  {
+    "id": "mpi-sws",
+    "name": "Max Planck Institute for Software Systems",
+    "kind": "Research institute",
+    "country": "Germany",
+    "city": "Saarbrücken / Kaiserslautern",
+    "why": "Tenure-track faculty hiring, with groups on human-AI interaction and multi-agent learning (Goran Radanović, Manuel Gomez-Rodriguez).",
+    "careers_url": "https://www.mpi-sws.org/research-careers/",
+    "tags": [
+      "multi-agent",
+      "ml",
+      "xai"
+    ]
+  },
+  {
+    "id": "mpib-berlin",
+    "name": "Max Planck Institute for Human Development",
+    "kind": "Research institute",
+    "country": "Germany",
+    "city": "Berlin",
+    "why": "Center for Humans and Machines (Iyad Rahwan) and Adaptive Rationality groups, spanning cognitive science and AI's social impact.",
+    "careers_url": "https://careers.mpib-berlin.mpg.de/jobs",
+    "tags": [
+      "cogsci",
+      "multi-agent",
+      "sts"
+    ]
+  },
+  {
+    "id": "cispa",
+    "name": "CISPA Helmholtz Center for Information Security",
+    "kind": "Research institute",
+    "country": "Germany",
+    "city": "Saarbrücken",
+    "why": "Well-funded tenure-track faculty hiring, including trustworthy and secure AI.",
+    "careers_url": "https://career.cispa.de/",
+    "tags": [
+      "safety",
+      "ml"
+    ]
+  },
+  {
+    "id": "quest-bih",
+    "name": "BIH QUEST Center for Responsible Research",
+    "kind": "Research institute",
+    "country": "Germany",
+    "city": "Berlin",
+    "why": "Leading metascience and research-integrity centre (founded by Ulrich Dirnagl) on reproducibility and research quality; jobs are on the BIH career portal.",
+    "careers_url": "https://www.bihealth.org/en/career",
+    "tags": [
+      "metascience",
+      "policy"
+    ]
+  },
+  {
+    "id": "hertie-cdg",
+    "name": "Hertie School, Centre for Digital Governance",
+    "kind": "University dept",
+    "country": "Germany",
+    "city": "Berlin",
+    "why": "Research centre on AI governance and digital policy with postdoc and faculty openings.",
+    "careers_url": "https://www.hertie-school.org/en/digital-governance/about/opportunities",
+    "tags": [
+      "policy",
+      "sts",
+      "safety"
+    ]
+  },
+  {
+    "id": "tudelft",
+    "name": "TU Delft",
+    "kind": "University dept",
+    "country": "Netherlands",
+    "city": "Delft",
+    "why": "The Delft Digital Ethics Centre and the Interactive Intelligence group are strong on value-sensitive design, hybrid intelligence and XAI.",
+    "careers_url": "https://www.tudelft.nl/en/about-tu-delft/working-at-tu-delft/search-jobs",
+    "tags": [
+      "xai",
+      "philosophy",
+      "hci",
+      "multi-agent"
+    ]
+  },
+  {
+    "id": "uva",
+    "name": "University of Amsterdam",
+    "kind": "University dept",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "why": "Home to the Amsterdam Machine Learning Lab, ILLC (logic and philosophy) and the Institute for Advanced Study.",
+    "careers_url": "https://werkenbij.uva.nl/en/vacancies",
+    "tags": [
+      "ml",
+      "philosophy",
+      "cogsci"
+    ]
+  },
+  {
+    "id": "utrecht",
+    "name": "Utrecht University",
+    "kind": "University dept",
+    "country": "Netherlands",
+    "city": "Utrecht",
+    "why": "Strong in multi-agent systems and argumentation, and host of the Descartes Centre for the history and philosophy of science.",
+    "careers_url": "https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs",
+    "tags": [
+      "multi-agent",
+      "philosophy",
+      "xai"
+    ]
+  },
+  {
+    "id": "radboud",
+    "name": "Radboud University",
+    "kind": "University dept",
+    "country": "Netherlands",
+    "city": "Nijmegen",
+    "why": "The Donders Institute and the AI department (Iris van Rooij's critical cognitive science of AI) fit cognitive science and AI epistemics.",
+    "careers_url": "https://www.ru.nl/en/working-at/job-opportunities",
+    "tags": [
+      "cogsci",
+      "philosophy",
+      "ml"
+    ]
+  },
+  {
+    "id": "leiden-cwts",
+    "name": "Leiden University / CWTS",
+    "kind": "University dept",
+    "country": "Netherlands",
+    "city": "Leiden",
+    "why": "CWTS (Centre for Science and Technology Studies) is a world leader in science studies and research evaluation, core territory for metascience of AI.",
+    "careers_url": "https://www.universiteitleiden.nl/en/vacancies",
+    "tags": [
+      "metascience",
+      "sts",
+      "policy"
+    ]
+  },
+  {
+    "id": "tilburg-mrc",
+    "name": "Tilburg University / Meta-Research Center",
+    "kind": "University dept",
+    "country": "Netherlands",
+    "city": "Tilburg",
+    "why": "Jelte Wicherts' Meta-Research Center studies research integrity, questionable research practices and fraud.",
+    "careers_url": "https://www.tilburguniversity.edu/about/working/vacancies",
+    "tags": [
+      "metascience",
+      "cogsci"
+    ]
+  },
+  {
+    "id": "kth",
+    "name": "KTH Royal Institute of Technology",
+    "kind": "University dept",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "why": "WASP-funded AI hiring, with the Division of Robotics, Perception and Learning and a human-centred technology group.",
+    "careers_url": "https://www.kth.se/lediga-jobb?l=en",
+    "tags": [
+      "ml",
+      "robotics",
+      "hci"
+    ]
+  },
+  {
+    "id": "chalmers",
+    "name": "Chalmers University of Technology",
+    "kind": "University dept",
+    "country": "Sweden",
+    "city": "Gothenburg",
+    "why": "WASP and WASP-HS positions in AI and humanities/society, plus the Chalmers AI Research Centre.",
+    "careers_url": "https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/",
+    "tags": [
+      "ml",
+      "sts",
+      "safety"
+    ]
+  },
+  {
+    "id": "aalto",
+    "name": "Aalto University",
+    "kind": "University dept",
+    "country": "Finland",
+    "city": "Espoo",
+    "why": "FCAI (Finnish Center for AI), with strong human-AI interaction and computational cognitive modelling (Antti Oulasvirta).",
+    "careers_url": "https://www.aalto.fi/en/open-positions",
+    "tags": [
+      "hci",
+      "cogsci",
+      "ml"
+    ]
+  },
+  {
+    "id": "helsinki",
+    "name": "University of Helsinki",
+    "kind": "University dept",
+    "country": "Finland",
+    "city": "Helsinki",
+    "why": "FCAI partner with Philosophy and the Centre for Philosophy of Social Science (TINT), which has a strong philosophy of science tradition.",
+    "careers_url": "https://www.helsinki.fi/en/about-us/careers/open-positions",
+    "tags": [
+      "philosophy",
+      "metascience",
+      "ml"
+    ]
+  },
+  {
+    "id": "copenhagen",
+    "name": "University of Copenhagen",
+    "kind": "University dept",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "why": "The Pioneer Centre for AI, DIKU's NLP/XAI groups and a strong philosophy of science section.",
+    "careers_url": "https://employment.ku.dk/all-vacancies/",
+    "tags": [
+      "ml",
+      "xai",
+      "philosophy"
+    ]
+  },
+  {
+    "id": "dtu",
+    "name": "Technical University of Denmark (DTU)",
+    "kind": "University dept",
+    "country": "Denmark",
+    "city": "Kongens Lyngby",
+    "why": "DTU Compute's cognitive systems and AI sections, part of the Pioneer Centre for AI.",
+    "careers_url": "https://www.dtu.dk/english/about/job-and-career/vacant-positions",
+    "tags": [
+      "ml",
+      "cogsci"
+    ]
+  },
+  {
+    "id": "inria",
+    "name": "Inria",
+    "kind": "Research institute",
+    "country": "France",
+    "city": "Paris / nationwide",
+    "why": "France's national CS institute, with permanent researcher competitions (CRCN/ISFP) and teams on XAI and multi-agent systems.",
+    "careers_url": "https://jobs.inria.fr/public/classic/en/offres",
+    "tags": [
+      "ml",
+      "xai",
+      "multi-agent",
+      "hci"
+    ]
+  },
+  {
+    "id": "ista",
+    "name": "Institute of Science and Technology Austria (ISTA)",
+    "kind": "Research institute",
+    "country": "Austria",
+    "city": "Klosterneuburg",
+    "why": "Tenure-track assistant professorships in CS and ML (e.g. Christoph Lampert), with a highly interdisciplinary campus.",
+    "careers_url": "https://ista.ac.at/en/jobs/",
+    "tags": [
+      "ml",
+      "cogsci"
+    ]
+  },
+  {
+    "id": "csh-vienna",
+    "name": "Complexity Science Hub",
+    "kind": "Research institute",
+    "country": "Austria",
+    "city": "Vienna",
+    "why": "Its science-of-science and computational social science groups match metascience and complex social dynamics, continuing the CMU ICSD line of work.",
+    "careers_url": "https://csh.ac.at/engage/jobs/",
+    "tags": [
+      "metascience",
+      "sts",
+      "multi-agent"
+    ]
+  },
+  {
+    "id": "ellis",
+    "name": "ELLIS (European Laboratory for Learning and Intelligent Systems)",
+    "kind": "Research institute",
+    "country": "Europe",
+    "city": "Pan-European",
+    "why": "Pan-European ML network whose units and job board list PI, postdoc and faculty positions.",
+    "careers_url": "https://ellis.eu/jobs",
+    "tags": [
+      "ml",
+      "safety",
+      "xai"
+    ]
+  },
+  {
+    "id": "eu-ai-office",
+    "name": "European AI Office (European Commission)",
+    "kind": "Policy / government",
+    "country": "Belgium",
+    "city": "Brussels",
+    "why": "Implements the EU AI Act, and hires technology specialists and AI evaluators for general-purpose AI safety.",
+    "careers_url": "https://eu-careers.europa.eu/en/job-opportunities/artificial-intelligence-ai",
+    "tags": [
+      "policy",
+      "safety"
+    ]
+  },
+  {
+    "id": "oecd-ai",
+    "name": "OECD (AI Policy Observatory / Directorate for STI)",
+    "kind": "Policy / government",
+    "country": "France",
+    "city": "Paris",
+    "why": "The OECD.AI and Science, Technology and Innovation directorates work on AI policy and on AI in science.",
+    "careers_url": "https://www.oecd.org/en/about/careers.html",
+    "tags": [
+      "policy",
+      "metascience"
+    ]
+  },
+  {
+    "id": "google-deepmind",
+    "name": "Google DeepMind",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "London / Zurich",
+    "why": "Research scientist roles in the Responsibility, AGI Safety, Science and socio-technical research teams.",
+    "careers_url": "https://deepmind.google/careers/",
+    "tags": [
+      "safety",
+      "ml",
+      "multi-agent",
+      "sts"
+    ]
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "London research office; its interpretability, alignment and societal impacts teams study how AI affects people and science.",
+    "careers_url": "https://www.anthropic.com/careers/jobs",
+    "tags": [
+      "safety",
+      "xai",
+      "sts"
+    ]
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "London research office, with openings such as research scientist roles on AI's cognitive and learning outcomes.",
+    "careers_url": "https://openai.com/careers/search/",
+    "tags": [
+      "safety",
+      "ml",
+      "cogsci"
+    ]
+  },
+  {
+    "id": "msr-cambridge",
+    "name": "Microsoft Research Cambridge",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "Cambridge",
+    "why": "Industry lab with a strong publication culture; its Sociotechnical Alignment and human-AI experience groups fit directly.",
+    "careers_url": "https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/opportunities/",
+    "tags": [
+      "hci",
+      "safety",
+      "sts",
+      "ml"
+    ]
+  },
+  {
+    "id": "meta-fair",
+    "name": "Meta FAIR",
+    "kind": "Industry lab",
+    "country": "France",
+    "city": "Paris / London",
+    "why": "FAIR research scientist roles in Paris and London, covering fundamental and responsible AI.",
+    "careers_url": "https://www.metacareers.com/careerprograms/research/",
+    "tags": [
+      "ml",
+      "safety"
+    ]
+  },
+  {
+    "id": "apple-mlr",
+    "name": "Apple Machine Learning Research",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "Cambridge / London / Zurich / Paris",
+    "why": "Apple's ML research teams in Europe, with growing interest in reasoning, evaluation and publishing.",
+    "careers_url": "https://machinelearning.apple.com/work-with-us",
+    "tags": [
+      "ml",
+      "hci"
+    ]
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral AI",
+    "kind": "Industry lab",
+    "country": "France",
+    "city": "Paris",
+    "why": "Europe's leading frontier-model lab, with research roles in Paris and London.",
+    "careers_url": "https://mistral.ai/careers",
+    "tags": [
+      "ml",
+      "safety"
+    ]
+  },
+  {
+    "id": "sony-ai",
+    "name": "Sony AI",
+    "kind": "Industry lab",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "why": "Research team with an AI ethics flagship and a Zurich office.",
+    "careers_url": "https://ai.sony/joinus/jobroles/",
+    "tags": [
+      "ml",
+      "safety",
+      "robotics"
+    ]
+  },
+  {
+    "id": "amazon-science",
+    "name": "Amazon Science",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "Cambridge / London / Berlin / Tübingen",
+    "why": "Applied scientist roles in European offices, including Tübingen causality and Cambridge AGI teams.",
+    "careers_url": "https://www.amazon.science/careers",
+    "tags": [
+      "ml"
+    ]
+  },
+  {
+    "id": "spotify-research",
+    "name": "Spotify Research",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "Research on algorithmic responsibility, human-centred recommender systems and user modelling.",
+    "careers_url": "https://www.lifeatspotify.com/jobs",
+    "tags": [
+      "hci",
+      "ml",
+      "sts"
+    ]
+  },
+  {
+    "id": "bloomberg",
+    "name": "Bloomberg AI Engineering",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "A large NLP/AI research group that publishes actively, with a London hub.",
+    "careers_url": "https://bloomberg.avature.net/careers",
+    "tags": [
+      "ml"
+    ]
+  },
+  {
+    "id": "huawei-zrc",
+    "name": "Huawei Zurich Research Center",
+    "kind": "Industry lab",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "why": "Part of Huawei's European Research Institute, hiring AI researchers in Zurich.",
+    "careers_url": "https://careers.huaweirc.ch/jobs",
+    "tags": [
+      "ml"
+    ]
+  },
+  {
+    "id": "naver-labs-europe",
+    "name": "NAVER LABS Europe",
+    "kind": "Industry lab",
+    "country": "France",
+    "city": "Meylan (Grenoble)",
+    "why": "A publication-oriented industrial lab in ML, NLP, robotics and human-robot interaction.",
+    "careers_url": "https://europe.naverlabs.com/careers/",
+    "tags": [
+      "ml",
+      "robotics",
+      "hci"
+    ]
+  },
+  {
+    "id": "cohere",
+    "name": "Cohere",
+    "kind": "Industry lab",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "Cohere Labs (formerly Cohere For AI) runs open-science research from London and elsewhere.",
+    "careers_url": "https://jobs.ashbyhq.com/cohere",
+    "tags": [
+      "ml",
+      "metascience"
+    ]
+  },
+  {
+    "id": "hugging-face",
+    "name": "Hugging Face",
+    "kind": "Industry lab",
+    "country": "France",
+    "city": "Paris (remote)",
+    "why": "Open-science ML company with research roles on evaluation, ethics and society (e.g. Margaret Mitchell's team).",
+    "careers_url": "https://apply.workable.com/huggingface/",
+    "tags": [
+      "ml",
+      "sts",
+      "metascience"
+    ]
+  },
+  {
+    "id": "apollo-research",
+    "name": "Apollo Research",
+    "kind": "Nonprofit",
+    "country": "United Kingdom",
+    "city": "London",
+    "why": "London AI safety organisation focused on evaluations of deception and scheming in frontier models.",
+    "careers_url": "https://www.apolloresearch.ai/careers",
+    "tags": [
+      "safety",
+      "xai"
+    ]
+  },
+  {
+    "id": "far-ai",
+    "name": "FAR.AI",
+    "kind": "Nonprofit",
+    "country": "Global",
+    "city": "Berkeley / remote",
+    "why": "AI safety research nonprofit that hires remote research scientists and runs alignment workshops.",
+    "careers_url": "https://far.ai/careers",
+    "tags": [
+      "safety",
+      "ml"
+    ]
+  },
+  {
+    "id": "epoch-ai",
+    "name": "Epoch AI",
+    "kind": "Nonprofit",
+    "country": "Global",
+    "city": "Remote",
+    "why": "Research on AI trends, compute and forecasting, much of it quantitative metascience of AI progress.",
+    "careers_url": "https://epoch.ai/careers",
+    "tags": [
+      "metascience",
+      "policy"
+    ]
+  },
+  {
+    "id": "govai",
+    "name": "Centre for the Governance of AI (GovAI)",
+    "kind": "Nonprofit",
+    "country": "United Kingdom",
+    "city": "Oxford / London",
+    "why": "AI governance research institute with research fellow and scholar roles.",
+    "careers_url": "https://www.governance.ai/opportunities",
+    "tags": [
+      "policy",
+      "safety"
+    ]
+  }
+]

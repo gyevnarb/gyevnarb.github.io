@@ -1,0 +1,227 @@
+/* Job Market Hub, embedded in the site layout at /jobs/.
+   Colours and fonts come from the site tokens (_includes/site.scss); everything is scoped to .jobhub. */
+.jobhub {
+  --rule: 2px;
+  --on-red: #ffffff; --on-blue: #ffffff; --on-yellow: #16150f;
+  font: 400 15px/1.55 var(--display);
+}
+@media (prefers-color-scheme: dark) {
+  .jobhub { --on-blue: var(--bg); }
+}
+.jobhub * { border-radius: 0 !important; }
+.jobhub a { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--blue); }
+.jobhub a:hover { background: var(--blue); color: var(--on-blue); }
+.jobhub h3 a, .jobhub .res .card a { border-bottom: 0; }
+.jobhub h3 a:hover, .jobhub .res .card a:hover { background: none; color: var(--blue); }
+.jobhub code { font-family: ui-monospace, Menlo, monospace; font-size: 12px; background: var(--yellow); color: var(--on-yellow); padding: 1px 5px; }
+.jobhub small { font-size: 11px; }
+.jobhub button, .jobhub input, .jobhub select, .jobhub textarea { font-family: var(--display); }
+
+/* ---------- page head */
+.jh-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 32px; margin-bottom: 1.5rem; }
+.jh-head h1 { font-size: clamp(1.9rem, 5.4vw, 3rem); letter-spacing: -.015em; line-height: 1.08; }
+.jh-head .sub { margin: .4rem 0 0; font-size: 1.05rem; color: var(--muted); font-family: var(--text); }
+.jh-meta { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); text-align: right; line-height: 1.7; }
+.jh-meta .bad { color: var(--red); }
+.jh-note { margin: 2.5rem 0 0; font: 400 .85rem/1.5 var(--text); color: var(--muted); }
+
+/* ---------- tabs */
+.jobhub .tabs { display: flex; border-top: var(--rule) solid var(--ink); border-bottom: var(--rule) solid var(--ink); overflow-x: auto;
+  position: sticky; top: 0; background: var(--bg); z-index: 5; margin-bottom: 28px; }
+.jobhub .tabs button { background: none; border: 0; border-right: 1px solid var(--line); padding: 14px 18px 12px;
+  font: 600 12px var(--display); text-transform: uppercase; letter-spacing: .12em; color: var(--ink); cursor: pointer; white-space: nowrap; }
+.jobhub .tabs button:hover { background: var(--yellow); color: var(--on-yellow); }
+.jobhub .tabs button.active { background: var(--ink); color: var(--bg); }
+.jobhub .pill { display: inline-block; min-width: 18px; margin-left: 4px; padding: 0 5px; background: var(--red); color: var(--on-red);
+  font-size: 10px; text-align: center; letter-spacing: 0; }
+.jobhub .pill:empty { display: none; }
+.jobhub .tab { display: none; }
+.jobhub .tab.active { display: block; }
+
+@media (max-width: 760px) {
+  .jh-meta { text-align: left; }
+  .jobhub input[type=search] { min-width: 0; }
+}
+
+/* ---------- controls */
+.jobhub .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 20px; }
+.jobhub input[type=search], .jobhub input:not([type]), .jobhub input[type=date], .jobhub select, .jobhub textarea {
+  font: 400 14px var(--display); color: var(--ink); background: var(--bg);
+  border: 2px solid var(--ink); padding: 7px 10px; outline: none; }
+.jobhub input:focus, .jobhub select:focus, .jobhub textarea:focus { border-color: var(--blue); box-shadow: 4px 4px 0 var(--blue); }
+.jobhub input[type=search] { min-width: 260px; flex: 1 1 260px; max-width: 440px; }
+.jobhub select { appearance: none; padding-right: 28px; cursor: pointer;
+  background: linear-gradient(45deg, transparent 50%, var(--ink) 50%) right 14px center / 6px 6px no-repeat,
+              linear-gradient(-45deg, transparent 50%, var(--ink) 50%) right 9px center / 6px 6px no-repeat, var(--bg); }
+.jobhub input[type=checkbox] { accent-color: var(--ink); width: 15px; height: 15px; }
+.jobhub input[type=range] { accent-color: var(--red); }
+.jobhub .range, .jobhub .check { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em;
+  display: inline-flex; align-items: center; gap: 7px; }
+.jobhub .range b { font-size: 14px; min-width: 16px; }
+.jobhub .chips { display: flex; gap: 0; flex-wrap: wrap; }
+.jobhub .chip { border: 2px solid var(--ink); margin-left: -2px; background: var(--bg); color: var(--ink); padding: 5px 11px;
+  font: 600 11px var(--display); text-transform: uppercase; letter-spacing: .08em; cursor: pointer; }
+.jobhub .chip:first-child { margin-left: 0; }
+.jobhub .chip small { color: var(--muted); font-size: 10px; }
+.jobhub .chip.on { background: var(--ink); color: var(--bg); }
+.jobhub .chip.on small { color: var(--yellow); }
+.jobhub .btn { font: 600 11px var(--display); text-transform: uppercase; letter-spacing: .1em; background: var(--ink); color: var(--bg);
+  border: 2px solid var(--ink); padding: 8px 14px; cursor: pointer; }
+.jobhub .btn:hover { background: var(--red); border-color: var(--red); color: var(--on-red); }
+.jobhub .btn.ghost { background: var(--bg); color: var(--ink); }
+.jobhub .btn.ghost:hover { background: var(--yellow); border-color: var(--ink); color: var(--on-yellow); }
+.jobhub .count { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 10px; }
+
+/* ---------- cards */
+.jobhub .list { display: flex; flex-direction: column; border-top: var(--rule) solid var(--ink); }
+.jobhub .list > .card { border: 0; border-bottom: 1px solid var(--line); padding: 16px 4px 16px 36px; position: relative; }
+.jobhub .list > .card:hover { background: color-mix(in srgb, var(--yellow) 10%, var(--bg)); }
+.jobhub .card { background: var(--bg); border: 2px solid var(--ink); padding: 14px 16px; }
+.jobhub .job { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; }
+.jobhub .job.hidden { opacity: .35; }
+.jobhub .job h3 { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.3; letter-spacing: -.005em; }
+.jobhub .job .org { font-size: 13px; color: var(--muted); }
+.jobhub .job .sum { font-size: 13px; color: var(--muted); grid-column: 1 / -1; margin: 4px 0 0; max-width: 90ch;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* geometric marker per role type */
+.jobhub .shape { position: absolute; left: 6px; top: 21px; width: 14px; height: 14px; background: var(--ink); }
+.jobhub .shape.faculty { background: var(--red); border-radius: 50% !important; }
+.jobhub .shape.industry { background: var(--blue); }
+.jobhub .shape.fellowship { background: none; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent;
+  border-bottom: 14px solid var(--yellow); }
+.jobhub .shape.postdoc { background: none; border: 3px solid var(--ink); border-radius: 50% !important; }
+.jobhub .shape.safety { background: var(--blue); border-radius: 50% !important; }
+.jobhub .shape.other { background: none; border: 3px solid var(--ink); }
+
+.jobhub .badges { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.jobhub .b { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; padding: 2px 7px;
+  background: var(--ink); color: var(--bg); white-space: nowrap; }
+.jobhub .b.muted { background: transparent; color: var(--ink); border: 1px solid var(--line); padding: 1px 6px; }
+.jobhub .b.warn { background: var(--red); color: var(--on-red); }
+.jobhub .b.ok { background: var(--blue); color: var(--on-blue); }
+.jobhub .b.new { background: var(--yellow); color: var(--on-yellow); }
+.jobhub .actions { display: flex; gap: 0; align-items: flex-start; }
+.jobhub .icon { background: var(--bg); border: 2px solid var(--ink); margin-left: -2px; cursor: pointer; color: var(--ink);
+  font-size: 13px; width: 32px; height: 30px; }
+.jobhub .icon:hover { background: var(--ink); color: var(--bg); }
+.jobhub .icon.on { background: var(--yellow); color: var(--on-yellow); }
+.jobhub .score { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); text-align: right; margin-top: 6px; }
+
+/* ---------- tracker */
+.jobhub .board { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0; border-left: 2px solid var(--ink); }
+.jobhub .col { border-right: 2px solid var(--ink); border-top: var(--rule) solid var(--ink); border-bottom: 2px solid var(--ink); padding: 0 10px 10px; min-height: 160px; }
+.jobhub .col h4 { margin: 0 -10px 10px; padding: 10px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em;
+  border-bottom: 2px solid var(--ink); }
+.jobhub .col:nth-child(1) h4 { background: var(--yellow); color: var(--on-yellow); }
+.jobhub .col:nth-child(3) h4 { background: var(--blue); color: var(--on-blue); }
+.jobhub .col:nth-child(4) h4, .jobhub .col:nth-child(5) h4 { background: var(--red); color: var(--on-red); }
+.jobhub .col:nth-child(6) h4 { background: var(--ink); color: var(--bg); }
+.jobhub .col .card { margin-bottom: 10px; font-size: 12px; padding: 10px; }
+.jobhub .col .card b { font-size: 14px; display: block; margin-bottom: 2px; }
+.jobhub .col .card b a { border-bottom: 0; }
+.jobhub .col textarea { width: 100%; margin-top: 8px; min-height: 48px; font-size: 12px; resize: vertical; border-width: 1px; }
+.jobhub .col .row { display: flex; gap: 0; margin-top: 8px; align-items: stretch; }
+.jobhub .col .row select, .jobhub .col .row input { font-size: 11px; padding: 3px 6px; border-width: 1px; margin-right: -1px; }
+.jobhub .col .row select { padding-right: 22px; }
+.jobhub .col .row .icon { height: auto; border-width: 1px; }
+.jobhub .form { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; border-left: 12px solid var(--yellow); }
+
+/* ---------- deadlines */
+.jobhub .month { margin: 30px 0 0; padding-bottom: 6px; font-size: 22px; font-weight: 600; text-transform: uppercase; letter-spacing: -.01em;
+  border-bottom: var(--rule) solid var(--ink); }
+.jobhub .month:first-child { margin-top: 0; }
+.jobhub .dl { display: grid; grid-template-columns: 100px 1fr auto; gap: 16px; align-items: center; padding: 10px 4px 10px 20px;
+  border: 0; border-bottom: 1px solid var(--line); }
+.jobhub .dl .date { font-size: 20px; font-weight: 600; line-height: 1.1; letter-spacing: -.02em; }
+.jobhub .dl .date small { display: block; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; }
+.jobhub .dl.soon .date { color: var(--red); }
+.jobhub .dl.soon { box-shadow: inset 8px 0 0 var(--red); }
+.jobhub .dl a { border-bottom: 0; }
+
+/* ---------- watchlist */
+.jobhub .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 0;
+  border-top: 2px solid var(--ink); border-left: 2px solid var(--ink); }
+.jobhub .grid .card { border: 0; border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); padding: 18px; display: flex; flex-direction: column; }
+.jobhub .grid .card h3 { margin: 0 0 4px; font-size: 16px; font-weight: 600; line-height: 1.25; }
+.jobhub .grid .card p { margin: 10px 0; font-size: 13px; color: var(--muted); flex: 1; }
+.jobhub .grid .card:nth-child(7n+1) { box-shadow: inset 0 6px 0 var(--red); }
+.jobhub .grid .card:nth-child(7n+4) { box-shadow: inset 0 6px 0 var(--blue); }
+.jobhub .grid .card:nth-child(7n+6) { box-shadow: inset 0 6px 0 var(--yellow); }
+.jobhub .grid .foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.jobhub .grid .foot > span { display: flex; align-items: center; gap: 8px; }
+
+/* ---------- guides */
+.jobhub .guides { display: grid; grid-template-columns: 220px 1fr; gap: 0; border: 2px solid var(--ink); }
+.jobhub .guides aside { border-right: 2px solid var(--ink); }
+.jobhub .guides aside button { display: block; width: 100%; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--line);
+  padding: 9px 14px; font: 400 14px var(--display); color: var(--ink); cursor: pointer; }
+.jobhub .guides aside button:hover { background: var(--yellow); color: var(--on-yellow); }
+.jobhub .guides aside button.active { background: var(--ink); color: var(--bg); font-weight: 600; }
+.jobhub #gBody { border: 0; padding: 28px 36px; }
+.jobhub #gBody h2 { margin: 0 0 8px; font-size: 36px; font-weight: 600; text-transform: uppercase; letter-spacing: -.02em; line-height: 1;
+  padding-bottom: 14px; border-bottom: var(--rule) solid var(--ink); }
+.jobhub #gBody h4 { margin: 24px 0 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .14em; color: var(--red); }
+.jobhub #gBody p, .jobhub #gBody li { font-size: 14px; max-width: 80ch; }
+.jobhub #gBody ul { padding-left: 0; list-style: none; }
+.jobhub #gBody li { padding-left: 20px; position: relative; margin-bottom: 6px; }
+.jobhub #gBody li::before { content: ""; position: absolute; left: 2px; top: .5em; width: 8px; height: 8px; background: var(--blue); }
+
+/* ---------- checklist */
+.jobhub .progress { width: 260px; height: 14px; border: 2px solid var(--ink); background: var(--bg); overflow: hidden; }
+.jobhub .progress div { height: 100%; background: var(--blue); width: 0; transition: width .2s; }
+.jobhub #cPct { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; }
+.jobhub .group { margin-bottom: 30px; }
+.jobhub .group h3 { font-size: 22px; font-weight: 600; text-transform: uppercase; letter-spacing: -.01em; margin: 0;
+  padding-bottom: 6px; border-bottom: var(--rule) solid var(--ink); }
+.jobhub .ck { display: grid; grid-template-columns: 22px 1fr auto; gap: 12px; padding: 12px 4px; margin: 0; cursor: pointer;
+  border: 0; border-bottom: 1px solid var(--line); }
+.jobhub .ck:hover { background: color-mix(in srgb, var(--yellow) 10%, var(--bg)); }
+.jobhub .ck.done .t { text-decoration: line-through; text-decoration-color: var(--red); text-decoration-thickness: 2px; color: var(--muted); }
+.jobhub .ck .t { font-weight: 600; font-size: 14px; }
+.jobhub .ck .d { font-size: 13px; color: var(--muted); max-width: 90ch; }
+
+/* ---------- resources */
+.jobhub .res h3 { font-size: 22px; font-weight: 600; text-transform: uppercase; letter-spacing: -.01em; margin: 30px 0 0;
+  padding-bottom: 6px; border-bottom: var(--rule) solid var(--ink); }
+.jobhub .res h3:first-child { margin-top: 0; }
+.jobhub .res .card { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; margin: 0; padding: 10px 4px; border: 0; border-bottom: 1px solid var(--line); }
+.jobhub .res .card b { font-weight: 600; }
+.jobhub .res .card span { font-size: 13px; color: var(--muted); grid-column: 1; }
+.jobhub .empty { padding: 48px; text-align: center; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; border: 2px dashed var(--line); }
+
+@media (max-width: 760px) {
+  .jobhub .guides { grid-template-columns: 1fr; }
+  .jobhub .guides aside { display: flex; flex-wrap: wrap; border-right: 0; border-bottom: 2px solid var(--ink); }
+  .jobhub .guides aside button { width: auto; }
+  .jobhub #gBody { padding: 20px 16px; }
+  .jobhub .dl { grid-template-columns: 80px 1fr; }
+}
+
+/* legend for role-type shapes */
+.jobhub .count { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; }
+.jobhub .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 0; padding: 0; font-size: inherit; color: var(--muted); }
+.jobhub .legend span { display: inline-flex; align-items: center; gap: 6px; }
+.jobhub .legend .shape { position: static; width: 10px; height: 10px; }
+.jobhub .legend .shape.fellowship { width: 0; height: 0; border-left-width: 6px; border-right-width: 6px; border-bottom-width: 10px; }
+.jobhub .legend .shape.postdoc, .jobhub .legend .shape.other { border-width: 2px; }
+
+.jobhub [hidden] { display: none !important; }
+
+/* country code blocks in the guides (flags would break the palette) */
+.jobhub .cc { display: inline-block; min-width: 38px; margin-right: 10px; padding: 1px 4px; text-align: center; font-size: 10px; font-weight: 600;
+  letter-spacing: .06em; background: var(--ink); color: var(--bg); vertical-align: middle; }
+.jobhub .guides aside button.active .cc { background: var(--yellow); color: var(--on-yellow); }
+.jobhub #gBody h2 .cc { font-size: 16px; padding: 6px 8px; min-width: 64px; margin-right: 16px; background: var(--red); color: var(--on-red); }
+
+/* Paragraph text in the text face; headings, labels and controls use the display face. */
+.jobhub .job .sum, .jobhub .job .org, .jobhub #gBody p, .jobhub #gBody li, .jobhub .ck .d, .jobhub .grid .card p, .jobhub .grid .card .org, .jobhub .res .card span, .jobhub .dl small, .jobhub .col .card > span, .jobhub .col textarea {
+  font-family: var(--text); letter-spacing: 0; }
+.jobhub #gBody p, .jobhub #gBody li { font-size: 15px; line-height: 1.6; }
+
+/* ads marked as no longer available */
+.jobhub .job.gone h3 a { text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: var(--red); color: var(--muted); }
+.jobhub .job.gone .shape { opacity: .35; }
+.jobhub .b.gone { background: transparent; color: var(--red); border: 2px solid var(--red); padding: 0 6px; }
+.jobhub .icon.on-gone { background: var(--red); border-color: var(--red); color: var(--on-red); }

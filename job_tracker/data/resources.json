@@ -1,0 +1,498 @@
+[
+ {
+  "id": "jobs-ac-uk",
+  "category": "Job boards",
+  "name": "jobs.ac.uk",
+  "url": "https://www.jobs.ac.uk/",
+  "description": "The main UK academic job board, where nearly every UK lectureship and postdoc is advertised.",
+  "region": "UK"
+ },
+ {
+  "id": "euraxess",
+  "category": "Job boards",
+  "name": "EURAXESS Jobs",
+  "url": "https://euraxess.ec.europa.eu/jobs/search",
+  "description": "The European Commission's researcher job and funding portal, covering every EU/EEA country.",
+  "region": "Europe"
+ },
+ {
+  "id": "academicpositions",
+  "category": "Job boards",
+  "name": "AcademicPositions",
+  "url": "https://academicpositions.com/",
+  "description": "A European-focused aggregator of PhD, postdoc and faculty positions, with field and country filters.",
+  "region": "Europe"
+ },
+ {
+  "id": "the-unijobs",
+  "category": "Job boards",
+  "name": "Times Higher Education Unijobs",
+  "url": "https://www.timeshighereducation.com/unijobs/",
+  "description": "International university job listings from Times Higher Education.",
+  "region": "Global"
+ },
+ {
+  "id": "nature-careers",
+  "category": "Job boards",
+  "name": "Nature Careers",
+  "url": "https://www.nature.com/naturecareers/jobs",
+  "description": "Science job board with many European institute, fellowship and group-leader adverts.",
+  "region": "Global"
+ },
+ {
+  "id": "science-careers",
+  "category": "Job boards",
+  "name": "Science Careers (AAAS)",
+  "url": "https://jobs.sciencecareers.org/",
+  "description": "AAAS job board for research and faculty positions across the sciences.",
+  "region": "Global"
+ },
+ {
+  "id": "ellis-jobs",
+  "category": "Job boards",
+  "name": "ELLIS job board",
+  "url": "https://ellis.eu/jobs",
+  "description": "ML-specific openings from ELLIS units and partner institutions across Europe.",
+  "region": "Europe"
+ },
+ {
+  "id": "cra-career-center",
+  "category": "Job boards",
+  "name": "CRA Career Center",
+  "url": "https://careercenter.cra.org/",
+  "description": "Computing Research Association job ads for CS faculty and research positions, mostly North American with some international listings.",
+  "region": "Global"
+ },
+ {
+  "id": "academicjobsonline",
+  "category": "Job boards",
+  "name": "AcademicJobsOnline",
+  "url": "https://academicjobsonline.org/ajo/jobs",
+  "description": "Application platform and listing site used by many CS, maths and philosophy departments.",
+  "region": "Global"
+ },
+ {
+  "id": "philjobs",
+  "category": "Job boards",
+  "name": "PhilJobs: Jobs for Philosophers",
+  "url": "https://philjobs.org/jobs",
+  "description": "The APA/PhilPapers job board for philosophy, including philosophy of science and AI ethics posts.",
+  "region": "Global"
+ },
+ {
+  "id": "cstheory-jobs",
+  "category": "Job boards",
+  "name": "CS Theory Jobs",
+  "url": "https://cstheory-jobs.org/",
+  "description": "Aggregated faculty and postdoc adverts in theoretical CS, often including European departments.",
+  "region": "Global"
+ },
+ {
+  "id": "academictransfer",
+  "category": "Job boards",
+  "name": "AcademicTransfer",
+  "url": "https://www.academictransfer.com/en/",
+  "description": "The central job board for Dutch universities and research institutes.",
+  "region": "Europe"
+ },
+ {
+  "id": "academics-de",
+  "category": "Job boards",
+  "name": "academics.de (ZEIT)",
+  "url": "https://www.academics.de/",
+  "description": "Germany's leading academic job market, run with DIE ZEIT, listing professorships and W1/W2 tenure-track posts.",
+  "region": "Europe"
+ },
+ {
+  "id": "zeit-stellenmarkt",
+  "category": "Job boards",
+  "name": "ZEIT Stellenmarkt",
+  "url": "https://jobs.zeit.de/",
+  "description": "DIE ZEIT's job market, where German professorships are traditionally advertised.",
+  "region": "Europe"
+ },
+ {
+  "id": "forschung-lehre",
+  "category": "Job boards",
+  "name": "Forschung & Lehre Karriere",
+  "url": "https://www.forschung-und-lehre.de/karriere",
+  "description": "The German Association of University Professors' career portal, with professorship adverts.",
+  "region": "Europe"
+ },
+ {
+  "id": "jobbnorge",
+  "category": "Job boards",
+  "name": "Jobbnorge",
+  "url": "https://www.jobbnorge.no/en",
+  "description": "The main portal for Norwegian university and research-institute vacancies (plus some Nordic partners).",
+  "region": "Europe"
+ },
+ {
+  "id": "varbi-stockholm",
+  "category": "Job boards",
+  "name": "Varbi – Stockholm University vacancies",
+  "url": "https://su.varbi.com/en/what:findjob/",
+  "description": "Varbi is the recruitment system used by most Swedish universities; this is Stockholm University's listing.",
+  "region": "Europe"
+ },
+ {
+  "id": "varbi-uppsala",
+  "category": "Job boards",
+  "name": "Varbi – Uppsala University vacancies",
+  "url": "https://uu.varbi.com/en/",
+  "description": "Uppsala University's vacancies on Varbi, the recruitment system used across Swedish academia.",
+  "region": "Europe"
+ },
+ {
+  "id": "eth-jobs",
+  "category": "Job boards",
+  "name": "ETH Zurich job portal",
+  "url": "https://jobs.ethz.ch/",
+  "description": "All ETH Zurich vacancies, from doctoral to professorial positions.",
+  "region": "Europe"
+ },
+ {
+  "id": "epfl-jobs",
+  "category": "Job boards",
+  "name": "EPFL job openings",
+  "url": "https://www.epfl.ch/about/working/working-at-epfl/job-openings/",
+  "description": "EPFL's central listing of academic and research openings.",
+  "region": "Europe"
+ },
+ {
+  "id": "jobs-ch",
+  "category": "Job boards",
+  "name": "jobs.ch",
+  "url": "https://www.jobs.ch/en/",
+  "description": "The leading Swiss job portal, useful for industry research roles in Zurich and Lausanne.",
+  "region": "Europe"
+ },
+ {
+  "id": "academickeys",
+  "category": "Job boards",
+  "name": "AcademicKeys",
+  "url": "https://www.academickeys.com/",
+  "description": "Discipline-specific academic job listings, mostly North American with some international posts.",
+  "region": "Global"
+ },
+ {
+  "id": "linkedin-jobs",
+  "category": "Job boards",
+  "name": "LinkedIn Jobs",
+  "url": "https://www.linkedin.com/jobs/",
+  "description": "The main channel for industry research-scientist roles at European AI labs.",
+  "region": "Global"
+ },
+ {
+  "id": "80k-jobs",
+  "category": "Job boards: AI safety & policy",
+  "name": "80,000 Hours job board",
+  "url": "https://jobs.80000hours.org/",
+  "description": "Curated high-impact roles, with strong coverage of AI safety, governance and policy research.",
+  "region": "Global"
+ },
+ {
+  "id": "aisafety-jobs",
+  "category": "Job boards: AI safety & policy",
+  "name": "AISafety.com jobs",
+  "url": "https://www.aisafety.com/jobs",
+  "description": "Aggregated AI safety research, engineering and governance roles worldwide.",
+  "region": "Global"
+ },
+ {
+  "id": "probably-good",
+  "category": "Job boards: AI safety & policy",
+  "name": "Probably Good job board",
+  "url": "https://jobs.probablygood.org/",
+  "description": "Impact-focused job board that includes AI governance and research roles.",
+  "region": "Global"
+ },
+ {
+  "id": "eu-careers-ai",
+  "category": "Job boards: AI safety & policy",
+  "name": "EU Careers – Artificial intelligence",
+  "url": "https://eu-careers.europa.eu/en/job-opportunities/artificial-intelligence-ai",
+  "description": "EU institutions' AI job opportunities, including calls from the European AI Office.",
+  "region": "Europe"
+ },
+ {
+  "id": "uk-civil-service",
+  "category": "Job boards: AI safety & policy",
+  "name": "Civil Service Jobs (UK)",
+  "url": "https://www.civilservicejobs.service.gov.uk/",
+  "description": "UK government vacancies, including DSIT, the AI Security Institute and other science-policy roles.",
+  "region": "UK"
+ },
+ {
+  "id": "ea-forum-jobs",
+  "category": "Job boards: AI safety & policy",
+  "name": "EA Forum – open job listings",
+  "url": "https://forum.effectivealtruism.org/topics/job-listing-open",
+  "description": "Community-posted openings at AI safety, forecasting and research organisations.",
+  "region": "Global"
+ },
+ {
+  "id": "might-job-hunt",
+  "category": "Advice & guides",
+  "name": "Matt Might – Academic job hunt advice",
+  "url": "https://matt.might.net/articles/advice-for-academic-job-hunt/",
+  "description": "Classic practical tips on cover letters, job talks and interviews for CS faculty candidates.",
+  "region": "Global"
+ },
+ {
+  "id": "guo-job-search",
+  "category": "Advice & guides",
+  "name": "Philip Guo – Notes on the tenure-track job search",
+  "url": "https://xb00dx.github.io/files/guo-faculty-job-search.pdf",
+  "description": "Philip Guo's detailed write-up of applying to 24 CS faculty jobs, covering materials, interviews and decisions.",
+  "region": "Global"
+ },
+ {
+  "id": "csguides-job-guide",
+  "category": "Advice & guides",
+  "name": "CS Grad Job and Interview Guide",
+  "url": "https://csguides.github.io/grad-job-guide/",
+  "description": "A community GitHub guide to the academic and industry-research job search in CS.",
+  "region": "Global"
+ },
+ {
+  "id": "shomir-tt-guide",
+  "category": "Advice & guides",
+  "name": "Shomir Wilson – Guide for the CS/IS tenure-track market",
+  "url": "https://shomir.net/tt_job_guide.html",
+  "description": "A step-by-step guide to research-oriented CS and information-science faculty searches.",
+  "region": "Global"
+ },
+ {
+  "id": "csfaculty-questions",
+  "category": "Advice & guides",
+  "name": "Interview Questions for CS Faculty Jobs",
+  "url": "https://csfaculty.github.io/",
+  "description": "A crowd-sourced list of questions asked in CS faculty interviews and on-site visits.",
+  "region": "Global"
+ },
+ {
+  "id": "mireshghallah-advice",
+  "category": "Advice & guides",
+  "name": "Surviving (and Thriving on) the Academic Job Market",
+  "url": "https://mireshghallah.github.io/blog/job_market_advice.html",
+  "description": "Recent first-hand advice from an ML/NLP faculty candidate on applications, talks and negotiation.",
+  "region": "Global"
+ },
+ {
+  "id": "heiss-job-market",
+  "category": "Advice & guides",
+  "name": "Andrew Heiss – academic-job-market (GitHub)",
+  "url": "https://github.com/andrewheiss/academic-job-market",
+  "description": "Data and reflections from 2.5 years on the academic job market, including application counts and outcomes.",
+  "region": "Global"
+ },
+ {
+  "id": "philos-l",
+  "category": "Communities & mailing lists",
+  "name": "PHILOS-L",
+  "url": "https://www.liverpool.ac.uk/philosophy/philos-l/",
+  "description": "A long-running international philosophy mailing list (Liverpool) for jobs, CFPs and conferences.",
+  "region": "Global"
+ },
+ {
+  "id": "jeffhuang-cs-data",
+  "category": "Tools",
+  "name": "Jeff Huang – Computer Science Open Data",
+  "url": "https://jeffhuang.com/computer-science-open-data/",
+  "description": "Data on CS faculty hiring, placements and where new faculty come from.",
+  "region": "Global"
+ },
+ {
+  "id": "drafty-csprofessors",
+  "category": "Tools",
+  "name": "Drafty – CS Professors dataset",
+  "url": "https://drafty.cs.brown.edu/csprofessors",
+  "description": "A crowd-edited spreadsheet of CS faculty, their hiring year and PhD origin, useful for mapping departments.",
+  "region": "Global"
+ },
+ {
+  "id": "csrankings",
+  "category": "Tools",
+  "name": "CSRankings",
+  "url": "https://csrankings.org/",
+  "description": "Metrics-based ranking of CS departments by area, useful for shortlisting departments (includes Europe).",
+  "region": "Global"
+ },
+ {
+  "id": "interfolio",
+  "category": "Tools",
+  "name": "Interfolio Dossier",
+  "url": "https://www.interfolio.com/dossier/",
+  "description": "Service for storing and sending confidential reference letters and application materials.",
+  "region": "Global"
+ },
+ {
+  "id": "ucu-pay-spine",
+  "category": "Salary & contracts",
+  "name": "UCU – HE single pay spine",
+  "url": "https://www.ucu.org.uk/he_singlepayspine",
+  "description": "The UK higher-education national pay spine, for benchmarking lecturer and research-fellow grades.",
+  "region": "UK"
+ },
+ {
+  "id": "tvl-tables",
+  "category": "Salary & contracts",
+  "name": "öffentlicher-dienst.info – TV-L pay tables",
+  "url": "https://oeffentlicher-dienst.info/tv-l/allg/",
+  "description": "German public-sector TV-L pay tables (E13/E14/E15) used for postdocs and non-professorial academic staff.",
+  "region": "Europe"
+ },
+ {
+  "id": "levels-fyi",
+  "category": "Salary & contracts",
+  "name": "Levels.fyi",
+  "url": "https://www.levels.fyi/",
+  "description": "Crowd-sourced compensation data for industry research-scientist roles, including London and Zurich.",
+  "region": "Global"
+ },
+ {
+  "id": "uk-global-talent",
+  "category": "Visa & mobility",
+  "name": "UK Global Talent visa",
+  "url": "https://www.gov.uk/global-talent",
+  "description": "The official page for the UK's endorsement-based visa for leaders and potential leaders in research and digital technology.",
+  "region": "UK"
+ },
+ {
+  "id": "uk-global-talent-academic",
+  "category": "Visa & mobility",
+  "name": "Global Talent visa – researchers and academics",
+  "url": "https://www.gov.uk/global-talent-researcher-academic",
+  "description": "The researcher/academic route of the Global Talent visa, including fast-track endorsement for named fellowships and roles.",
+  "region": "UK"
+ },
+ {
+  "id": "uk-skilled-worker",
+  "category": "Visa & mobility",
+  "name": "UK Skilled Worker visa",
+  "url": "https://www.gov.uk/skilled-worker-visa",
+  "description": "The employer-sponsored UK work visa that most university and industry offers use.",
+  "region": "UK"
+ },
+ {
+  "id": "uk-hpi",
+  "category": "Visa & mobility",
+  "name": "UK High Potential Individual visa",
+  "url": "https://www.gov.uk/high-potential-individual-visa",
+  "description": "An unsponsored 2–3-year UK visa for recent graduates of top global universities.",
+  "region": "UK"
+ },
+ {
+  "id": "eu-blue-card",
+  "category": "Visa & mobility",
+  "name": "EU Blue Card (EU Immigration Portal)",
+  "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/eu-blue-card_en",
+  "description": "The European Commission's official guide to the EU Blue Card for highly qualified workers, with per-country pages.",
+  "region": "Europe"
+ },
+ {
+  "id": "de-blue-card",
+  "category": "Visa & mobility",
+  "name": "Make it in Germany – EU Blue Card",
+  "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+  "description": "The German government's guide to the EU Blue Card and its salary thresholds.",
+  "region": "Europe"
+ },
+ {
+  "id": "nl-hsm",
+  "category": "Visa & mobility",
+  "name": "IND – Highly skilled migrant (Netherlands)",
+  "url": "https://www.ind.nl/en/residence-permits/work/highly-skilled-migrant",
+  "description": "Dutch residence-permit route for researchers and knowledge workers.",
+  "region": "Europe"
+ },
+ {
+  "id": "se-work-permit",
+  "category": "Visa & mobility",
+  "name": "Swedish Migration Agency – Working in Sweden",
+  "url": "https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden.html",
+  "description": "Work and residence permit guidance for Sweden, including research permits.",
+  "region": "Europe"
+ },
+ {
+  "id": "ch-non-eu",
+  "category": "Visa & mobility",
+  "name": "SEM – Work permits for non-EU/EFTA nationals (Switzerland)",
+  "url": "https://www.sem.admin.ch/sem/en/home/themen/arbeit/nicht-eu_efta-angehoerige.html",
+  "description": "Swiss federal guidance on work permits for third-country nationals.",
+  "region": "Europe"
+ },
+ {
+  "id": "euraxess-mobility",
+  "category": "Visa & mobility",
+  "name": "EURAXESS – researcher mobility services",
+  "url": "https://euraxess.ec.europa.eu/",
+  "description": "EURAXESS service centres and guides on visas, social security and relocation for researchers.",
+  "region": "Europe"
+ },
+ {
+  "id": "ml-news",
+  "category": "Communities & mailing lists",
+  "name": "ml-news (Google Group)",
+  "url": "https://groups.google.com/g/ml-news",
+  "description": "A widely read ML mailing list for job ads, including European professorships and group-leader calls.",
+  "region": "Global"
+ },
+ {
+  "id": "connectionists",
+  "category": "Communities & mailing lists",
+  "name": "Connectionists mailing list",
+  "url": "https://mailman.srv.cs.cmu.edu/mailman/listinfo/connectionists",
+  "description": "Long-running neural computation / ML list (CMU-hosted) with frequent job and postdoc postings.",
+  "region": "Global"
+ },
+ {
+  "id": "acl-jobs",
+  "category": "Communities & mailing lists",
+  "name": "ACL Member Portal – job announcements",
+  "url": "https://www.aclweb.org/portal/category/topics/job-announcement",
+  "description": "Job postings from the Association for Computational Linguistics community.",
+  "region": "Global"
+ },
+ {
+  "id": "spsp-list",
+  "category": "Communities & mailing lists",
+  "name": "SPSP mailing list",
+  "url": "https://www.philosophy-science-practice.org/mailing-list/",
+  "description": "The Society for Philosophy of Science in Practice's announcement list for jobs, CFPs and events.",
+  "region": "Global"
+ },
+ {
+  "id": "philsci-archive",
+  "category": "Communities & mailing lists",
+  "name": "PhilSci-Archive",
+  "url": "https://philsci-archive.pitt.edu/",
+  "description": "The philosophy of science preprint archive, useful for tracking active groups and for self-archiving work.",
+  "region": "Global"
+ },
+ {
+  "id": "metascience-conf",
+  "category": "Communities & mailing lists",
+  "name": "Metascience conference",
+  "url": "https://www.metascience.info/",
+  "description": "The international metascience conference series, the main venue for the metascience and research-on-research community.",
+  "region": "Global"
+ },
+ {
+  "id": "tenuretracker",
+  "category": "Job boards",
+  "name": "TenureTracker",
+  "url": "https://tenuretracker.info/",
+  "description": "Daily aggregator of postdoc, lecturer and tenure-track openings collected from university career pages and EURAXESS, with free email alerts.",
+  "region": "Global"
+ },
+ {
+  "id": "community-sheet-2026",
+  "category": "Job boards",
+  "name": "Community academic jobs sheet (2026–27)",
+  "url": "https://docs.google.com/spreadsheets/d/1LJ93NUxRIxKMhdZ02Fy_LkpwPS3GQy7j6EmIjaHES1s/edit?gid=0#gid=0",
+  "description": "Crowd-curated Google Sheet of about 1,000 faculty, postdoc and fellowship openings across CS, AI, information science and the social sciences. Many listed deadlines are the dates review starts.",
+  "region": "Global"
+ }
+]
