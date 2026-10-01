@@ -48,7 +48,7 @@
 .jobhub input[type=search], .jobhub input:not([type]), .jobhub input[type=date], .jobhub select, .jobhub textarea {
   font: 400 14px var(--display); color: var(--ink); background: var(--bg);
   border: 2px solid var(--ink); padding: 7px 10px; outline: none; }
-.jobhub input:focus, .jobhub select:focus, .jobhub textarea:focus { border-color: var(--blue); box-shadow: 4px 4px 0 var(--blue); }
+.jobhub input:not([type=range]):not([type=checkbox]):focus, .jobhub select:focus, .jobhub textarea:focus { border-color: var(--blue); box-shadow: 4px 4px 0 var(--blue); }
 .jobhub input[type=search] { min-width: 260px; flex: 1 1 260px; max-width: 440px; }
 .jobhub select { appearance: none; padding-right: 28px; cursor: pointer;
   background: linear-gradient(45deg, transparent 50%, var(--ink) 50%) right 14px center / 6px 6px no-repeat,
