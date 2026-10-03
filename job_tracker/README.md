@@ -40,6 +40,7 @@ Your tracker, checklist ticks, hidden and unavailable listings, and last-visit d
 | THE Unijobs, Nature Careers, Science Careers | Madgex RSS (`/jobsrss/`) |
 | TenureTracker (includes EURAXESS postings) | search result pages |
 | Community academic jobs Google Sheet | CSV export; add more sheets in `SHEETS` |
+| ML News mailing list (ml-news@googlegroups.com) | public Google Groups archive; add more groups in `GROUPS` |
 | AcademicTransfer (NL) | search result pages |
 | 80,000 Hours board (AI safety & policy) | public Algolia index |
 | Anthropic, UK AISI, Isomorphic, xAI, Wayve, Helsing, Scale | Greenhouse API |
@@ -54,6 +55,7 @@ To tune coverage, edit these constants at the top of `refresh.py`:
 - `BOARDS` for company job boards. Add any Greenhouse, Ashby, Lever or Workable slug.
 - `KEYWORDS` / `ROLE_BONUS` for relevance weights.
 - `EXCLUDE` for title patterns to drop.
+- `GROUPS` for public Google Groups mailing lists. Only adverts are kept (calls for papers, talks and courses are skipped). Each advert links to its thread, and stays listed for `GROUP_KEEP_DAYS` (60) after it drops off the group's front page, or until its deadline passes.
 
 ## Curated data (`data/*.json`)
 

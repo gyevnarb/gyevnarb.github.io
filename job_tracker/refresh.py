@@ -39,6 +39,11 @@ QUERIES = [
 # Date added, Position/Resource, Title, Field/Topic, University/Organization, Region, Deadline, Link
 SHEETS = {"Community sheet": "1LJ93NUxRIxKMhdZ02Fy_LkpwPS3GQy7j6EmIjaHES1s"}
 
+# Public Google Groups (mailing lists) whose job adverts are scraped from the web archive.
+# Only the most recent ~30 threads are visible, so adverts are kept for GROUP_KEEP_DAYS once seen.
+GROUPS = {"ML News": "ml-news"}
+GROUP_KEEP_DAYS = 60
+
 # Company job boards (public ATS APIs). Only research-flavoured titles are kept.
 BOARDS = {
     "greenhouse": {"anthropic": "Anthropic", "aisi": "UK AI Security Institute",
@@ -320,6 +325,113 @@ def fmt_d(iso):
     return datetime.fromisoformat(iso).strftime("%-d %b %Y")
 
 
+GROUP_JOB = re.compile(r"\b(positions?|post-?docs?|postdoctoral|professors?(hips?)?|lecturers?(hips?)?|faculty|"
+                       r"fellows?(hips?)?|jobs?|hiring|openings?|vacanc\w*|research (scientist|engineer|associate)|"
+                       r"scientists?|researchers?|tenure|chairs?|group leaders?|w[123]|phd|internships?)\b", re.I)
+GROUP_NOT_JOB = re.compile(r"\bcfp\b|call for (papers|participation|abstracts|submissions|proposals)|workshop|"
+                           r"conference|symposium|special session|\btalks?\b|seminar|lectures?\b|course|tutorial|"
+                           r"challenge|competition|webinar|summer school|award|newsletter|\bdeadline extension\b", re.I)
+GROUP_DEADLINE = re.compile(r"(?:deadline|apply by|applications? (?:due|close|by|received by)|closing date|"
+                            r"review of applications|until)\W{0,12}(?:is|on|of|:)?\s*"
+                            r"((?:\d{1,2}(?:st|nd|rd|th)?\s+[A-Z][a-z]+\.?,?\s+\d{4})|(?:[A-Z][a-z]+\.?\s+\d{1,2}(?:st|nd|rd|th)?,?\s+\d{4})|"
+                            r"(?:\d{4}-\d{2}-\d{2})|(?:\d{1,2}[./]\d{1,2}[./]\d{4}))", re.I)
+DEADLINE_FMTS = ["%d %B %Y", "%d %b %Y", "%B %d %Y", "%b %d %Y", "%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y"]
+ORG_NAME = re.compile(r"(?:[A-Z][\w&'’.-]*\s+){0,4}(?:University|Universit[äé]t?|Universiteit|Institute|Institut|"
+                      r"College|Cent(?:er|re)|School|Laborator(?:y|ies)|Lab|Academy|Foundation|Hospital)\b"
+                      r"(?:\s+(?:of|for|de|für)\s+(?:the\s+)?(?:[A-Z][\w&'’.-]*\s?){1,5})?")
+
+
+def group_posted(s):
+    """Listing dates look like '10:27 AM' (today), 'Oct 2' (this year) or '9/12/25'."""
+    s = s.strip()
+    if re.fullmatch(r"\d{1,2}:\d{2}\s*[AP]M", s):
+        return TODAY
+    now = datetime.now()
+    try:
+        d = datetime.strptime(f"{s} {now.year}", "%b %d %Y")
+        return (d if d <= now else d.replace(year=now.year - 1)).date().isoformat()
+    except ValueError:
+        pass
+    try:
+        return datetime.strptime(s, "%m/%d/%y").date().isoformat()
+    except ValueError:
+        return None
+
+
+def group_place(s):
+    """First place name mentioned (UK, Europe or elsewhere), as written in the text."""
+    hits = [m for rx in (UK, EUROPE, NON_EUROPE) for m in [rx.search(s)] if m]
+    return min(hits, key=lambda m: m.start()).group(0) if hits else ""
+
+
+def group_thread(group, tid):
+    """Full text of the first message in a thread."""
+    h = fetch(f"https://groups.google.com/g/{group}/c/{tid}")
+    t = html.unescape(re.sub(r"<[^>]+>", "\n", h))
+    t = re.sub(r"[ \t]+", " ", t)
+    start = t.find("to Machine Learning News") if "to Machine Learning News" in t else t.find("Report message")
+    body = t[start:] if start >= 0 else t
+    end = re.search(r"You received this message|Reply all\n|\nReply\n", body)
+    return re.sub(r"\n\s*\n+", "\n", body[:end.start()] if end else body[:8000]).strip()
+
+
+def src_groups():
+    prev = []
+    if (DATA / "jobs.json").exists():
+        prev = json.loads((DATA / "jobs.json").read_text()).get("jobs", [])
+    known = {j.get("thread"): j for j in prev if j.get("thread")}
+    keep_from = datetime.fromordinal(datetime.now().date().toordinal() - GROUP_KEEP_DAYS).date().isoformat()
+    out = []
+    for label, group in GROUPS.items():
+        page = fetch(f"https://groups.google.com/g/{group}")
+        rows = re.findall(r'data-rowid="([^"]+)">(.*?)(?=data-rowid=|$)', page, re.S)
+        todo, fresh = [], set()
+        for tid, row in rows:
+            parts = [p.strip() for p in html.unescape(re.sub(r"<[^>]+>", "|", row)).split("|") if p.strip()]
+            i = next((k for k, p in enumerate(parts) if group_posted(p)), None)
+            if i is None or i + 1 >= len(parts):
+                continue
+            subject, snippet = parts[i + 1], parts[i + 2] if i + 2 < len(parts) else ""
+            if not GROUP_JOB.search(subject) or GROUP_NOT_JOB.search(subject):
+                continue
+            fresh.add(tid)
+            if tid in known:  # details already extracted on an earlier run
+                out.append({k: v for k, v in known[tid].items() if k not in ("id", "region", "score", "first_seen")})
+            else:
+                todo.append((tid, subject, snippet, group_posted(parts[i])))
+
+        def build(item):
+            tid, subject, snippet, posted = item
+            try:
+                body = group_thread(group, tid)
+            except Exception:
+                body = snippet
+            head = body[:2500]
+            subj = re.sub(r"^\s*\[[^\]]*\]\s*", "", subject)  # drop "[JOB]" style tags
+            at = re.search(r"\b(?:at|@)\s+(?:the\s+)?([A-Z][^,;()\n]{3,70}?)(?=\s*(?:,|;|\(|\bin\b|$|\s[-–—]\s))", subj)
+            named = ORG_NAME.search(subj) or ORG_NAME.search(head)
+            org = (at.group(1) if at else named.group(0) if named else "").strip(" .,-")
+            dl = GROUP_DEADLINE.search(body)
+            deadline = parse_date(re.sub(r"(\d)(st|nd|rd|th)", r"\1", dl.group(1)).replace(",", "").replace(".", " ")
+                                  if dl and not re.match(r"\d{1,2}[./]", dl.group(1)) else (dl.group(1) if dl else ""),
+                                  DEADLINE_FMTS)
+            j = job(label, subj, org, group_place(subj) or group_place(head),
+                    f"https://groups.google.com/g/{group}/c/{tid}", classify_kind(subj, "Other"),
+                    posted=posted, deadline=deadline,
+                    summary=re.sub(r"\s+", " ", head.replace("to Machine Learning News", ""))[:400],
+                    tags=["mailing list"])
+            j["thread"] = tid
+            return j
+
+        with cf.ThreadPoolExecutor(6) as ex:
+            out += list(ex.map(build, todo))
+        # keep adverts that have dropped off the front page for a while
+        out += [{k: v for k, v in j.items() if k not in ("id", "region", "score", "first_seen")}
+                for j in prev if j.get("source") == label and j.get("thread") not in fresh
+                and (j.get("posted") or TODAY) >= keep_from]
+    return out
+
+
 def src_academictransfer():
     out = []
     for q in QUERIES[:10]:
@@ -448,7 +560,7 @@ SOURCES = {
     "AcademicTransfer": src_academictransfer, "80,000 Hours": src_80k, "Greenhouse boards": src_greenhouse,
     "Ashby boards": src_ashby, "Lever boards": src_lever, "Workable boards": src_workable,
     "Microsoft": src_microsoft, "Science Careers": src_science, "TenureTracker": src_tenuretracker,
-    "Community sheet": src_sheets,
+    "Community sheet": src_sheets, "Mailing lists": src_groups,
 }
 
 
