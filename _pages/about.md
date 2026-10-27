@@ -6,8 +6,8 @@ position: Postdoctoral Research Associate, Institute for Complex Social Dynamics
 toggles: true
 ---
 
-I study the <b>metascience of AI</b>: how AI is changing the way science is done, what it can claim to know, and how scientific communities are organised.
-I combine computational methods with cognitive experiments and user studies, working with [Atoosa Kasirzadeh](https://kasirzadeh.org/) and [Nihar Shah](https://www.cs.cmu.edu/~nihars/) at the intersection of machine learning, cognitive science, and the philosophy of science.
+I study the <b>science of automated science</b>: how automation is changing the way science is done, what it can claim to know, and how scientific communities are organised.
+I combine computational methods with empirical and user studies, working with [Atoosa Kasirzadeh](https://kasirzadeh.org/) and [Nihar Shah](https://www.cs.cmu.edu/~nihars/) at the intersection of machine learning, cognitive science, and the philosophy of science.
 I completed my [PhD](https://era.ed.ac.uk/items/8d02a5aa-e2ae-4243-99b7-f639a3a14289) at the University of Edinburgh on explaining multi-agent behaviour through counterfactual reasoning, supervised by [Stefano Albrecht](https://agents-lab.org/stefano-albrecht/), [Shay Cohen](https://homepages.inf.ed.ac.uk/scohen/), and [Chris Lucas](https://homepages.inf.ed.ac.uk/clucas2/).
 
 I am currently most curious about three questions:
