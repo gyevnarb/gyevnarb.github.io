@@ -33,7 +33,7 @@ social:
   - title: cv
     url: /assets/pdf/CV.pdf
 
-blog_name: Metascience of AI
+blog_name: Science of Automated Science
 blog_description: or how AI is changing the way we do science
 
 permalink: /blog/:year/:title/
