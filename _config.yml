@@ -18,6 +18,8 @@ nav:
     url: /blog/
   - title: news
     url: /news/
+  - title: cv
+    url: /cv/
 
 social:
   - title: email
