@@ -32,7 +32,7 @@ QUERIES = [
     "artificial intelligence", "machine learning", "AI safety", "explainable AI",
     "responsible AI", "trustworthy AI", "philosophy of science", "metascience",
     "cognitive science", "multi-agent", "human-centred AI", "computer science lecturer",
-    "assistant professor computer science", "AI ethics", "science of science",
+    "assistant professor computer science", "AI ethics", '"science of science"',
 ]
 
 # Community-maintained Google Sheets of openings (must be link-viewable). Columns expected:
@@ -198,7 +198,7 @@ def classify_kind(title, default):
 def src_jobs_ac_uk():
     out = []
     for q in QUERIES:
-        for start in (1, 26):
+        for start in range(1, 200, 25):  # site caps pageSize at 25; follow up to 8 pages
             u = "https://www.jobs.ac.uk/search/?" + urllib.parse.urlencode(
                 {"keywords": q, "sortOrder": 1, "pageSize": 25, "startIndex": start})
             h = fetch(u)
