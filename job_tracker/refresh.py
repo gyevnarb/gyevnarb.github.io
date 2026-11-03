@@ -64,12 +64,15 @@ KEYWORDS = {
     r"philosoph": 1,
     r"cognitive|human-cent|human-computer|\bhci\b|multi-?agent|autonomous (systems|vehicles|driving)": 3,
     r"ethic|fairness|society|social|complex (systems|social)|computational social": 2,
-    r"artificial intelligence|machine learning|\bai\b|\bml\b|reinforcement|language model|llm": 1,
-    r"computer science|informatics|computing": 1,
+    r"artificial intelligence|machine learning|\bai\b|\bml\b|reinforcement|language model|llm|intelligent systems": 3,
+    r"computer science|informatics|computing|data science": 2,
 }
+# Role tiers matched against the title; only the best-matching tier counts.
 ROLE_BONUS = {
-    r"assistant professor|lecturer|tenure|junior professor|juniorprofessor|w1|w2|group leader|research fellow|fellowship|associate professor": 3,
+    r"assistant professor|associate professor|lecturer|tenure|junior ?professor|\bw[12]\b|university assistant": 4,
+    r"group leader|research fellow|fellowship": 3,
     r"research scientist|researcher|member of technical staff|research lead": 2,
+    r"\bprofessor|\breader\b|\bw3\b|chair in|postdoc|post-doc": 1,
 }
 # Titles we never want (students, admin, pure engineering/business roles).
 EXCLUDE = re.compile(
@@ -571,8 +574,10 @@ def score(j):
     title, rest = j["title"].lower(), f"{j['summary']} {j['org']}".lower()
     in_title = sum(w for pat, w in KEYWORDS.items() if re.search(pat, title))
     in_rest = sum(w for pat, w in KEYWORDS.items() if not re.search(pat, title) and re.search(pat, rest))
-    role = sum(w for pat, w in ROLE_BONUS.items() if re.search(pat, title))
-    return in_title + min(in_rest, 4) + role
+    role = max((w for pat, w in ROLE_BONUS.items() if re.search(pat, title)), default=0)
+    if not in_title:  # a good role in an unrelated field (sociology, nursing, ...) is only half as relevant
+        role //= 2
+    return in_title + min(in_rest, 2) + role
 
 
 def norm_key(j):
@@ -599,16 +604,19 @@ def refresh():
         for p in json.loads((DATA / "jobs.json").read_text()).get("jobs", []):
             prev[p["id"]] = p.get("first_seen", TODAY)
 
-    seen, clean = set(), []
+    seen, clean = {}, []
     for j in jobs:
         if not j["title"] or not j["url"] or EXCLUDE.search(j["title"]):
             continue
         if j["deadline"] and j["deadline"] < TODAY:
             continue
         k = norm_key(j)
-        if k in seen:
+        if k in seen:  # keep the first copy, but fill its gaps from later ones
+            first = seen[k]
+            for f in ("summary", "deadline", "posted", "salary"):
+                first[f] = first[f] or j[f]
             continue
-        seen.add(k)
+        seen[k] = j
         j["id"] = k[:60]
         j["region"] = region_of(j["location"])
         if j["region"] == "Other" and not NON_EUROPE.search(j["location"]):  # vague location: try the org name
@@ -617,9 +625,10 @@ def refresh():
         if j["region"] == "Other" and sheet_region == "Europe":
             j["region"] = "Europe"
         j["location"] = j["location"] or sheet_region
-        j["score"] = score(j)
         j["first_seen"] = prev.get(j["id"], TODAY)
         clean.append(j)
+    for j in clean:  # after dedup, so merged-in summaries count
+        j["score"] = score(j)
     clean.sort(key=lambda j: (-j["score"], j["deadline"] or "9999"))
     out = {"generated": datetime.now(timezone.utc).isoformat(timespec="minutes"), "sources": statuses, "jobs": clean}
     (DATA / "jobs.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
