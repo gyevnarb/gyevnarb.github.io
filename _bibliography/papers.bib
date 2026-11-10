@@ -1,5 +1,19 @@
 ---
 ---
+@inproceedings{gyevnar2026agentDivergence,
+    abbr={arXiv},
+    selected={true},
+    bibtex_show={true},
+    code ={https://github.com/gyevnarb/proof-divergence},
+    title={Autonomous AI Agents Systematically Diverge From Human Preferences in Proof Formalization},
+    author={Bálint Gyevnár and Simon DeDeo},
+    year={2026},
+    month={Nov.},
+    arxiv={2611.06995},
+    booktitle={arXiv:2611.06995},
+    abstract={Artificial intelligence (AI) systems have ushered in a new age of proof abundance, but helping humans understand these proofs requires new attention to the differences in how AI agents and humans pursue a proof-making task. We present "simulated collaboration", a methodology that allows us to examine two key questions: (1) the relative attention AI agents pay to surface syntax or, conversely, deeper underlying semantics, and (2) how and where AI agent preferences for what to do next diverge from human preferences. On a set of nine major human collaborations in Lean with 4.7M definitions across more than 6K commits, we find that, over the course of proof construction, AI agents (1) are far more strongly drawn than humans to explicitly marked gaps; (2) show a relative aversion to densely connected proof centers and to complex or surprising proof goals; and (3) are relatively attracted to surprising proof bodies, which they tend to regularize toward baseline. Our results highlight important blind spots and potential interventions for future human-AI collaboration in mathematics.}
+}
+
 @inproceedings{payan2026greCAPTCHA,
     abbr={arXiv},
     selected={true},
@@ -28,6 +42,21 @@
     arxiv={2607.10712},
     booktitle={arXiv:2607.10712},
     abstract={Scientific fraud is the instrument of doubt that malicious entities can use to establish controversy in science. Historically, it required the resources of a company: deep pockets, ghostwritten articles, and corrupt academics. Today, Artificial Intelligence (AI) is increasingly automating scientific research, so we ask: Can a remote adversary weaponize the honest use of AI in science to compromise scientific integrity? We envision and empirically evaluate a new attack, indirect data poisoning, in which an adversary corrupts an open dataset and uploads the poisoned variant to a public repository. Autonomous research agents may independently retrieve and process this data, turning honest scientists into the unpaid and unwitting distributors of fraud at scale. Across five socially-salient topics, from hiring discrimination to the safety of autonomous vehicles, three widely used frontier AI systems (Claude Code with Claude Opus 4.7, Codex with GPT-5.5, Gemini CLI with Gemini 3.1 Pro), and 450 ethically contained experimental runs, we find that poisoning succeeds in 49.56% of runs, while the rate of poisoning detection is only 6.0%. The attack requires no topic-specific trigger-words, agent access, indirect prompt injection, or fabricated papers, only the open data ecosystem and misleading metadata. To mitigate the attacks, we propose and evaluate two measures: a scientist persona and a data provenance audit with five checks (referencing papers, social markers, statistical anomalies, related datasets, poisoning caution). We find that the persona still leaves 16.67% of runs with a poisoned conclusion, but provenance auditing reduces attack success rate to zero. Our results suggest that indirect data poisoning may enable scientific fraud at unprecedented scale, but these attacks can be mitigated with suitable auditing by agents during data retrieval. }
+}
+
+@inproceedings{rachum2026xrlBugfixing,
+    abbr={arXiv},
+    selected={false},
+    bibtex_show={true},
+    code ={https://github.com/cool-RR/FixArena},
+    html = {https://fixarena.org/},
+    title={Evaluating RL Explainability Methods by How Much They Help Fix Bugs in Agents},
+    author={Ram Rachum and Yotam Amitai and Bálint Gyevnár and Reuth Mirsky and Cameron Allen},
+    year={2026},
+    month={Aug.},
+    arxiv={2608.17524},
+    booktitle={arXiv:2608.17524},
+    abstract={This preliminary paper outlines a planned evaluation benchmark for Explainable Reinforcement Learning (XRL) methods. Current evaluations rely on functionally-grounded metrics like faithfulness and compactness, and on human-grounded proxies like subjective ratings or prediction accuracy. We suggest evaluating XRL methods by how effectively their generated explanations help to diagnose and fix malfunctioning reinforcement learning (RL) agents. We propose EvalXRL, a benchmark in which a Large Language Model (LLM) coding agent uses different XRL methods to diagnose a held-out malfunction in an RL agent, and then repair it. Our proposed benchmark iterates across (environment × malfunction × XRL method) tuples and uses the reward signal of the RL agents to form a final score for each XRL method. The coding agent may use the method interactively: invoke the XRL method, process its output, form new hypotheses on what is broken, and invoke the method again with parameters adjusted for testing these hypotheses. This closed-loop structure may be described as a simplified version of the scientific method. Some XRL methods provide self-evaluations that follow this pattern; we propose the first head-to-head comparison of multiple XRL methods in closed-loop usage.}
 }
 
 @phdthesis{gyevnar2026ActionExplanationMultiagent,
@@ -110,7 +139,7 @@ html={https://era.ed.ac.uk/items/8d02a5aa-e2ae-4243-99b7-f639a3a14289},
     address = {New York, NY, United States},
     abbr = {Nat. Mac. Intell.},
     doi = {10.1038/s42256-025-01020-y},
-    selected = {true},
+    selected = {false},
     bibtex_show = {true},
     arxiv={2502.09288},
     annotation = {* Equal contribution},
