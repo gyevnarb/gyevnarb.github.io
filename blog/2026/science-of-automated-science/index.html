@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Science of Automated Science | Bálint Gyevnár</title>
+  <meta name="description" content="Building Integrity into Machine-Driven Discovery">
+  <meta name="color-scheme" content="light dark">
+  
+  <link rel="canonical" href="https://gbalint.me/blog/2026/science-of-automated-science/">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="alternate" type="application/atom+xml" title="Bálint Gyevnár" href="/feed.xml">
+  
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/dad6lce.css">
+  
+  <style>:root{--bg: #f4f1ea;--fg: #16150f;--muted: #5e5b53;--line: #d8d2c4;--red: #c4302b;--blue: #1f4e9a;--yellow: #e2a70f;--ink: #16150f;--grey: #9a958a;--text: "neue-haas-grotesk-text", "Helvetica Neue", Helvetica, Arial, sans-serif;--display: "neue-haas-grotesk-display", "Helvetica Neue", Helvetica, Arial, sans-serif;--measure: 46rem;--gap: clamp(1.25rem, 4vw, 2.5rem);color-scheme:light dark}@media(prefers-color-scheme: dark){:root{--bg: #131311;--fg: #ebe7dd;--muted: #a19c90;--line: #34322d;--red: #e5533f;--blue: #6b93dd;--yellow: #f0bd34;--ink: #ebe7dd;--grey: #6f6b62}.portrait img{filter:brightness(0.88)}img[src$=".svg"],img[src*=".svg?"],img[src*=".svg#"]{background:#fff}}*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0 auto;max-width:calc(var(--measure) + 2*var(--gap));padding:0 var(--gap);background:var(--bg);color:var(--fg);font:400 1.0625rem/1.6 var(--text);font-feature-settings:"kern","liga";text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}body.wide{max-width:calc(82rem + 2*var(--gap))}h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;margin:0}h1{text-wrap:balance}p,ul,ol,dl,figure,pre,blockquote{margin:0 0 1em}img{max-width:100%;height:auto;display:block}strong,b{font-weight:600}a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:var(--grey)}a:hover{color:var(--red);text-decoration-color:currentColor}:focus-visible{outline:2px solid var(--blue);outline-offset:2px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.bar{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem 2rem;padding:1.75rem 0 1.1rem;border-bottom:2px solid var(--ink);font-family:var(--display)}.bar a{text-decoration:none}.brand{display:inline-flex;align-items:center;gap:.45em;font-size:2.3rem;font-weight:600;letter-spacing:-0.01em;line-height:1.1}.mark{width:1.6em;height:.45em;flex:none}.mark circle{fill:var(--blue)}.mark rect{fill:var(--red)}.mark path{fill:var(--yellow)}.bar nav{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;font-size:1.2rem}.bar nav a{padding:.15rem 0;border-bottom:2px solid rgba(0,0,0,0)}.bar nav a[aria-current]{border-color:var(--red)}main{padding:clamp(1.5rem,4.5vw,2.5rem) 0 2rem}.block{margin-top:clamp(2.5rem,7vw,4rem)}.block>h2{font-size:1rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding-top:.6rem;margin-bottom:1.25rem;border-top:2px solid var(--red)}.block>h2 a{text-decoration:none}.lede{font-size:1.2rem;color:var(--muted)}.meta{color:var(--muted);font-size:.9rem}.dated{list-style:none;padding:0}.dated>li{display:grid;grid-template-columns:8.5rem 1fr;gap:.25rem 1.5rem;padding:.7rem 0;border-top:1px solid var(--line)}.dated>li:first-child{border-top:0;padding-top:0}.dated time{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums;padding-top:.1rem}.dated p{margin:.2rem 0 0}.intro{display:grid;grid-template-columns:1fr 13rem;gap:0 2.5rem}.tagline{grid-column:1/-1;font-size:clamp(1.9rem,5.4vw,3rem);font-weight:700;letter-spacing:-0.015em;line-height:1.08;margin-bottom:clamp(1.5rem,4vw,2.5rem);max-width:18em}.intro .prose{grid-column:1;grid-row:2}.portrait{grid-column:2;grid-row:2;margin:.35rem 0 0}.portrait figcaption{font-size:.85rem;color:var(--muted);margin-top:.6rem;line-height:1.4}.prose ul{padding-left:1.1rem}.intro .prose ul{list-style:none;padding-left:1.5rem}.intro .prose ul>li{position:relative}.intro .prose ul>li::before{content:"";position:absolute;left:-1.5rem;top:.42em;width:.7em;height:.7em;background:var(--blue);border-radius:50%}.intro .prose ul>li:nth-child(3n+2)::before{background:var(--red);border-radius:0}.intro .prose ul>li:nth-child(3n)::before{background:var(--yellow);border-radius:0;clip-path:polygon(50% 0, 100% 100%, 0 100%)}.prose li{margin-bottom:.6em}.social{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;font-family:var(--display)}.pubs ol.bibliography{list-style:none;padding:0;margin:0}.pubs ol.bibliography>li+li{margin-top:1.75rem}.by-year{display:grid;grid-template-columns:5rem 1fr;gap:0 1.5rem;margin-top:2.5rem}.by-year h2.bibliography{font-size:1.6rem;font-weight:600;font-variant-numeric:tabular-nums;border-top:2px solid var(--red);padding-top:.5rem;margin-top:2.5rem}.by-year ol.bibliography{border-top:1px solid var(--line);padding-top:1.25rem !important;margin-top:2.5rem !important}.by-year h2.bibliography:first-of-type,.by-year h2:first-of-type+ol{margin-top:0 !important}.pub{border-left:5px solid var(--grey);padding-left:1rem}.pub-conference{--kind: var(--red)}.pub-journal{--kind: var(--blue)}.pub-award{--kind: var(--yellow)}.pub-preprint{--kind: var(--ink)}.pub-thesis{--kind: var(--grey)}.pub{border-left-color:var(--kind, var(--grey))}.pub p{margin:.15rem 0 0}.pub-venue{font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}.pub-venue a{text-decoration:none}.pub-title{font-size:1.12rem;margin-top:.2rem}.pub-authors,.pub-where,.pub-note{font-size:.93rem;color:var(--muted)}.pub-authors strong{color:var(--fg);font-weight:600}.pub-where em{font-style:normal}.pub-note{font-size:.85rem}.pub-links{display:flex;flex-wrap:wrap;gap:.1rem 1rem;margin-top:.45rem !important;font-size:.9rem}.pub-links button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline dotted var(--grey);text-underline-offset:.2em}.pub-links button:hover{color:var(--red)}.pub-links button[aria-expanded=true]{color:var(--red);text-decoration:underline solid currentColor}.pub-panel{margin-top:.75rem;font-size:.93rem}.pub-panel pre{font:.78rem/1.5 ui-monospace,"SF Mono",Menlo,Consolas,monospace;background:color-mix(in srgb, var(--fg) 5%, var(--bg));padding:.9rem 1rem;margin:0;overflow-x:auto;white-space:pre}.legend{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;font-size:.88rem;color:var(--muted)}.legend li{border-left:5px solid var(--kind);padding-left:.5rem;line-height:1.2}.peer ul{padding-left:1.1rem}.peer li>ul{margin:.25rem 0 .75rem}.peer>h2{font-size:1rem}.blog-head h1,.post-head h1{font-size:clamp(1.9rem,5.4vw,3rem);letter-spacing:-0.015em;line-height:1.08;margin-bottom:.6rem}.blog-head{margin-bottom:2.5rem}.posts .post-link{font-family:var(--display);font-size:1.15rem;font-weight:600}.ext{margin-left:.25rem;color:var(--muted)}.post-head{margin-bottom:2rem;padding-bottom:1.25rem;border-bottom:1px solid var(--line)}.post-head .meta{margin:0}.toc{font-size:.9rem;margin-bottom:2.5rem}.toc ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.3rem 1.25rem;counter-reset:toc}.toc li{counter-increment:toc}.toc li::before{content:counter(toc) " ";color:var(--red);font-variant-numeric:tabular-nums}.post .prose{font-size:1.1rem;line-height:1.7}.post .prose h3{font-size:1.4rem;margin:2.5rem 0 .8rem}.post .prose figure{margin:2rem 0}.post .prose figcaption{font-size:.88rem;color:var(--muted);margin-top:.5rem}.post .prose blockquote{margin:1.5rem 0;padding-left:1.25rem;border-left:3px solid var(--red)}.epigraph-title{font-family:var(--display);font-weight:600;margin-bottom:.5rem}.epigraph footer{color:var(--muted);font-size:.95rem}.cite,.fn{font-size:.78em}.cite a,.fn a{text-decoration:none;color:var(--blue)}.fn{line-height:0}.notes{margin-top:3rem;padding-top:.6rem;border-top:2px solid var(--red);font-size:.9rem;color:var(--muted)}.notes h2{font-size:1rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--fg);margin-bottom:1rem}.notes ol{padding-left:1.5rem}.notes li{margin-bottom:.5rem;overflow-wrap:anywhere}.notes li:target{color:var(--fg)}.katex-display{overflow-x:auto;overflow-y:hidden;padding:.25rem 0}.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding:1.25rem 0 2rem;margin-top:2rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}@media(max-width: 40rem){body{font-size:1rem}.bar{padding-top:1.25rem}.brand{font-size:1.85rem}.bar nav{gap:.25rem 1.25rem;font-size:1.1rem}.intro{grid-template-columns:1fr}.portrait{grid-row:2;grid-column:1;margin:0 0 1.5rem;display:flex;align-items:center;gap:.9rem}.portrait picture{flex:none}.portrait img{width:4rem;height:4rem}.portrait figcaption{margin:0;max-width:14rem}.tagline{grid-row:1;margin-bottom:1.25rem}.intro .prose{grid-row:3}.dated>li{grid-template-columns:1fr}.dated>li{gap:.1rem}.by-year{grid-template-columns:1fr}.by-year ol.bibliography{border-top:0;margin-top:1rem !important;padding-top:0 !important}.by-year h2.bibliography{font-size:1.3rem}.post .prose{font-size:1.03rem}}</style>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.querySelector('.prose'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false}]})"></script>
+  
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="/">
+      <svg class="mark" viewBox="0 0 36 10" aria-hidden="true"><circle cx="5" cy="5" r="5"/><rect x="13" width="10" height="10"/><path d="M26 10 31 0 36 10z"/></svg>
+      Bálint Gyevnár
+    </a>
+    <nav aria-label="Main">
+      
+      <a href="/publications/">publications</a>
+      
+      <a href="/blog/" aria-current="page">blog</a>
+      
+      <a href="/news/">news</a>
+      
+      <a href="/cv/">cv</a>
+      
+    </nav>
+  </header>
+
+  <main id="content">
+    
+<article class="post">
+  <header class="post-head">
+    <h1>Science of Automated Science</h1>
+    <p class="lede">Building Integrity into Machine-Driven Discovery</p>
+    <p class="meta">
+      <a href="https://gbalint.me/">Bálint Gyevnár</a>, Carnegie Mellon University, Pittsburgh, PA, USA<br>
+      <time datetime="2026-11-18T20:32:53+00:00">November 18, 2026</time> &middot; 11 min read
+    </p>
+  </header>
+  
+  <nav class="toc" aria-label="Contents">
+    <ol><li><a href="#diagnosing-epistemic-risks-of-automated-science">Diagnosing epistemic risks of automated science</a></li><li><a href="#explaining-autonomous-agents-to-support-scientific-understanding">Explaining autonomous agents to support scientific understanding</a></li><li><a href="#designing-new-institutional-processes">Designing new institutional processes</a></li><li><a href="#future-work">Future work</a></li></ol>
+  </nav>
+  
+  <div class="prose">
+    <figure style="float: right; margin-left: 1rem; margin-top: 0; max-width: 37%;">
+<img src="/assets/img/blog/cycle.svg" alt="Three segment cycle plot reading diagnose, understand, and design in a clockwise order. Each third shows an illustration and the words rigorous, correct, accountable in that order." />
+<figcaption style="text-align: justify;">Figure 1. The science of automated science connects the diagnosis of epistemic risks, human understanding, and institutional design to advance rigor, correctness, and accountability.</figcaption>
+</figure>
+
+<p><em>PDF of my <a href="/assets/pdf/research-statement.pdf">research statement</a>.</em></p>
+
+<p>Automated systems based on artificial intelligence (AI) have produced impressive results – from resolving long-standing mathematical problems to designing nanobodies against COVID-19 – yet they often struggle to follow basic principles of scientific integrity, such as “Don’t $p$-hack” <span class="cite">[<a href="#ref-luoMoreYouAutomate2026">1</a>]</span> and “Check your datasets” <span class="cite">[<a href="#ref-gyevnarDistributedDenialScience2026">2</a>]</span>.
+Motivated by research into machine behavior <span class="cite">[<a href="#ref-rahwanMachineBehaviour2019">3</a>]</span> and the risks of illusory understanding~ <span class="cite">[<a href="#ref-messeriArtificialIntelligenceIllusions2024">4</a>]</span>, my work <strong>investigates how to uphold scientific integrity in automated science by making it rigorous, correct, and accountable.</strong> I run controlled experiments with AI systems and human participants to identify epistemic risks to the credibility of scientific evidence, design algorithmic mitigations, and evaluate infrastructure that supports human judgment and responsibility. My goal is to build <strong>automated science that warrants the trust of the people it supports</strong>, towards which I have contributed interdisciplinary work that bridges three key areas (Figure 1.):</p>
+
+<ol>
+  <li><em>Diagnosing epistemic risks of automated science (<a href="#diagnosing-epistemic-risks-of-automated-science">Section: Diagnosing</a>):</em> I identified vulnerabilities in research agents <span class="cite">[<a href="#ref-gyevnarDistributedDenialScience2026">2</a>]</span> and divergences from human priorities <span class="cite">[<a href="#ref-gyevnarAutonomousAIAgents2026">5</a>]</span>, developing interventions for trustworthy collaboration.</li>
+  <li><em>Explaining autonomous agents to support scientific understanding (<a href="#explaining-autonomous-agents-to-support-scientific-understanding">Section: Explaining</a>):</em> I developed and evaluated systems that generate explanations of the behavior of autonomous agents <span class="cite">[<a href="#ref-gyevnarActionExplanationMultiagent2026">6</a>, <a href="#ref-gyevnarCausalExplanationsSequential2024">7</a>, <a href="#ref-gyevnarIntegratingCounterfactualSimulations2026">8</a>, <a href="#ref-gyevnarPeopleAttributePurpose2025">9</a>, <a href="#ref-gyevnarObjectiveMetricsHumanSubjects2025">10</a>]</span>. These provide a foundation for future systems that support human scientific understanding.</li>
+  <li><em>Designing new institutional processes (<a href="#designing-new-institutional-processes">Section: Institutions</a>):</em> I co-developed <a href="https://grecaptcha.com">greCAPTCHA</a> for assessing manuscript understanding <span class="cite">[<a href="#ref-payanGreCAPTCHAAssessingUnderstanding2026">11</a>]</span> and mapped how research communities prioritize AI risks <span class="cite">[<a href="#ref-gyevnarAISafetyEveryone2025">12</a>, <a href="#ref-gyevnarBridgingGapResponsible2026">13</a>]</span>, informing recommendations for new institutional processes for automated science.</li>
+</ol>
+
+<p>In recognition of my work, I received early-career researcher awards from UKRI and IEEE, with coverage in <a href="https://www.nature.com/articles/d41586-026-02071-w">Nature</a> and <a href="https://www.timeshighereducation.com/news/researchers-submitting-ai-assisted-papers-they-dont-understand">Times Higher Education</a>.
+Going forward, I will build scalable automated methods for diagnosing and mitigating epistemic risks, map how humans understand automated science and develop explanations that support scientific judgment, and evaluate new ways of communicating and crediting automated research (<a href="#future-work">Future work</a>).</p>
+
+<h3 id="diagnosing-epistemic-risks-of-automated-science">Diagnosing epistemic risks of automated science</h3>
+
+<p>Scientific inquiry is a long-horizon reasoning task with a large branching factor that spans the breadth of human creativity, from hypothesis generation to results communication.
+While AI systems have made impressive strides, their use can pose wide-ranging risks to the reliability of scientific knowledge.
+I identify such epistemic risks through controlled empirical studies and propose algorithmic mitigations for them.
+My work found that AI research agents (1) can <strong>industrialize scientific fraud</strong> even when honest researchers use them responsibly <span class="cite">[<a href="#ref-gyevnarDistributedDenialScience2026">2</a>]</span> and (2) <strong>systematically diverge from human preferences</strong> in open-ended proof formalizations <span class="cite">[<a href="#ref-gyevnarAutonomousAIAgents2026">5</a>]</span>.</p>
+
+<figure id="fig-poisoning" style="float: right; width: 33%; margin: 0 0 1rem 1rem;">
+  <img src="/assets/img/blog/poisoning-success.svg" alt="Bar chart of indirect data poisoning success with and without data auditing" style="width: 100%;" />
+  <figcaption><strong>Figure 1.</strong> Without mitigations, indirect data poisoning succeeds in 77% of all runs; data auditing reduces it to 9%.</figcaption>
+</figure>
+
+<p><strong>Distributed denial of science</strong> <span class="cite">[<a href="#ref-gyevnarDistributedDenialScience2026">2</a>]</span><strong>.</strong>
+My work showed that automated science can be exploited even when honest human researchers are involved.
+Just as the tobacco industry once used ghostwritten articles to sow public doubt, malicious entities can now target the autonomous AI agents that scientists or policymakers may use to analyze public datasets.
+In controlled experiments, I showed that manipulating the open data ecosystem through a single poisoned dataset can lead research agents to reproduce false or misleading findings (<a href="#fig-poisoning">Figure 1</a>).
+Agents flagged the attack in only 6% of runs and sometimes questioned the validity of <em>legitimate</em> datasets.
+I proposed data auditing as a mitigation with five checks – referencing publications, social markers, statistical anomalies, cross-dataset comparison, poisoning caution – finding that it reduced attack success rate from 77% to 9%.</p>
+
+<p><strong>Agents show diverging preferences from humans</strong> <span class="cite">[<a href="#ref-gyevnarAutonomousAIAgents2026">5</a>]</span><strong>.</strong>
+As automated science expands, calls for human-AI collaboration that verifies AI-generated results and preserves human agency are growing.
+This trend is most visible in mathematics, where AI has tackled an increasing number of major problems.
+I introduced simulated collaboration to compare agents’ choices with human contributions at different stages of mathematical formalization projects.
+Across nine such projects, I found systematic differences in which parts of the proofs agents chose to modify – e.g., agents were at least 40× more likely to fill explicit proof gaps that humans had deferred.
+These differences reveal how agents may redirect effort away from human research priorities, highlighting important blind spots and potential interventions for future human–AI collaborations in mathematics.</p>
+
+<div style="clear: both;"></div>
+
+<h3 id="explaining-autonomous-agents-to-support-scientific-understanding">Explaining autonomous agents to support scientific understanding</h3>
+
+<p>These epistemic risks mean that humans must be able to evaluate correctness and communicate the methods of automated science, both of which depend on understanding it.
+Yet, the complexity of these systems and a growing human reliance on them are undermining our ability to understand them.
+I design algorithms to address this issue by operationalizing validated concepts from cognitive science and evaluating them with human participants.
+My research showed how to (1) <strong>measure which explanations help people understand</strong> autonomous decision-making the most and (2) <strong>automatically generate explanations</strong> of autonomous agents that are intelligible.</p>
+
+<p>In particular, many of the most successful demonstrations of automated science rely on multi-agent systems (MAS), where agents coordinate and share information to achieve better outcomes.
+I have extensively contributed research on automatically generating human-intelligible explanations of MAS behavior.
+Grounding this work in cognitive science, across two studies involving 436 participants, I found that a focus on goals was the strongest predictor of perceived explanation quality <span class="cite">[<a href="#ref-gyevnarPeopleAttributePurpose2025">9</a>]</span>, which led me to propose objective evaluation metrics for explainable reinforcement learning <span class="cite">[<a href="#ref-gyevnarObjectiveMetricsHumanSubjects2025">10</a>]</span>.
+Building on this result, I proposed a formal framework for explaining action sequences in MAS that, uniquely, accounts for differing stakeholder preferences <span class="cite">[<a href="#ref-gyevnarActionExplanationMultiagent2026">6</a>]</span>.
+I developed <strong>MAAX</strong>, a modular algorithmic framework that generates causal explanations for a wide range of agents and trained policies.
+In two human-subject studies using autonomous driving, MAAX improved both perceived explanation quality and participants’ ability to predict agents’ goals and actions.
+I will investigate how these methods transfer to research agents (<a href="#future-work">Future work</a>).</p>
+
+<h3 id="designing-new-institutional-processes">Designing new institutional processes</h3>
+
+<p>The deluge of low-quality papers, the crisis of peer review, and the emergence of scientific monocultures all highlight that our existing protocols for deciding who deserves credit, and which topics deserve attention, are not suited for automated discovery.
+My work addresses these questions directly by (1) introducing <strong>solutions for a better appraisal</strong> of scientific achievements and (2) <strong>mapping the research priorities of responsible AI</strong> to offer concrete recommendations for sustainable scientific progress.</p>
+
+<figure id="fig-grecaptcha" style="float: right; width: 33%; margin: 0 0 1rem 1rem;">
+  <img src="/assets/img/blog/grecaptcha.svg" alt="Mean greCAPTCHA scores for participants' own versus unfamiliar papers" style="width: 100%;" />
+  <figcaption><strong>Figure 2.</strong> Mean greCAPTCHA score for each participant answering questions about their own and unfamiliar papers; n = 31 with AUC = 0.9.</figcaption>
+</figure>
+
+<p><strong>Assessing whether authors understand their work</strong> <span class="cite">[<a href="#ref-payanGreCAPTCHAAssessingUnderstanding2026">11</a>]</span><strong>.</strong>
+Automated science makes it easy to produce research artifacts (e.g., manuscripts, code, or slides) that their authors have not verified.
+This issue affects every institution that relies on submitted work to assess expertise or award credit, from scientific publishing to hiring.
+Drawing on educational psychology, I co-developed <strong>greCAPTCHA</strong>, a platform that generates and evaluates tests of people’s capacity to verify their own artifacts.
+In a proctored study with semi-structured interviews involving 31 academics, greCAPTCHA distinguished responses about participants’ own papers from responses about unfamiliar papers (<a href="#fig-grecaptcha">Figure 2</a>; AUC 0.9), providing initial evidence that greCAPTCHA can assess manuscript-specific understanding.
+In the interviews, participants reported positive experiences, remarking on its construct validity while suggesting important changes before deployment.
+greCAPTCHA is free to use online at <a href="https://grecaptcha.com">grecaptcha.com</a>, and we are working with university courses and academic venues to deploy it.</p>
+
+<p><strong>Mapping the concerns of responsible AI</strong> <span class="cite">[<a href="#ref-gyevnarBridgingGapResponsible2026">13</a>]</span><strong>.</strong>
+Research communities shape which risks receive attention and which safeguards are developed.
+For example, technical research from the fields of AI safety (AIS) and AI ethics (AIE) provides the machinery necessary to address the epistemic risks of AI.
+Yet, tensions between these fields have created competing priorities which risk sidelining crucial concerns.
+To understand these tensions, I mapped engagement between AIS and AIE across 3.5K research papers <span class="cite">[<a href="#ref-gyevnarAISafetyEveryone2025">12</a>, <a href="#ref-gyevnarBridgingGapResponsible2026">13</a>]</span>.
+Using computational tools and inductive thematic analysis, I found major areas of overlapping concern – e.g., advancing human understanding through explanations (<a href="#explaining-autonomous-agents-to-support-scientific-understanding">Explaining autonomous agents</a>) – and also several thematic divides – e.g., between explanations for actionable recourse and mechanistic interpretability.
+Based on these empirical findings, I argue that critical bridging, where we map irreconcilable differences while building durable forms of collaboration, offers concrete paths to integrating shared concerns into responsible AI.</p>
+
+<div style="clear: both;"></div>
+
+<h3 id="future-work">Future work</h3>
+
+<p>I aim to develop methods and infrastructure that embed rigor, correctness, and accountability into automated science.
+While scaling AI models may resolve some epistemic risks, fundamental limitations (e.g., reward hacking and training data bias) remain, and scaling alone cannot settle how research should be credited or prioritized.</p>
+
+<p><strong>Automating the diagnosis and mitigation of epistemic risks.</strong>
+Mitigating epistemic risks is essential, but their diagnosis is currently constrained by two major bottlenecks: it requires (1) familiarity with the deployment domain and (2) experimental validity through painstakingly controlled conditions.
+Building on my data-poisoning experiments (<a href="#diagnosing-epistemic-risks-of-automated-science">Diagnosing epistemic risks</a>), I will develop methods that generate candidate failures and test whether auditing interventions generalize to held-out datasets and different agents.
+I will also evaluate whether this automated diagnosis uncovers failures missed by existing checks and whether the resulting mitigations preserve research performance.
+In this direction, I have been collaborating with a philosopher of science to develop the notion of “rational inexpertise”: a computational model of how recombining ideas from agents with different expertise levels may generate diverse hypotheses about epistemic risks.
+More broadly, I aim to turn the diagnosis of epistemic risks into a scientific process of its own, in which AI systems propose hypotheses about how automated research fails, design controlled experiments to test them, and record confirmed risks in a shared library that domain experts can extend to their own fields.</p>
+
+<p><strong>Mapping human understanding of automated science through empirical studies.</strong>
+Advancing human understanding of automated science requires scalable methods to generate relevant explanations for these systems.
+How explanations can help people evaluate automated research, however, is an open question.
+Building on my work in explainable sequential decision-making, I will (1) study <strong>how domain experts and non-experts interpret explanations</strong> of research agents and (2) test <strong>whether tailored explanations improve people’s ability</strong> to detect errors, assess correctness, and calibrate their reliance.
+I will do this, for example, by adapting my MAAX framework (<a href="#explaining-autonomous-agents-to-support-scientific-understanding">Explaining autonomous agents</a>) to automated science and evaluating it with human participants.
+These studies will in turn inform my investigations into the automated discovery of AI epistemic risks.
+I aim to establish an empirically grounded account of what it means to understand automated research and identify which explanations different audiences need in order to evaluate its results.</p>
+
+<p><strong>New ways of communicating and appraising research.</strong>
+One area of (automated) science where epistemic risks are especially visible is the way we appraise and communicate research.
+Building on greCAPTCHA (<a href="#designing-new-institutional-processes">Designing new institutional processes</a>), I will continue to evaluate author understanding in collaboration with university courses and academic venues by extending greCAPTCHA to new modalities (e.g., code and posters) and studying its validity across different author contributions.
+I will also investigate what I call the “AI explainer” as a conference paper format: a human-authored appraisal of a concrete piece of fully automated research written for human readers.
+I will test whether these accounts affect readers’ understanding, critical evaluation, and engagement with automated research.
+I envision working with scientific communities to pilot new norms for authorship and credit under automation, evaluating them through workshops, competitions, or public engagement before recommending their wider adoption.</p>
+
+<p>My collaborations span computer science, cognitive science, and philosophy across a global network, which gives me direct access to diverse scientific communities in which to pilot and evaluate new designs.
+Together, my proposed projects will help scientific communities identify unreliable automated research, evaluate its evidence, and assign credit and responsibility fairly.</p>
+
+  </div>
+  <section class="notes refs"><h2>References</h2><ol><li id="ref-luoMoreYouAutomate2026">Luo, Z., Kasirzadeh, A., &amp; Shah, N. B. (2026). The More You Automate, the Less You See: Hidden Pitfalls of Autonomous AI Scientists. <i>Proceedings of the National Academy of Sciences</i>, <i>123</i>(41), e2610214123. https://doi.org/10.1073/pnas.2610214123</li><li id="ref-gyevnarDistributedDenialScience2026">Gyevnár, B., Kasirzadeh, A., &amp; Shah, N. B. (2026). <i>Distributed Denial of Science: How Indirect Data Poisoning of AI Systems Can Industrialize Scientific Fraud</i>. https://doi.org/10.48550/arXiv.2607.10712</li><li id="ref-rahwanMachineBehaviour2019">Rahwan, I., Cebrian, M., Obradovich, N., Bongard, J., Bonnefon, J.-F., Breazeal, C., Crandall, J. W., Christakis, N. A., Couzin, I. D., Jackson, M. O., Jennings, N. R., Kamar, E., Kloumann, I. M., Larochelle, H., Lazer, D., McElreath, R., Mislove, A., Parkes, D. C., Pentland, A. ‘Sandy,’ … Wellman, M. (2019). Machine Behaviour. <i>Nature</i>, <i>568</i>(7753), 477–486. https://doi.org/10.1038/s41586-019-1138-y</li><li id="ref-messeriArtificialIntelligenceIllusions2024">Messeri, L., &amp; Crockett, M. J. (2024). Artificial Intelligence and Illusions of Understanding in Scientific Research. <i>Nature</i>, <i>627</i>(8002), 49–58. https://doi.org/10.1038/s41586-024-07146-0</li><li id="ref-gyevnarAutonomousAIAgents2026">Gyevnár, B., &amp; DeDeo, S. (2026). <i>Autonomous AI Agents Systematically Diverge From Human Preferences in Proof Formalization</i>. https://doi.org/10.48550/arXiv.2611.06995</li><li id="ref-gyevnarActionExplanationMultiagent2026">Gyevnár, B. (2026). <i>Action Explanation of Multi-Agent Systems via Counterfactual Reasoning</i>. The University of Edinburgh.</li><li id="ref-gyevnarCausalExplanationsSequential2024">Gyevnár, B., Wang, C., Lucas, C. G., Cohen, S. B., &amp; Albrecht, S. V. (2024). Causal Explanations for Sequential Decision-Making in Multi-Agent Systems. <i>Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems, AAMAS ’24</i>, 771–779.</li><li id="ref-gyevnarIntegratingCounterfactualSimulations2026">Gyevnár, B., Lucas, C. G., Albrecht, S. V., &amp; Cohen, S. B. (2026). Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour. <i>Proceedings of the 25th International Conference on Autonomous Agents and Multiagent Systems, AAMAS ’26</i>, 956–966. https://doi.org/10.65109/MCSD1905</li><li id="ref-gyevnarPeopleAttributePurpose2025">Gyevnár, B., Droop, S., Quillien, T., Cohen, S. B., Bramley, N. R., Lucas, C. G., &amp; Albrecht, S. V. (2025). People Attribute Purpose to Autonomous Vehicles When Explaining Their Behavior: Insights from Cognitive Science for Explainable AI. <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems, CHI ’25</i>, 1–18. https://doi.org/10.1145/3706598.3713509</li><li id="ref-gyevnarObjectiveMetricsHumanSubjects2025">Gyevnár, B., &amp; Towers, M. (2025, January 31). Objective Metrics for Human-Subjects Evaluation in Explainable Reinforcement Learning. <i>Proceedings of the 2025 Multi-Disciplinary Conference on Reinforcement Learning and Decision Making</i>. https://doi.org/10.48550/arXiv.2501.19256</li><li id="ref-payanGreCAPTCHAAssessingUnderstanding2026">Payan, J., Gyevnár, B., Kasirzadeh, A., &amp; Shah, N. B. (2026). <i>greCAPTCHA: Assessing Understanding as Evidence of Research Authorship Under Generative AI</i>. https://doi.org/10.48550/arXiv.2609.20481</li><li id="ref-gyevnarAISafetyEveryone2025">Gyevnár, B., &amp; Kasirzadeh, A. (2025). AI Safety for Everyone. <i>Nature Machine Intelligence</i>, <i>7</i>(4), 531–542. https://doi.org/10.1038/s42256-025-01020-y</li><li id="ref-gyevnarBridgingGapResponsible2026">Gyevnár, B., &amp; Kasirzadeh, A. (2026). <i>Bridging the Gap in the Responsible AI Divides</i>. https://doi.org/10.48550/arXiv.2603.14495</li></ol></section>
+</article>
+
+  </main>
+
+  <footer class="foot">
+    <span>&copy; 2026 Bálint Gyevnár</span>
+    <span>Last updated November 19, 2026</span>
+  </footer>
+  
+</body>
+</html>
