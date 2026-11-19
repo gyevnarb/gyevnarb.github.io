@@ -32,7 +32,7 @@
     </a>
     <nav aria-label="Main">
       {% for item in site.nav %}
-      <a href="{{ item.url | relative_url }}"{% if page.url == item.url or page.collection == "posts" and item.url == "/blog/" %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      <a href="{{ item.url | relative_url }}"{% if item.new_tab %} target="_blank" rel="noopener"{% endif %}{% if page.url == item.url or page.collection == "posts" and item.url == "/blog/" %} aria-current="page"{% endif %}>{{ item.title }}</a>
       {% endfor %}
     </nav>
   </header>

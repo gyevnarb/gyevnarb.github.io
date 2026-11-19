@@ -20,6 +20,7 @@ nav:
     url: /news/
   - title: cv
     url: /cv/
+    new_tab: true
 
 social:
   - title: email
