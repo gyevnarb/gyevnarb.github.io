@@ -28,6 +28,7 @@
     --grey: #6f6b62;
   }
   .portrait img { filter: brightness(.88); }
+  img[src$=".svg"], img[src*=".svg?"], img[src*=".svg#"] { background: #fff; }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
