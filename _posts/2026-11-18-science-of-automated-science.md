@@ -35,7 +35,7 @@ Motivated by research into machine behavior <d-cite key="rahwanMachineBehaviour2
 2. *Explaining autonomous agents to support scientific understanding ([Section: Explaining](#explaining-autonomous-agents-to-support-scientific-understanding)):* I developed and evaluated systems that generate explanations of the behavior of autonomous agents <d-cite key="gyevnarActionExplanationMultiagent2026,gyevnarCausalExplanationsSequential2024,gyevnarIntegratingCounterfactualSimulations2026,gyevnarPeopleAttributePurpose2025,gyevnarObjectiveMetricsHumanSubjects2025"></d-cite>. These provide a foundation for future systems that support human scientific understanding.
 3. *Designing new institutional processes ([Section: Institutions](#designing-new-institutional-processes)):* I co-developed [greCAPTCHA](https://grecaptcha.com) for assessing manuscript understanding <d-cite key="payanGreCAPTCHAAssessingUnderstanding2026"></d-cite> and mapped how research communities prioritize AI risks <d-cite key="gyevnarAISafetyEveryone2025,gyevnarBridgingGapResponsible2026"></d-cite>, informing recommendations for new institutional processes for automated science.
 
-In recognition of my work, I received early-career researcher awards from UKRI and IEEE, with coverage in [Nature](https://www.nature.com/articles/d41586-026-02071-w) and [Times Higher Education](https://www.timeshighereducation.com/news/researchers-submitting-ai-assisted-papers-they-dont-understand).
+<!-- In recognition of my work, I received early-career researcher awards from UKRI and IEEE, with coverage in [Nature](https://www.nature.com/articles/d41586-026-02071-w) and [Times Higher Education](https://www.timeshighereducation.com/news/researchers-submitting-ai-assisted-papers-they-dont-understand). -->
 Going forward, I will build scalable automated methods for diagnosing and mitigating epistemic risks, map how humans understand automated science and develop explanations that support scientific judgment, and evaluate new ways of communicating and crediting automated research ([Future work](#future-work)).
 
 ### Diagnosing epistemic risks of automated science
@@ -135,6 +135,3 @@ Building on greCAPTCHA ([Designing new institutional processes](#designing-new-i
 I will also investigate what I call the “AI explainer” as a conference paper format: a human-authored appraisal of a concrete piece of fully automated research written for human readers.
 I will test whether these accounts affect readers' understanding, critical evaluation, and engagement with automated research.
 I envision working with scientific communities to pilot new norms for authorship and credit under automation, evaluating them through workshops, competitions, or public engagement before recommending their wider adoption.
-
-My collaborations span computer science, cognitive science, and philosophy across a global network, which gives me direct access to diverse scientific communities in which to pilot and evaluate new designs.
-Together, my proposed projects will help scientific communities identify unreliable automated research, evaluate its evidence, and assign credit and responsibility fairly.
